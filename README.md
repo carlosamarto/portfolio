@@ -18,7 +18,7 @@ This is my portfolio website build with React.js and Tailwind CSS. <br><br>
 
 ## 🚨 Forking this repo
 
-You can fork this repo without no problem, enjoy :).
+You can fork this repo and please give me proper credit, enjoy :).
 
 ## 🛠 Installation & Set Up
 
