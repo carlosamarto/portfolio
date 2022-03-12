@@ -1,6 +1,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+    },
     colors: {
       dark: "#2b2d42",
       red: "#ef233c",
@@ -16,8 +21,9 @@ module.exports = {
     extend: {
       fontSize: {
         title: "64px",
+        mobile: "32px",
         subtitle: "24px",
-        paragraph: "18px",
+        paragraph: "16px",
         small: "14px",
       },
       height: {

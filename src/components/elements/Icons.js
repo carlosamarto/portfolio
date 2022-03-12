@@ -30,7 +30,7 @@ const Icons = () => {
 
   return (
     <>
-      <div className="fixed bottom-6 left-16 flex flex-col gap-2">
+      <div className="lg:fixed lg:bottom-6 lg:left-8 flex lg:flex-col flex-row lg:gap-2 gap-6 lg:justify-start justify-center">
         <a
           href="https://github.com/carlosmrtzodev"
           target="_blank"
@@ -60,7 +60,7 @@ const Icons = () => {
       </div>
 
       {showButton && (
-        <div className="fixed right-16 bottom-6">
+        <div className="fixed bottom-6 right-8">
           <FontAwesomeIcon
             onClick={scrollToTop}
             icon={faAnglesUp}
