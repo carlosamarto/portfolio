@@ -1,9 +1,12 @@
 import React from "react";
+import Icons from "../elements/Icons";
 
 const Footer = () => {
   return (
     <>
-      <footer>Footer</footer>
+      <footer>
+        <Icons />
+      </footer>
     </>
   );
 };

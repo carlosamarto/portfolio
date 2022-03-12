@@ -16,10 +16,14 @@ module.exports = {
     extend: {
       fontSize: {
         title: "64px",
+        subtitle: "24px",
         paragraph: "18px",
         small: "14px",
       },
       height: {
+        initial: "calc(100vh - 6rem)",
+      },
+      minHeight: {
         initial: "calc(100vh - 6rem)",
       },
     },
