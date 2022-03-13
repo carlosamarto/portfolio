@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Menu from "../elements/Menu";
-import Logo from "../elements/Logo";
+import logo from "../../assets/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,7 +11,13 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex lg:justify-end justify-between items-center h-24">
-        <Logo />
+        <div className="lg:fixed block top-6 left-8">
+          <a href="/">
+            <figure>
+              <img src={logo} alt="Logo" className="w-14 h-14" />
+            </figure>
+          </a>
+        </div>
 
         <ul className="md:flex hidden gap-8">
           <Menu />
@@ -20,11 +26,11 @@ const Navbar = () => {
         <FontAwesomeIcon
           onClick={() => setToggleMenu(true)}
           icon={faBars}
-          className="cursor-pointer text-red hover:text-hover text-subtitle transition-all ease-in-out duration-300 md:hidden"
+          className=" md:hidden cursor-pointer text-subtitle text-red hover:text-hover transition-all ease-in-out duration-300"
         />
 
         <div
-          className={`bg-dark drop-shadow-2xl transition-all ease-in-out duration-300 fixed top-0 right-0 ${
+          className={`fixed top-0 right-0 bg-dark drop-shadow-2xl transition-all ease-in-out duration-300  ${
             toggleMenu ? `w-2/4` : `w-0`
           } h-screen`}
         >
@@ -39,7 +45,7 @@ const Navbar = () => {
               <FontAwesomeIcon
                 onClick={() => setToggleMenu(false)}
                 icon={faXmark}
-                className="cursor-pointer text-red hover:text-hover text-subtitle transition-all ease-in-out duration-300 m-2"
+                className="text-subtitle cursor-pointer text-red hover:text-hover transition-all ease-in-out duration-300 m-2"
               />
             </div>
 

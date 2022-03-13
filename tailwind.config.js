@@ -18,6 +18,9 @@ module.exports = {
       roboto: ["Roboto", "sans-serif"],
       rbtmono: ["Roboto Mono", "monospace"],
     },
+    boxShadow: {
+      red: "20px 20px 0px #EF233C;",
+    },
     extend: {
       fontSize: {
         title: "64px",
@@ -28,6 +31,7 @@ module.exports = {
       },
       height: {
         initial: "calc(100vh - 6rem)",
+        sm: "1px",
       },
       minHeight: {
         initial: "calc(100vh - 6rem)",

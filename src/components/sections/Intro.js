@@ -6,7 +6,7 @@ const Intro = () => {
     <>
       <section
         id="intro"
-        className="h-initial flex flex-col justify-start gap-6"
+        className="flex flex-col justify-start gap-4 h-initial"
       >
         <p className="text-parahraph font-rbtmono text-red">
           Hello! my name is
