@@ -2,27 +2,24 @@ import React from "react";
 import Title from "../elements/Title";
 import Skills from "../elements/Skills";
 import profile from "../../assets/Profile.jpg";
+import Section from "../Container/Section";
 
 const About = () => {
   return (
     <>
-      <section id="about" className="flex gap-8 h-screen">
-        <div className="flex flex-col gap-4 w-2/3">
+      <Section id="about" type="sm:flex-row flex-col sm:gap-6 gap-12">
+        <div className="flex flex-col gap-6">
           <Title number="01." text="About Me" />
 
-          <p className="text-paragraph font-rbtmono text-text">
-            My goal is to create cool looking websites and interfaces.
-          </p>
-
-          <p className="text-paragraph font-rbtmono text-text">
-            Hello my name is Carlos, I’m passionate about creating great things,
-            I went to study computer engineering for the love of computers and
-            that's where I found interest in{" "}
+          <p className="text-paragraph font-moboto text-text">
+            Hello! my name is Carlos, I’m passionate about creating great
+            things, I went to study computer engineering for the love of
+            computers and that's where I found interest in{" "}
             <span className="text-red">Web Development</span>, more precisely in
             the <span className="text-red">Front End</span>.
           </p>
 
-          <p className="text-paragraph font-rbtmono text-text">
+          <p className="text-paragraph font-moboto text-text">
             I currently work as a Freelancer and I continue to improve and
             learn.
           </p>
@@ -38,16 +35,16 @@ const About = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="w-full">
           <figure>
             <img
               src={profile}
               alt="Profile"
-              className="md:w-4/5 w-full shadow-red"
+              className="sm:shadow-red sm:hover:shadow-hover sm:transition-all sm:ease-in-out sm:duration-200"
             />
           </figure>
         </div>
-      </section>
+      </Section>
     </>
   );
 };

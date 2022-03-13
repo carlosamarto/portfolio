@@ -7,7 +7,7 @@ const Icons = ({ children, url }) => {
         href={url}
         target="_blank"
         rel="noreferrer"
-        className="text-subtitle text-light hover:text-hover transition-all ease-in-out duration-300"
+        className="text-subtitle text-light hover:text-hover transition-all ease-in-out duration-200"
       >
         {children}
       </a>

@@ -7,8 +7,10 @@ const Container = ({ children }) => {
     <>
       <Navbar />
 
-      <main className="container">
-        <article className="min-h-initial">{children}</article>
+      <main>
+        <article className="flex flex-col lg:gap-2 md:gap-12 gap-24 min-h-vh">
+          {children}
+        </article>
       </main>
 
       <Footer />

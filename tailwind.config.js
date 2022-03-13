@@ -2,9 +2,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
   theme: {
     screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
+      sm: "768px",
+      md: "976px",
+      lg: "1024px",
     },
     colors: {
       dark: "#2b2d42",
@@ -12,29 +12,29 @@ module.exports = {
       light: "#edf2f4",
       text: "#8d99ae",
       hover: "#d90429",
-      alt: "rgba(239, 35, 60, .35)",
+      alt: "rgba(239, 35, 60, .15)",
+      glass: "rgba(43, 45, 66, .95)",
     },
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
-      rbtmono: ["Roboto Mono", "monospace"],
+      moboto: ["Roboto Mono", "monospace"],
     },
     boxShadow: {
       red: "20px 20px 0px #EF233C;",
     },
     extend: {
       fontSize: {
-        title: "64px",
+        title: "52px",
         mobile: "32px",
         subtitle: "24px",
         paragraph: "16px",
         small: "14px",
       },
       height: {
-        initial: "calc(100vh - 6rem)",
-        sm: "1px",
+        min: "1px",
       },
       minHeight: {
-        initial: "calc(100vh - 6rem)",
+        vh: "calc(100vh - 6rem)",
       },
     },
   },

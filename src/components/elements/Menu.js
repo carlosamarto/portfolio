@@ -1,5 +1,6 @@
 import React from "react";
 import Links from "./Links";
+import Btn from "./Btn";
 
 const Menu = () => {
   return (
@@ -8,6 +9,7 @@ const Menu = () => {
       <Links url="#featured" number="02." text="Featured" />
       <Links url="#work" number="03." text="Projects" />
       <Links url="#contact" number="04." text="Contact" />
+      <Btn text="Resume" url="/" />
     </>
   );
 };

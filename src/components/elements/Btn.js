@@ -5,7 +5,7 @@ const Btn = ({ url, text }) => {
     <>
       <a
         href={url}
-        className="inline-block text-paragraph font-rbtmono text-red border border-red hover:bg-alt transition-all ease-in-out duration-300 py-3 px-8"
+        className="inline-block text-paragraph font-moboto text-red border border-red hover:bg-alt transition-all ease-in-out duration-200 py-2 px-8"
       >
         {text}
       </a>

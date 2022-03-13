@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex lg:justify-end justify-between items-center h-24">
+      <nav className="flex lg:justify-end justify-between items-center h-24 lg:mb-0 mb-8">
         <div className="lg:fixed block top-6 left-8">
           <a href="/">
             <figure>
@@ -19,25 +19,25 @@ const Navbar = () => {
           </a>
         </div>
 
-        <ul className="md:flex hidden gap-8">
+        <ul className="md:flex hidden items-center gap-8">
           <Menu />
         </ul>
 
         <FontAwesomeIcon
           onClick={() => setToggleMenu(true)}
           icon={faBars}
-          className=" md:hidden cursor-pointer text-subtitle text-red hover:text-hover transition-all ease-in-out duration-300"
+          className="md:hidden cursor-pointer text-subtitle text-red hover:text-hover transition-all ease-in-out duration-200"
         />
 
         <div
-          className={`fixed top-0 right-0 bg-dark drop-shadow-2xl transition-all ease-in-out duration-300  ${
+          className={`fixed top-0 right-0 bg-glass drop-shadow-2xl transition-all ease-in-out duration-200  ${
             toggleMenu ? `w-2/4` : `w-0`
-          } h-screen`}
+          } h-screen z-10`}
         >
           <div
             className={`${
               toggleMenu
-                ? `opacity-100 transition-all ease-in delay-150 duration-300`
+                ? `opacity-100 transition-all ease-in delay-200 duration-200`
                 : `opacity-0`
             }`}
           >
@@ -45,11 +45,11 @@ const Navbar = () => {
               <FontAwesomeIcon
                 onClick={() => setToggleMenu(false)}
                 icon={faXmark}
-                className="text-subtitle cursor-pointer text-red hover:text-hover transition-all ease-in-out duration-300 m-2"
+                className="text-subtitle cursor-pointer text-red hover:text-hover transition-all ease-in-out duration-200 m-4"
               />
             </div>
 
-            <ul className="flex flex-col gap-8 p-8">
+            <ul className="flex flex-col items-center gap-8">
               <Menu />
             </ul>
           </div>

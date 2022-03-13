@@ -14,7 +14,7 @@ const Footer = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
+      if (window.pageYOffset > 200) {
         setShowButton(true);
       } else {
         setShowButton(false);
@@ -30,14 +30,14 @@ const Footer = () => {
 
   return (
     <>
-      <footer class="flex lg:flex-row flex-col justify-center items-center gap-2 h-24">
+      <footer class="flex lg:flex-row flex-col justify-center items-center gap-2 h-24 mt-8">
         <a
           href="https://github.com/carlosmrtzodev/portfolio"
           target="_blank"
           rel="noreferrer"
-          className="text-paragraph font-rbtmono text-center text-red hover:text-hover transition-all ease-in-out duration-300"
+          className="text-paragraph font-moboto text-center text-red hover:text-hover transition-all ease-in-out duration-200"
         >
-          Created by Carlos Martínez.
+          Created by Carlos Martínez. <FontAwesomeIcon icon={faGithub} />
         </a>
 
         <div className="lg:fixed lg:bottom-6 lg:left-8 flex lg:flex-col flex-row lg:gap-2 gap-6 lg:justify-start justify-center">
@@ -55,11 +55,11 @@ const Footer = () => {
         </div>
 
         {showButton && (
-          <div className="fixed bottom-6 right-8">
+          <div className="fixed bottom-6 md:right-8 right-2.5">
             <FontAwesomeIcon
               onClick={scrollToTop}
               icon={faAnglesUp}
-              className="cursor-pointer text-subtitle text-red hover:text-hover animate-bounce hover:animate-none transition-all ease-in-out duration-300"
+              className="cursor-pointer text-subtitle text-red hover:text-hover animate-bounce hover:animate-none transition-all ease-in-out duration-200"
             />
           </div>
         )}
