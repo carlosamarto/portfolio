@@ -10,8 +10,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex lg:justify-end justify-between items-center h-24 lg:mb-0 mb-8">
-        <div className="lg:fixed block top-6 left-8">
+      <nav className="flex lg:justify-end justify-between items-center h-24 lg:mb-0 mb-12">
+        <div className="lg:fixed lg:top-6 lg:left-8 block">
           <a href="/">
             <figure>
               <img src={logo} alt="Logo" className="w-14 h-14" />
@@ -19,7 +19,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <ul className="md:flex hidden items-center gap-8">
+        <ul className="md:flex items-center gap-8 hidden">
           <Menu />
         </ul>
 
@@ -45,7 +45,7 @@ const Navbar = () => {
               <FontAwesomeIcon
                 onClick={() => setToggleMenu(false)}
                 icon={faXmark}
-                className="text-subtitle cursor-pointer text-red hover:text-hover transition-all ease-in-out duration-200 m-4"
+                className="cursor-pointer text-subtitle text-red hover:text-hover transition-all ease-in-out duration-200 m-4"
               />
             </div>
 

@@ -31,7 +31,7 @@ module.exports = {
         small: "14px",
       },
       height: {
-        min: "1px",
+        mini: "1px",
       },
       minHeight: {
         vh: "calc(100vh - 6rem)",

@@ -9,10 +9,10 @@ const Content = ({ image, title, description, codes, link, github }) => {
     <>
       <div className="relative">
         <figure className="lg:w-2/3">
-          <img src={image} alt="Featured 1" />
+          <img src={image} alt={title} />
         </figure>
 
-        <div className="lg:absolute lg:bottom-1/3 lg:right-0 flex flex-col gap-6 bg-red lg:hover:bg-hover lg:transition-all lg:ease-in-out lg:duration-200 lg:drop-shadow-2xl lg:w-2/4 px-4 py-2">
+        <div className="lg:absolute lg:bottom-1/3 lg:right-0 flex flex-col gap-8 bg-red lg:hover:bg-hover lg:transition-all lg:ease-in-out lg:duration-200 lg:drop-shadow-2xl lg:w-2/4 px-4 py-2">
           <ul className="flex justify-between items-center">
             <li>
               <h4 className="text-paragraph font-roboto font-bold text-light">
@@ -32,22 +32,22 @@ const Content = ({ image, title, description, codes, link, github }) => {
           <div className="flex sm:flex-row flex-col justify-between sm:items-center items-end gap-2">
             <ul className="flex gap-2">
               {codes.map((code) => (
-                <li key={code} className="text-small font-roboto text-light">
+                <li key={code} className="text-small font-moboto text-light">
                   {code}
                 </li>
               ))}
             </ul>
 
             <ul className="flex gap-4">
-              <li className="text-paragraph text-light">
-                <Icons url={link} type={true}>
-                  <FontAwesomeIcon icon={faExternalLink} />
+              <li>
+                <Icons url={github} classes="text-subtitle text-light">
+                  <FontAwesomeIcon icon={faGithub} />
                 </Icons>
               </li>
 
-              <li className="text-paragraph text-light">
-                <Icons url={github} type={true}>
-                  <FontAwesomeIcon icon={faGithub} />
+              <li>
+                <Icons url={link} classes="text-subtitle text-light">
+                  <FontAwesomeIcon icon={faExternalLink} />
                 </Icons>
               </li>
             </ul>

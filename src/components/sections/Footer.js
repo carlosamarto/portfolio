@@ -30,7 +30,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer class="flex lg:flex-row flex-col justify-center items-center gap-2 h-24 mt-8">
+      <footer class="flex lg:flex-row flex-col justify-center items-center gap-2 h-24 mt-12">
         <a
           href="https://github.com/carlosmrtzodev/portfolio"
           target="_blank"
@@ -40,16 +40,25 @@ const Footer = () => {
           Created by Carlos Martínez. <FontAwesomeIcon icon={faCodeBranch} />
         </a>
 
-        <div className="lg:fixed lg:bottom-6 lg:left-8 flex lg:flex-col flex-row lg:gap-2 gap-6 lg:justify-start justify-center">
-          <Icons url="https://github.com/carlosmrtzodev" type={false}>
+        <div className="lg:fixed lg:bottom-6 lg:left-8 flex lg:flex-col flex-row lg:justify-start justify-center lg:gap-2 gap-4">
+          <Icons
+            url="https://github.com/carlosmrtzodev"
+            classes="text-subtitle text-light hover:text-hover"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </Icons>
 
-          <Icons url="https://www.linkedin.com/in/carlosmrtzodev/" type={false}>
+          <Icons
+            url="https://www.linkedin.com/in/carlosmrtzodev/"
+            classes="text-subtitle text-light hover:text-hover"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </Icons>
 
-          <Icons url="https://twitter.com/carlosmrtzodev" type={false}>
+          <Icons
+            url="https://twitter.com/carlosmrtzodev"
+            classes="text-subtitle text-light hover:text-hover"
+          >
             <FontAwesomeIcon icon={faTwitter} />
           </Icons>
         </div>

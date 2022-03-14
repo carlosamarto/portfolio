@@ -22,9 +22,7 @@ const Intro = () => {
           continuing to improve.
         </p>
 
-        <div>
-          <Btn text="Contact Me" url="#contact" />
-        </div>
+        <Btn text="Contact" url="#contact" classes="py-3 px-12" />
       </section>
     </>
   );
