@@ -12,11 +12,11 @@ const Intro = () => {
       >
         <h1 className="text-parahraph font-moboto text-red">Hello! I’m</h1>
 
-        <h2 className="lg:text-title text-mobile font-roboto font-bold text-light leading-none">
+        <h2 className="lg:text-title text-mobile font-roboto font-bold text-light sm:leading-none">
           Carlos Martínez.
         </h2>
 
-        <h2 className="lg:text-title text-mobile font-roboto font-bold text-text leading-none">
+        <h2 className="lg:text-title text-mobile font-roboto font-bold text-text sm:leading-none">
           My goal is to create cool things.
         </h2>
 
