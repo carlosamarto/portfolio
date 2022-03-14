@@ -7,7 +7,7 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesUp, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   const [showButton, setShowButton] = useState(false);
@@ -37,19 +37,19 @@ const Footer = () => {
           rel="noreferrer"
           className="text-paragraph font-moboto text-center text-red hover:text-hover transition-all ease-in-out duration-200"
         >
-          Created by Carlos Martínez. <FontAwesomeIcon icon={faGithub} />
+          Created by Carlos Martínez. <FontAwesomeIcon icon={faCodeBranch} />
         </a>
 
         <div className="lg:fixed lg:bottom-6 lg:left-8 flex lg:flex-col flex-row lg:gap-2 gap-6 lg:justify-start justify-center">
-          <Icons url="https://github.com/carlosmrtzodev">
+          <Icons url="https://github.com/carlosmrtzodev" type={false}>
             <FontAwesomeIcon icon={faGithub} />
           </Icons>
 
-          <Icons url="https://www.linkedin.com/in/carlosmrtzodev/">
+          <Icons url="https://www.linkedin.com/in/carlosmrtzodev/" type={false}>
             <FontAwesomeIcon icon={faLinkedinIn} />
           </Icons>
 
-          <Icons url="https://twitter.com/carlosmrtzodev">
+          <Icons url="https://twitter.com/carlosmrtzodev" type={false}>
             <FontAwesomeIcon icon={faTwitter} />
           </Icons>
         </div>

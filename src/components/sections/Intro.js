@@ -1,11 +1,10 @@
 import React from "react";
 import Btn from "../elements/Btn";
-import Section from "../Container/Section";
 
 const Intro = () => {
   return (
     <>
-      <Section id="intro" type="flex-col gap-6">
+      <section id="intro" className="flex flex-col gap-6 md:min-h-vh">
         <h1 className="text-parahraph font-moboto text-red">Hello! I’m</h1>
 
         <h2 className="lg:text-title text-mobile font-roboto font-bold text-light leading-none">
@@ -26,7 +25,7 @@ const Intro = () => {
         <div>
           <Btn text="Contact Me" url="#contact" />
         </div>
-      </Section>
+      </section>
     </>
   );
 };

@@ -2,12 +2,14 @@ import React from "react";
 import Title from "../elements/Title";
 import Skills from "../elements/Skills";
 import profile from "../../assets/Profile.jpg";
-import Section from "../Container/Section";
 
 const About = () => {
   return (
     <>
-      <Section id="about" type="sm:flex-row flex-col sm:gap-6 gap-12">
+      <section
+        id="about"
+        className="flex sm:flex-row flex-col sm:gap-6 gap-12 md:min-h-vh"
+      >
         <div className="flex flex-col gap-6">
           <Title number="01." text="About Me" />
 
@@ -44,7 +46,7 @@ const About = () => {
             />
           </figure>
         </div>
-      </Section>
+      </section>
     </>
   );
 };
