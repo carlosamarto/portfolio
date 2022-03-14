@@ -16,7 +16,10 @@ const About = () => {
 
   return (
     <>
-      <section id="about" className="flex flex-col gap-12 md:min-h-vh">
+      <section
+        id="about"
+        className="flex flex-col gap-12 xxl:min-h-full md:min-h-vh"
+      >
         <Title number="01." text="About" />
 
         <div className="flex sm:flex-row flex-col gap-12">

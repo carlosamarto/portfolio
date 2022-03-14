@@ -6,7 +6,10 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Intro = () => {
   return (
     <>
-      <section id="intro" className="flex flex-col gap-6 md:min-h-vh">
+      <section
+        id="intro"
+        className="flex flex-col gap-6 xxl:min-h-full md:min-h-vh"
+      >
         <h1 className="text-parahraph font-moboto text-red">Hello! I’m</h1>
 
         <h2 className="lg:text-title text-mobile font-roboto font-bold text-light leading-none">

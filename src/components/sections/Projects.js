@@ -5,7 +5,10 @@ import Title from "../elements/Title";
 const Projects = () => {
   return (
     <>
-      <section id="projects" className="flex flex-col gap-12 md:min-h-vh">
+      <section
+        id="projects"
+        className="flex flex-col gap-12 xxl:min-h-full md:min-h-vh"
+      >
         <Title number="03." text="Projects" />
 
         <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12">

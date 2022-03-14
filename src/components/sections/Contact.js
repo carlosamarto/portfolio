@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex justify-center items-center md:min-h-vh"
+      className="flex justify-center items-center xxl:min-h-full md:min-h-vh"
     >
       <div className="text-center flex flex-col gap-8 md:w-2/3 w-full">
         <h3 className="lg:text-title text-mobile font-roboto font-bold text-light leading-none">

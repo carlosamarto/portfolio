@@ -7,7 +7,10 @@ import gpt3 from "../../assets/gpt-3.png";
 const Featured = () => {
   return (
     <>
-      <section id="featured" className="flex flex-col gap-12 md:min-h-vh">
+      <section
+        id="featured"
+        className="flex flex-col gap-12 xxl:min-h-full md:min-h-vh"
+      >
         <Title number="02." text="Featured" />
 
         <Content
