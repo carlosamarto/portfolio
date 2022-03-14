@@ -8,7 +8,7 @@ const Contact = () => {
       className="flex justify-center items-center md:min-h-vh"
     >
       <div className="text-center flex flex-col gap-8 md:w-2/3 w-full">
-        <h4 className="lg:text-title text-mobile font-roboto font-bold text-light">
+        <h4 className="lg:text-title text-mobile font-roboto font-bold text-light leading-none">
           <span className="lg:text-mobile text-subtitle text-red">04. </span>Get
           in Touch
         </h4>
@@ -21,8 +21,8 @@ const Contact = () => {
 
         <Btn
           url="mailto:carlosmrtzodev@gmail.com"
-          text="carlosmrtzodev@gmail.com"
-          classes="px-12 py-6"
+          text="Let's Talk."
+          classes="px-12 py-4"
         />
       </div>
     </section>

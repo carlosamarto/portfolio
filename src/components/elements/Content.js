@@ -4,15 +4,19 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
-const Content = ({ image, title, description, codes, link, github }) => {
+const Content = ({ image, title, description, codes, link, github, alt }) => {
   return (
     <>
       <div className="relative">
-        <figure className="lg:w-2/3">
+        <figure className={`lg:w-2/3 ${alt ? `lg:ml-auto` : `lg-ml-0`}`}>
           <img src={image} alt={title} />
         </figure>
 
-        <div className="lg:absolute lg:bottom-1/3 lg:right-0 flex flex-col gap-8 bg-red lg:hover:bg-hover lg:transition-all lg:ease-in-out lg:duration-200 lg:drop-shadow-2xl lg:w-2/4 px-4 py-2">
+        <div
+          className={`lg:absolute lg:bottom-1/3 ${
+            alt ? `lg:left-0` : `lg:right-0`
+          } flex flex-col gap-8 bg-red lg:hover:bg-hover lg:transition-all lg:ease-in-out lg:duration-200 lg:drop-shadow-2xl lg:w-2/4 px-4 py-2`}
+        >
           <ul className="flex justify-between items-center">
             <li>
               <h4 className="text-paragraph font-roboto font-bold text-light">

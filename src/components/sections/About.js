@@ -21,7 +21,7 @@ const About = () => {
 
             <p className="text-paragraph font-moboto text-text">
               I currently work as a Freelancer and I continue to improve and
-              learn.
+              learn more.
             </p>
 
             <ul className="grid md:grid-cols-3 grid-cols-2 gap-4">

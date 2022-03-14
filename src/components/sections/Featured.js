@@ -17,6 +17,7 @@ const Featured = () => {
           codes={["React.js", "Next.js", "Tailwind CSS"]}
           link="https://pokedex-app-rouge.vercel.app/"
           github="https://github.com/carlosmrtzodev/pokedex-app"
+          alt={false}
         />
 
         <Content
@@ -26,6 +27,7 @@ const Featured = () => {
           codes={["React.js", "JavaScript", "CSS"]}
           link="https://responsive-website-seven.vercel.app/"
           github="https://github.com/carlosmrtzodev/responsive-website"
+          alt={true}
         />
       </section>
     </>
