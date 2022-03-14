@@ -1,5 +1,7 @@
 import React from "react";
 import Btn from "../elements/Btn";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Intro = () => {
   return (
@@ -16,13 +18,21 @@ const Intro = () => {
         </h2>
 
         <p className="text-paragraph font-moboto text-text md:w-2/3 w-full">
-          I’m a <span className="text-red">Front End Developer</span>{" "}
-          specialized in creating websites and infarces with a unique and great
-          style. Currently, I’m focused on being better at what I do and
-          continuing to improve.
+          I’m a{" "}
+          <strong className="text-red font-normal">Front End Developer</strong>{" "}
+          specialized in creating cool and unique style websites and interfaces.
+          Currently, I’m focused on being better at what I do and continuing to
+          learn more.
         </p>
 
-        <Btn text="Contact" url="#contact" classes="py-3 px-12" />
+        <Btn
+          text="Let’s Talk"
+          url="#contact"
+          target="_self"
+          rel="author"
+          classes="py-3 px-12"
+          icon={<FontAwesomeIcon icon={faArrowRight} className="ml-2" />}
+        />
       </section>
     </>
   );

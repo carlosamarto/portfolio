@@ -8,9 +8,7 @@ const Container = ({ children }) => {
       <Navbar />
 
       <main>
-        <article className="flex flex-col md:gap-12 gap-24 min-h-vh">
-          {children}
-        </article>
+        <article className="flex flex-col gap-12 min-h-vh">{children}</article>
       </main>
 
       <Footer />

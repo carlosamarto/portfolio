@@ -37,7 +37,7 @@ const Content = ({ image, title, description, codes, link, github, alt }) => {
             <ul className="flex gap-2">
               {codes.map((code) => (
                 <li key={code} className="text-small font-moboto text-light">
-                  {code}
+                  <strong>{code}</strong>
                 </li>
               ))}
             </ul>

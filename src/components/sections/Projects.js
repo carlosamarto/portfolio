@@ -1,15 +1,14 @@
 import React from "react";
 import Card from "../elements/Card";
-
 import Title from "../elements/Title";
 
 const Projects = () => {
   return (
     <>
-      <section id="featured" className="flex flex-col gap-12 md:min-h-vh">
+      <section id="projects" className="flex flex-col gap-12 md:min-h-vh">
         <Title number="03." text="Projects" />
 
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+        <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12">
           <Card
             link="https://pomodoro-app-sage.vercel.app/"
             github="https://github.com/carlosmrtzodev/Pomodoro-app"
@@ -23,7 +22,7 @@ const Projects = () => {
             github="https://github.com/carlosmrtzodev/poke"
             title="Poké App"
             description="Simple Poké App in Next.js, Styled Components and PokéAPI REST."
-            codes={["React.js", "Next.js", "JavaScript"]}
+            codes={["Next.js", "React.js", "JavaScript"]}
           />
 
           <Card

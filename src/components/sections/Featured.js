@@ -1,8 +1,8 @@
 import React from "react";
 import Title from "../elements/Title";
 import Content from "../elements/Content";
-import features1 from "../../assets/Featured-1.png";
-import features2 from "../../assets/Featured-2.png";
+import pokedex from "../../assets/pokedex.png";
+import gpt3 from "../../assets/gpt-3.png";
 
 const Featured = () => {
   return (
@@ -11,7 +11,7 @@ const Featured = () => {
         <Title number="02." text="Featured" />
 
         <Content
-          image={features1}
+          image={pokedex}
           title="Pokedex App"
           description="Improved version of my Poké App in Next.js, Tailwind CSS and PokéAPI REST."
           codes={["React.js", "Next.js", "Tailwind CSS"]}
@@ -21,7 +21,7 @@ const Featured = () => {
         />
 
         <Content
-          image={features2}
+          image={gpt3}
           title="GPT-3"
           description="Fully Responsive Modern UI/UX Website in React.js."
           codes={["React.js", "JavaScript", "CSS"]}

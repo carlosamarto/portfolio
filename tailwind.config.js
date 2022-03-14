@@ -2,9 +2,11 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
   theme: {
     screens: {
+      xs: "580px",
       sm: "768px",
       md: "976px",
       lg: "1024px",
+      xl: "1175px",
     },
     colors: {
       dark: "#2b2d42",

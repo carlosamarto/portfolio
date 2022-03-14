@@ -4,45 +4,57 @@ import Skills from "../elements/Skills";
 import profile from "../../assets/Profile.jpg";
 
 const About = () => {
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React.js",
+    "Next.js",
+    "Tailwind CSS",
+    "WordPress",
+  ];
+
   return (
     <>
       <section id="about" className="flex flex-col gap-12 md:min-h-vh">
-        <Title number="01." text="About Me" />
+        <Title number="01." text="About" />
 
         <div className="flex sm:flex-row flex-col gap-12">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-12">
             <p className="text-paragraph font-moboto text-text">
-              Hello! my name is Carlos, I’m passionate about creating great
-              things, I went to study computer engineering for the love of
-              computers and that's where I found interest in{" "}
-              <span className="text-red">Web Development</span>, more precisely
-              in the <span className="text-red">Front End</span>.
-            </p>
-
-            <p className="text-paragraph font-moboto text-text">
-              I currently work as a Freelancer and I continue to improve and
-              learn more.
+              Hello! My name is Carlos, I’m passionate about creating things
+              with a great style, I studied{" "}
+              <strong className="text-red font-normal">
+                Computer Engineering
+              </strong>{" "}
+              because of my curiosity in computers and there I found the
+              interest in{" "}
+              <strong className="text-red font-normal">Web Development</strong>,
+              more precisely in the{" "}
+              <strong className="text-red font-normal">Front End</strong> area.
             </p>
 
             <ul className="grid md:grid-cols-3 grid-cols-2 gap-4">
-              <Skills text="HTML" />
-              <Skills text="CSS" />
-              <Skills text="JavaScript" />
-              <Skills text="React.js" />
-              <Skills text="Next.js" />
-              <Skills text="Tailwind CSS" />
-              <Skills text="WordPress" />
+              {skills.map((skill) => (
+                <Skills text={skill} />
+              ))}
             </ul>
           </div>
 
           <div className="w-full">
-            <figure>
-              <img
-                src={profile}
-                alt="Profile"
-                className="sm:shadow-red sm:hover:shadow-hover sm:transition-all sm:ease-in-out sm:duration-200"
-              />
-            </figure>
+            <a
+              href="https://www.linkedin.com/in/carlosmrtzodev/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <figure>
+                <img
+                  src={profile}
+                  alt="Profile"
+                  className="xs:shadow-red xs:hover:shadow-hover xs:transition-all xs:ease-in-out xs:duration-200"
+                />
+              </figure>
+            </a>
           </div>
         </div>
       </section>

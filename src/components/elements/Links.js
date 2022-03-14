@@ -8,9 +8,9 @@ const Links = ({ url, number, text }) => {
           href={url}
           className="text-paragraph font-roboto text-light group-hover:text-hover transition-all ease-in-out duration-200"
         >
-          <b className="text-small font-moboto text-red group-hover:text-hover transition-all ease-in-out duration-200">
+          <strong className="text-small font-moboto text-red group-hover:text-hover transition-all ease-in-out duration-200">
             {number}
-          </b>{" "}
+          </strong>{" "}
           {text}
         </a>
       </li>

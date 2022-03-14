@@ -1,14 +1,18 @@
 import React from "react";
 
-const Btn = ({ url, text, classes }) => {
+const Btn = ({ url, text, classes, target, rel, icon }) => {
   return (
     <>
       <div>
         <a
           href={url}
-          className={`inline-block text-paragraph font-moboto text-red border border-red hover:bg-alt transition-all ease-in-out duration-200 ${classes}`}
+          target={target}
+          rel={rel}
+          className={`inline-block text-paragraph font-moboto font-bold text-red border border-red hover:bg-alt transition-all ease-in-out duration-200 ${classes}`}
         >
           {text}
+          {""}
+          {icon}
         </a>
       </div>
     </>

@@ -35,9 +35,10 @@ const Footer = () => {
           href="https://github.com/carlosmrtzodev/portfolio"
           target="_blank"
           rel="noreferrer"
-          className="text-paragraph font-moboto text-center text-red hover:text-hover transition-all ease-in-out duration-200"
+          className="text-paragraph font-moboto text-center text-text hover:text-hover transition-all ease-in-out duration-200"
         >
-          Created by Carlos Martínez. <FontAwesomeIcon icon={faCodeBranch} />
+          Designed & Built by Carlos Martínez.{" "}
+          <FontAwesomeIcon icon={faCodeBranch} />
         </a>
 
         <div className="lg:fixed lg:bottom-6 lg:left-8 flex lg:flex-col flex-row lg:justify-start justify-center lg:gap-2 gap-4">

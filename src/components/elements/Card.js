@@ -14,14 +14,15 @@ const Card = ({ link, github, title, description, codes }) => {
           </li>
 
           <li className="flex gap-4">
-            <Icons url={link} classes="text-subtitle text-red hover:text-hover">
-              <FontAwesomeIcon icon={faExternalLink} />
-            </Icons>
             <Icons
               url={github}
               classes="text-subtitle text-red hover:text-hover"
             >
               <FontAwesomeIcon icon={faGithub} />
+            </Icons>
+
+            <Icons url={link} classes="text-subtitle text-red hover:text-hover">
+              <FontAwesomeIcon icon={faExternalLink} />
             </Icons>
           </li>
         </ul>
@@ -34,8 +35,8 @@ const Card = ({ link, github, title, description, codes }) => {
 
         <ul className="flex items-center gap-2">
           {codes.map((code) => (
-            <li className="text-small font-moboto font-bold text-text">
-              {code}
+            <li className="text-small font-moboto text-text">
+              <strong>{code}</strong>
             </li>
           ))}
         </ul>
