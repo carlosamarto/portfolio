@@ -16,7 +16,7 @@ const Featured = () => {
         <Content
           image={pokedex}
           title="Pokedex App"
-          description="Improved version of my Poké App in Next.js, Tailwind CSS and PokéAPI REST."
+          description="Pokédex App in Next.js, Tailwind CSS and PokéAPI REST."
           codes={["React.js", "Next.js", "Tailwind CSS"]}
           link="https://pokedex-app-rouge.vercel.app/"
           github="https://github.com/carlosmrtzodev/pokedex-app"
