@@ -21,14 +21,6 @@ const Projects = () => {
           />
 
           <Card
-            link="https://poke-kappa-three.vercel.app/"
-            github="https://github.com/carlosmrtzodev/poke"
-            title="Poké App"
-            description="Simple Poké App in Next.js, Styled Components and PokéAPI REST."
-            codes={["Next.js", "React.js", "JavaScript"]}
-          />
-
-          <Card
             link="https://compound-interest-one.vercel.app/"
             github="https://github.com/carlosmrtzodev/compound-interest"
             title="Compound Interest App"
