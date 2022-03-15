@@ -28,7 +28,7 @@ const About = () => {
               Hello! My name is Carlos, I’m passionate about creating things
               with a great style, I studied{" "}
               <strong className="text-red font-normal">
-                Computer Engineering
+                Software Engineering
               </strong>{" "}
               because of my curiosity in computers and there I found the
               interest in{" "}
