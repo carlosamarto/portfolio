@@ -53,7 +53,7 @@ const Projects = () => {
           />
 
           <Card
-            link="https://oshica.com.ve/"
+            link="http://www.s2ctech.com/"
             github="null"
             title="S2CTech"
             description="S2CTech Website in WordPress with Elementor."
