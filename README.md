@@ -5,8 +5,10 @@
 ## 📄 Intro.
 
 <div align="center">
-This is my portfolio website build with React.js and Tailwind CSS. <br><br>
+My Portfolio Website in React.js and Tailwind CSS. <br><br>
 </div>
+
+[![Portfolio Banner](./assets/banner.png)](https://www.carlosmrtzo.com/)
 
 ## 💼 Used technologies
 
