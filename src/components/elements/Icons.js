@@ -6,7 +6,7 @@ const Icons = ({ children, url, classes }) => {
       <a
         href={url}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         className={`${classes} transition-all ease-in-out duration-200`}
       >
         {children}

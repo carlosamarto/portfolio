@@ -34,7 +34,7 @@ const Footer = () => {
         <a
           href="https://github.com/carlosmrtzodev/portfolio"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="text-paragraph font-moboto text-center text-text hover:text-hover transition-all ease-in-out duration-200"
         >
           Designed & Built by Carlos Martínez.{" "}

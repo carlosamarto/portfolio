@@ -16,7 +16,7 @@ const Menu = () => {
         text="Resume"
         url={resume}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         classes="py-2 px-4"
         icon={<FontAwesomeIcon icon={faScroll} className="ml-2" />}
       />
