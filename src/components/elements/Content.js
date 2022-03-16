@@ -8,7 +8,11 @@ const Content = ({ image, title, description, codes, link, github, alt }) => {
   return (
     <>
       <div className="relative">
-        <figure className={`lg:w-2/3 ${alt ? `lg:ml-auto` : `lg-ml-0`}`}>
+        <figure
+          className={`lg:w-2/3 ${
+            alt ? `lg:ml-auto` : `lg-ml-0`
+          } lg:drop-shadow-2xl`}
+        >
           <img src={image} alt={title} />
         </figure>
 
