@@ -16,7 +16,7 @@ const Projects = () => {
             link="https://pomodoro-app-sage.vercel.app/"
             github="https://github.com/carlosmrtzodev/Pomodoro-app"
             title="Pomodoro App"
-            description="Responsive Pomodoro App in React.js and Styled Components."
+            description="Pomodoro App in React.js and Styled Components."
             codes={["React.js", "JavaScript", "CSS"]}
           />
 
@@ -24,7 +24,7 @@ const Projects = () => {
             link="https://simple-user-manager.vercel.app/"
             github="https://github.com/carlosmrtzodev/simple-user-manager"
             title="User Manager App"
-            description="Simple User Manager App in React.js."
+            description="Simple User Manager App in React.js and Tailwind CSS."
             codes={["React.js", "JavaScript", "CSS"]}
           />
 
