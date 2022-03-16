@@ -14,12 +14,14 @@ const Card = ({ link, github, title, description, codes }) => {
           </li>
 
           <li className="flex gap-4">
-            <Icons
-              url={github}
-              classes="text-subtitle text-red hover:text-hover"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </Icons>
+            {github === "null" ? null : (
+              <Icons
+                url={github}
+                classes="text-subtitle text-red hover:text-hover"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </Icons>
+            )}
 
             <Icons url={link} classes="text-subtitle text-red hover:text-hover">
               <FontAwesomeIcon icon={faExternalLink} />

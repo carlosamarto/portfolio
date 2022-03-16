@@ -21,18 +21,26 @@ const Projects = () => {
           />
 
           <Card
-            link="https://compound-interest-one.vercel.app/"
-            github="https://github.com/carlosmrtzodev/compound-interest"
-            title="Compound Interest App"
-            description="Simple Compound Interest App in React.js with Formik Forms."
-            codes={["React.js", "JavaScript", "CSS"]}
-          />
-
-          <Card
             link="https://simple-user-manager.vercel.app/"
             github="https://github.com/carlosmrtzodev/simple-user-manager"
             title="User Manager App"
             description="Simple User Manager App in React.js."
+            codes={["React.js", "JavaScript", "CSS"]}
+          />
+
+          <Card
+            link="https://oshica.com.ve/"
+            github="null"
+            title="Oshica"
+            description="Oshica Website in WordPress with Elementor."
+            codes={["WordPress", "Elementor", "CSS"]}
+          />
+
+          <Card
+            link="https://compound-interest-one.vercel.app/"
+            github="https://github.com/carlosmrtzodev/compound-interest"
+            title="Compound Interest App"
+            description="Simple Compound Interest App in React.js with Formik Forms."
             codes={["React.js", "JavaScript", "CSS"]}
           />
 
@@ -42,6 +50,14 @@ const Projects = () => {
             title="Cart App"
             description="Simple Cart App in React.js."
             codes={["React.js", "JavaScript", "CSS"]}
+          />
+
+          <Card
+            link="https://oshica.com.ve/"
+            github="null"
+            title="S2CTech"
+            description="S2CTech Website in WordPress with Elementor."
+            codes={["WordPress", "Elementor", "CSS"]}
           />
         </div>
       </section>
