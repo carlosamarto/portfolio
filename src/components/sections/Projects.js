@@ -7,11 +7,11 @@ const Projects = () => {
     <>
       <section
         id="projects"
-        className="flex flex-col gap-x-4 gap-y-12 xxl:min-h-full md:min-h-vh"
+        className="flex flex-col gap-12 xxl:min-h-full md:min-h-vh"
       >
         <Title number="03." text="Projects" />
 
-        <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12">
+        <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-4 gap-y-12">
           <Card
             link="https://pomodoro-app-sage.vercel.app/"
             github="https://github.com/carlosmrtzodev/Pomodoro-app"
