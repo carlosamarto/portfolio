@@ -11,7 +11,7 @@ const Projects = () => {
       >
         <Title number="03." text="Projects" />
 
-        <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-4 gap-y-12">
+        <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12">
           <Card
             link="https://pomodoro-app-sage.vercel.app/"
             github="https://github.com/carlosmrtzodev/Pomodoro-app"
