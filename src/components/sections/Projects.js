@@ -7,7 +7,7 @@ const Projects = () => {
     <>
       <section
         id="projects"
-        className="flex flex-col gap-12 xxl:min-h-full md:min-h-vh"
+        className="flex flex-col gap-x-4 gap-y-12 xxl:min-h-full md:min-h-vh"
       >
         <Title number="03." text="Projects" />
 
