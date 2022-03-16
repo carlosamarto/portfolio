@@ -1,5 +1,4 @@
 import Btn from "./Btn";
-import React from "react";
 import Links from "./Links";
 import resume from "../../assets/resume/CV EN.pdf";
 import { faScroll } from "@fortawesome/free-solid-svg-icons";

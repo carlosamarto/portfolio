@@ -1,5 +1,3 @@
-import React from "react";
-
 const Links = ({ url, number, text }) => {
   return (
     <>

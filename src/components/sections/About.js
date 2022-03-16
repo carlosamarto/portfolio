@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "../elements/Title";
 import Skills from "../elements/Skills";
 import profile from "../../assets/Profile.jpg";

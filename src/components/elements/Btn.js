@@ -1,5 +1,3 @@
-import React from "react";
-
 const Btn = ({ url, text, classes, target, rel, icon }) => {
   return (
     <>

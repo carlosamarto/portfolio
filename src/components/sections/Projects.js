@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../elements/Card";
 import Title from "../elements/Title";
 

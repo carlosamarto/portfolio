@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import Menu from "../elements/Menu";
 import logo from "../../assets/Logo.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "../elements/Title";
 import Content from "../elements/Content";
 import pokedex from "../../assets/pokedex.png";

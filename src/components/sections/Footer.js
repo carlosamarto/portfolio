@@ -1,4 +1,3 @@
-import React from "react";
 import Icons from "../elements/Icons";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
