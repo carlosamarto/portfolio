@@ -37,7 +37,7 @@ const Card = ({ link, github, title, description, codes }) => {
 
         <ul className="flex items-center gap-2">
           {codes.map((code) => (
-            <li className="text-small font-moboto text-text">
+            <li key={code} className="text-small font-moboto text-text">
               <strong>{code}</strong>
             </li>
           ))}

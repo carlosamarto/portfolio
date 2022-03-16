@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Btn from "./components/elements/Btn";
-import Container from "./components/Container/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,15 +14,11 @@ const NotFound = () => {
           404: This page could not be found
         </h1>
 
-        <Link to="/">
-          <Btn
-            text="Go Back"
-            url=""
-            target="_self"
-            rel="author"
-            classes="py-3 px-12"
-            icon={<FontAwesomeIcon icon={faArrowRight} className="ml-2" />}
-          />
+        <Link
+          to="/"
+          className="inline-block text-paragraph font-moboto font-bold text-red border border-red hover:bg-alt transition-all ease-in-out duration-200 py-3 px-12"
+        >
+          Go Back <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
         </Link>
       </section>
     </>

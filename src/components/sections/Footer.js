@@ -30,7 +30,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer class="flex lg:flex-row flex-col justify-center items-center gap-2 h-24 mt-12">
+      <footer className="flex lg:flex-row flex-col justify-center items-center gap-2 h-24 mt-12">
         <a
           href="https://github.com/carlosmrtzodev/portfolio"
           target="_blank"
