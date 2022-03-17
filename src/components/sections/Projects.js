@@ -47,7 +47,7 @@ const Projects = () => {
             link="https://cart-app-ten.vercel.app/"
             github="https://github.com/carlosmrtzodev/cart-app"
             title="Cart App"
-            description="Simple Cart App in React.js."
+            description="Simple Cart App in React.js and Styled Components."
             codes={["React.js", "JavaScript", "CSS"]}
           />
 
