@@ -4,13 +4,10 @@ import Title from "../elements/Title";
 const Projects = () => {
   return (
     <>
-      <section
-        id="projects"
-        className="flex flex-col gap-12 xxl:min-h-full md:min-h-vh"
-      >
+      <section id="projects" className="section__projects">
         <Title number="03." text="Projects" />
 
-        <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12">
+        <div className="projects__container">
           <Card
             link="https://pomodoro-app-sage.vercel.app/"
             github="https://github.com/carlosmrtzodev/Pomodoro-app"
@@ -24,7 +21,7 @@ const Projects = () => {
             github="https://github.com/carlosmrtzodev/simple-user-manager"
             title="User Manager App"
             description="Simple User Manager App in React.js and Tailwind CSS."
-            codes={["React.js", "JavaScript", "CSS"]}
+            codes={["React.js", "JavaScript", "Tailwind CSS"]}
           />
 
           <Card
@@ -39,8 +36,8 @@ const Projects = () => {
             link="https://compound-interest-one.vercel.app/"
             github="https://github.com/carlosmrtzodev/compound-interest"
             title="Compound Interest App"
-            description="Simple Compound Interest App in React.js with Formik Forms."
-            codes={["React.js", "JavaScript", "CSS"]}
+            description="Simple Compound Interest App in React.js with Formik Forms and Tailwind CSS."
+            codes={["React.js", "JavaScript", "Tailwind CSS"]}
           />
 
           <Card

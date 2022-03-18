@@ -5,7 +5,7 @@ const Icons = ({ children, url, classes }) => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className={`${classes} transition-all ease-in-out duration-200`}
+        className={`icons__links ${classes}`}
       >
         {children}
       </a>

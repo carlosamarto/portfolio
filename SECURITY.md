@@ -1,7 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [Security Policy](#security-policy)
   - [Supported Versions](#supported-versions)
   - [Reporting a Vulnerability](#reporting-a-vulnerability)
@@ -15,9 +14,9 @@
 We release patches for security vulnerabilities. Which versions are eligible
 receiving such patches depend on the CVSS v3.0 Rating:
 
-| Portfolio v1.0 | Supported Versions                        |
-| ---------------| ----------------------------------------- |
-| V1             | Most recent release                       |
+| Portfolio v2 | Supported Versions  |
+| ------------ | ------------------- |
+| V2           | Most recent release |
 
 ## Reporting a Vulnerability
 

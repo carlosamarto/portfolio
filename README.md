@@ -1,14 +1,10 @@
-[![Carlos's GitHub Banner](https://raw.githubusercontent.com/carlosmrtzodev/carlosmrtzodev/master/assets/BannerWork.png)](https://github.com/carlosmrtzodev/)
-[![Twitter Badge](https://img.shields.io/badge/Twitter-Profile-informational?style=for-the-badge&logo=twitter&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)](https://twitter.com/carlosmrtzodev)
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=for-the-badge&logo=linkedin&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)](https://www.linkedin.com/in/carlosmrtzodev/)
-
 ## 📄 Intro.
 
 <div align="center">
 My Portfolio Website in React.js and Tailwind CSS. <br><br>
 </div>
 
-[![Portfolio Banner](./assets/banner.png)](https://www.carlosmrtzo.com/)
+[![Portfolio Banner](./public/assets/banner.png)](https://www.carlosmrtzo.com/)
 
 ## 💼 Used technologies
 

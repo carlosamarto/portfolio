@@ -5,26 +5,17 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Intro = () => {
   return (
     <>
-      <section
-        id="intro"
-        className="flex flex-col gap-6 xxl:min-h-full md:min-h-vh"
-      >
-        <h1 className="text-parahraph font-moboto text-red">Hello! I’m</h1>
+      <section id="intro" className="section__intro">
+        <h1>Hello! I’m</h1>
 
-        <h2 className="lg:text-title text-mobile font-roboto font-bold text-light sm:leading-none">
-          Carlos Martínez.
-        </h2>
+        <h2>Carlos Martínez.</h2>
 
-        <h2 className="lg:text-title text-mobile font-roboto font-bold text-text sm:leading-none">
-          My goal is to create cool things.
-        </h2>
+        <h2 className="title__alt-color">My goal is to create cool things.</h2>
 
-        <p className="text-paragraph font-moboto text-text md:w-2/3 w-full">
-          I’m a{" "}
-          <strong className="text-red font-normal">Front End Developer</strong>{" "}
-          specialized in creating cool and unique style websites and interfaces.
-          Currently, I’m focused on being better at what I do and continuing to
-          learn more.
+        <p className="p__alt-width">
+          I’m a <strong>Front End Developer</strong> specialized in creating
+          cool and unique style websites and interfaces. Currently, I’m focused
+          on being better at what I do and continuing to learn more.
         </p>
 
         <Btn
@@ -33,7 +24,7 @@ const Intro = () => {
           target="_self"
           rel="author"
           classes="py-3 px-12"
-          icon={<FontAwesomeIcon icon={faArrowRight} className="ml-2" />}
+          icon={<FontAwesomeIcon icon={faArrowRight} className="btn__icon" />}
         />
       </section>
     </>

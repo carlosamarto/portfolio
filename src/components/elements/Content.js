@@ -6,54 +6,57 @@ import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 const Content = ({ image, title, description, codes, link, github, alt }) => {
   return (
     <>
-      <div className="relative">
+      <div className="featured__container">
         <figure
-          className={`lg:w-2/3 ${
-            alt ? `lg:ml-auto` : `lg-ml-0`
-          } lg:drop-shadow-2xl`}
+          className={`featured__container-figure ${
+            alt
+              ? `featured__container-figure_right`
+              : `featured__container-figure_left`
+          }`}
         >
           <img src={image} alt={title} />
         </figure>
 
         <div
-          className={`lg:absolute lg:bottom-1/3 ${
-            alt ? `lg:left-0` : `lg:right-0`
-          } flex flex-col gap-8 bg-red lg:hover:bg-hover lg:transition-all lg:ease-in-out lg:duration-200 lg:drop-shadow-2xl lg:w-2/4 px-4 py-2`}
+          className={`featured__container-description ${
+            alt
+              ? `featured__container-description_left`
+              : `featured__container-description_right`
+          }`}
         >
-          <ul className="flex justify-between items-center">
+          <ul className="featured__container-description_titles">
             <li>
-              <h4 className="text-paragraph font-roboto font-bold text-light">
-                Featured Project
-              </h4>
+              <h4>Featured Project</h4>
             </li>
 
             <li>
-              <h4 className="text-paragraph font-roboto font-bold text-light">
-                {title}
-              </h4>
+              <h4>{title}</h4>
             </li>
           </ul>
 
-          <p className="text-small font-moboto text-light">{description}</p>
+          <p className="featured__container-description_text">{description}</p>
 
-          <div className="flex sm:flex-row flex-col justify-between sm:items-center items-end gap-2">
-            <ul className="flex gap-2">
+          <div className="featured__container-skills">
+            <ul className="featured__container-skills_container">
               {codes.map((code) => (
-                <li key={code} className="text-small font-moboto text-light">
-                  <strong>{code}</strong>
+                <li
+                  key={code}
+                  className="featured__container-skills_container-text"
+                >
+                  <strong className="strong__alt-color_light">{code}</strong>
                 </li>
               ))}
             </ul>
 
-            <ul className="flex gap-4">
+            <ul className="featured__container-links">
               <li>
-                <Icons url={github} classes="text-subtitle text-light">
+                <Icons url={github} classes="icons__links-featured">
                   <FontAwesomeIcon icon={faGithub} />
                 </Icons>
               </li>
 
               <li>
-                <Icons url={link} classes="text-subtitle text-light">
+                <Icons url={link} classes="icons__links-featured">
                   <FontAwesomeIcon icon={faExternalLink} />
                 </Icons>
               </li>
