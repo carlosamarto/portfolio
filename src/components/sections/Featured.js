@@ -20,7 +20,7 @@ const Featured = () => {
         <Content
           image="/gpt-3.png"
           title="GPT-3"
-          description="Fully Responsive Modern UI/UX Website in React.js."
+          description="Fully Responsive Modern UI/UX Website in React.js with React Router."
           codes={["React.js", "JavaScript", "CSS"]}
           link="https://responsive-website-seven.vercel.app/"
           github="https://github.com/carlosmrtzodev/responsive-website"
