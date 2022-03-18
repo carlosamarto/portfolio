@@ -1,7 +1,7 @@
 ## 📄 Intro.
 
 <div align="center">
-My Portfolio Website in React.js and Tailwind CSS. <br><br>
+My Portfolio Website in React.js with React Router and Tailwind CSS. <br><br>
 </div>
 
 [![Portfolio Banner](./public/banner.png)](https://www.carlosmrtzo.com/)
