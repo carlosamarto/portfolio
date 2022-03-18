@@ -301,7 +301,7 @@
   }
 
   .projects__container {
-    @apply grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12;
+    @apply grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12;
   }
   .projects__card {
     @apply flex flex-col justify-between gap-6 border border-red p-4;
@@ -313,7 +313,7 @@
     @apply text-paragraph;
   }
   .projects__card-skills {
-    @apply flex items-center gap-2;
+    @apply xs:flex items-center gap-2;
   }
 
   .contact__container {
