@@ -4,7 +4,7 @@
 My Portfolio Website in React.js and Tailwind CSS. <br><br>
 </div>
 
-[![Portfolio Banner](./public/assets/banner.png)](https://www.carlosmrtzo.com/)
+[![Portfolio Banner](./public/banner.png)](https://www.carlosmrtzo.com/)
 
 ## 💼 Used technologies
 
