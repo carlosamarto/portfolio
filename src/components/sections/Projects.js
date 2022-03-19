@@ -20,7 +20,7 @@ const Projects = () => {
             link="https://simple-user-manager.vercel.app/"
             github="https://github.com/carlosmrtzodev/simple-user-manager"
             title="User Manager App"
-            description="Simple User Manager App in React.js and Tailwind CSS."
+            description="Simple User Manager App in React.js with React Router and Tailwind CSS."
             codes={["React.js", "JavaScript", "Tailwind CSS"]}
           />
 
