@@ -1,4 +1,4 @@
-import "./global.css";
+import "./globals.css";
 import App from "./App";
 import NotFound from "./404";
 import ReactDOM from "react-dom";

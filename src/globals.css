@@ -4,14 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
 
 @layer base {
-  * {
-    @apply m-0 p-0 list-none no-underline box-border scroll-smooth;
-  }
-
-  body {
-    @apply bg-dark;
-  }
-
   p,
   h1,
   li {
@@ -23,9 +15,22 @@
     @apply text-red;
   }
 
+  p,
+  li {
+    @apply text-gray;
+  }
+
   h2,
   h4 {
     @apply font-roboto font-bold text-light;
+  }
+
+  * {
+    @apply m-0 p-0 list-none no-underline box-border scroll-smooth;
+  }
+
+  body {
+    @apply bg-dark;
   }
 
   h2 {
@@ -40,21 +45,12 @@
     @apply font-normal;
   }
 
-  p,
-  li {
-    @apply text-gray;
-  }
-
   section {
     @apply flex justify-center xl:min-h-full md:min-h-sections;
   }
 }
 
 @layer components {
-  .root {
-    @apply xl:max-w-7xl md:w-3/4 w-4/5 mx-auto;
-  }
-
   .title__line,
   .contact__container-title,
   .projects__card-title {
@@ -176,6 +172,10 @@
   .navbar__logo,
   .footer__social {
     @apply lg:fixed lg:left-8;
+  }
+
+  .root {
+    @apply xl:max-w-7xl md:w-3/4 w-4/5 mx-auto;
   }
 
   .btn {
