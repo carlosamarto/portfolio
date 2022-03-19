@@ -52,8 +52,8 @@
 
 @layer components {
   .title__line,
-  .contact__container-title,
-  .projects__card-title {
+  .projects__card-title,
+  .contact__container-title {
     @apply font-roboto font-bold text-light;
   }
 
@@ -63,9 +63,9 @@
   .footer__top-icon,
   .navbar__menu-icon,
   .about__skills-icon,
-  .contact__container-title_number,
   .navbar__menu-links_number,
   .projects__card-icons_folder,
+  .contact__container-title_number,
   .navbar__menu-responsive_icon-close,
   .projects__card-icon_container-links {
     @apply text-red;
@@ -174,6 +174,12 @@
     @apply lg:fixed lg:left-8;
   }
 
+  .about__skills .strong__alt-color_text,
+  .projects__card-skills_text .strong__alt-color_light,
+  .featured__container-skills_container-text .strong__alt-color_light {
+    @apply font-bold;
+  }
+
   .root {
     @apply xl:max-w-7xl md:w-3/4 w-4/5 mx-auto;
   }
@@ -193,6 +199,10 @@
 
   .title__line {
     @apply relative text-subtitle after:content-[''] after:absolute after:top-2/4 after:inline-flex after:bg-red after:w-2/4 after:h-px after:ml-4;
+  }
+
+  .title__number {
+    @apply font-normal;
   }
 
   .p__alt-width {
@@ -336,6 +346,6 @@
     @apply fixed bottom-6 md:right-8 right-2.5;
   }
   .footer__top-icon {
-    @apply cursor-pointer text-subtitle animate-bounce hover:animate-none;
+    @apply cursor-pointer text-subtitle;
   }
 }
