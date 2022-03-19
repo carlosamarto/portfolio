@@ -12,7 +12,7 @@ const Projects = () => {
             link="https://pomodoro-app-sage.vercel.app/"
             github="https://github.com/carlosmrtzodev/Pomodoro-app"
             title="Pomodoro App"
-            description="Pomodoro App in React.js and Styled Components."
+            description="Pomodoro App in React.js with React Router and Styled Components."
             codes={["React.js", "JavaScript", "CSS"]}
           />
 
