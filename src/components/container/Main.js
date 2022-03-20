@@ -1,7 +1,7 @@
 import Navbar from "../sections/Navbar";
 import Footer from "../sections/Footer";
 
-const Container = ({ children }) => {
+const Main = ({ children }) => {
   return (
     <>
       <Navbar />
@@ -15,4 +15,4 @@ const Container = ({ children }) => {
   );
 };
 
-export default Container;
+export default Main;
