@@ -46,7 +46,7 @@
   }
 
   section {
-    @apply flex justify-center xl:min-h-full md:min-h-sections;
+    @apply flex justify-center xl:min-h-half md:min-h-sections;
   }
 }
 
@@ -181,7 +181,7 @@
   }
 
   .root {
-    @apply xl:max-w-7xl md:w-3/4 w-4/5 mx-auto;
+    @apply lg:max-w-5xl md:w-3/4 w-4/5 mx-auto;
   }
 
   .btn {

@@ -26,6 +26,7 @@ module.exports = {
     extend: {
       minHeight: {
         sections: "80vh",
+        half: "70vh",
       },
       fontSize: {
         title: "52px",

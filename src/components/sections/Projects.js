@@ -36,8 +36,8 @@ const Projects = () => {
             link="https://compound-interest-one.vercel.app/"
             github="https://github.com/carlosmrtzodev/compound-interest"
             title="Compound Interest App"
-            description="Simple Compound Interest App in React.js with Formik Forms and Tailwind CSS."
-            codes={["React.js", "JavaScript", "Tailwind CSS"]}
+            description="Simple Compound Interest App in React.js with Formik Forms, React Router and Styled Components."
+            codes={["React.js", "JavaScript", "CSS"]}
           />
 
           <Card
