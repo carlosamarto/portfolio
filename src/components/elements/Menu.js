@@ -1,5 +1,5 @@
-import Btn from "./Btn";
-import Links from "./Links";
+import { Btn } from "./Btn";
+import { Links } from "./Links";
 import { faScroll } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -23,4 +23,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export { Menu };

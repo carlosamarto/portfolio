@@ -1,4 +1,5 @@
-import Icons from "../elements/Icons";
+import { AnimatePresence, motion } from "framer-motion";
+import { Icons } from "../elements/Icons";
 import {
   faGithub,
   faLinkedinIn,
@@ -9,6 +10,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+  const variants = {
+    show: {
+      opacity: 1,
+    },
+    hide: {
+      opacity: 0,
+    },
+  };
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -30,7 +39,11 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <a
+        <motion.a
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
           href="https://github.com/carlosmrtzodev/portfolio"
           target="_blank"
           rel="noopener noreferrer"
@@ -38,9 +51,14 @@ const Footer = () => {
         >
           Designed & Built by Carlos Martínez.{" "}
           <FontAwesomeIcon icon={faCodeBranch} />
-        </a>
+        </motion.a>
 
-        <div className="footer__social">
+        <motion.div
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0 }}
+          className="footer__social"
+        >
           <Icons
             url="https://github.com/carlosmrtzodev"
             classes="icons__links-footer"
@@ -61,20 +79,28 @@ const Footer = () => {
           >
             <FontAwesomeIcon icon={faTwitter} />
           </Icons>
-        </div>
+        </motion.div>
 
-        {showButton && (
-          <div className="footer__top">
-            <FontAwesomeIcon
-              onClick={scrollToTop}
-              icon={faAnglesUp}
-              className="footer__top-icon"
-            />
-          </div>
-        )}
+        <AnimatePresence>
+          {showButton && (
+            <motion.div
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              className="footer__top"
+            >
+              <FontAwesomeIcon
+                onClick={scrollToTop}
+                icon={faAnglesUp}
+                className="footer__top-icon"
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </footer>
     </>
   );
 };
 
-export default Footer;
+export { Footer };

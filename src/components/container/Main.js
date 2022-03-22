@@ -1,5 +1,5 @@
-import Navbar from "../sections/Navbar";
-import Footer from "../sections/Footer";
+import { Navbar } from "../sections/Navbar";
+import { Footer } from "../sections/Footer";
 
 const Main = ({ children }) => {
   return (
@@ -15,4 +15,4 @@ const Main = ({ children }) => {
   );
 };
 
-export default Main;
+export { Main };

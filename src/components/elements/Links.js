@@ -1,7 +1,7 @@
 const Links = ({ url, number, text }) => {
   return (
     <>
-      <li className="group">
+      <li>
         <a href={url} className="navbar__menu-links">
           <strong className="navbar__menu-links_number">{number}</strong> {text}
         </a>
@@ -10,4 +10,4 @@ const Links = ({ url, number, text }) => {
   );
 };
 
-export default Links;
+export { Links };

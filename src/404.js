@@ -5,15 +5,15 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const NotFound = () => {
   return (
     <>
-      <section id="404" className="section__error">
+      <section id="404" className="section error">
         <p className="error__message">404: This page could not be found</p>
 
         <Link to="/" className="btn">
-          Go Back <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+          Go Back <FontAwesomeIcon icon={faArrowRight} className="btn__icon" />
         </Link>
       </section>
     </>
   );
 };
 
-export default NotFound;
+export { NotFound };

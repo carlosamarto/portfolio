@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
       xs: "512px",
@@ -19,9 +19,6 @@ module.exports = {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
       moboto: ["Roboto Mono", "monospace"],
-    },
-    boxShadow: {
-      red: "20px 20px 0px #EF233C;",
     },
     extend: {
       minHeight: {

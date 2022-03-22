@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Menu from "../elements/Menu";
+import { motion } from "framer-motion";
+import { Menu } from "../elements/Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,23 +10,39 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar__logo">
+        <motion.div
+          className="navbar__logo"
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0 }}
+        >
           <a href="/">
             <figure>
-              <img src="/Logo.png" alt="Logo" className="navbar__logo-size" />
+              <img src="/Logo.svg" alt="Logo" className="navbar__logo-size" />
             </figure>
           </a>
-        </div>
+        </motion.div>
 
-        <ul className="navbar__menu">
+        <motion.ul
+          className="navbar__menu"
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0 }}
+        >
           <Menu />
-        </ul>
+        </motion.ul>
 
-        <FontAwesomeIcon
-          onClick={() => setToggleMenu(true)}
-          icon={faBars}
-          className="navbar__menu-icon"
-        />
+        <motion.div
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0 }}
+        >
+          <FontAwesomeIcon
+            onClick={() => setToggleMenu(true)}
+            icon={faBars}
+            className="navbar__menu-icon"
+          />
+        </motion.div>
 
         <div
           className={`navbar__menu-responsive  ${
@@ -59,4 +76,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export { Navbar };

@@ -12,4 +12,4 @@ const Btn = ({ url, text, classes, target, rel, icon }) => {
   );
 };
 
-export default Btn;
+export { Btn };

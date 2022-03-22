@@ -1,10 +1,18 @@
-import Card from "../elements/Card";
-import Title from "../elements/Title";
+import { motion } from "framer-motion";
+import { Card } from "../elements/Card";
+import { Title } from "../elements/Title";
 
 const Projects = () => {
   return (
     <>
-      <section id="projects" className="section__projects">
+      <motion.section
+        viewport={{ once: true }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        id="projects"
+        className="section projects"
+      >
         <Title number="03." text="Projects" />
 
         <div className="projects__container">
@@ -56,9 +64,9 @@ const Projects = () => {
             codes={["WordPress", "Elementor", "CSS"]}
           />
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
 
-export default Projects;
+export { Projects };

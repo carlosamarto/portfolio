@@ -1,4 +1,4 @@
-import Icons from "./Icons";
+import { Icons } from "./Icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
@@ -26,29 +26,29 @@ const Content = ({ image, title, description, codes, link, github, alt }) => {
         >
           <ul className="featured__container-description_titles">
             <li>
-              <h4>Featured Project</h4>
+              <h4 className="subtitle">Featured Project</h4>
             </li>
 
             <li>
-              <h4>{title}</h4>
+              <h4 className="subtitle">{title}</h4>
             </li>
           </ul>
 
           <p className="featured__container-description_text">{description}</p>
 
-          <div className="featured__container-skills">
-            <ul className="featured__container-skills_container">
+          <div className="featured__container-description_skills">
+            <ul className="featured__container-description_skills-container">
               {codes.map((code) => (
                 <li
                   key={code}
-                  className="featured__container-skills_container-text"
+                  className="featured__container-description_skills-container_text"
                 >
-                  <strong className="strong__alt-color_light">{code}</strong>
+                  <strong className="strong__light">{code}</strong>
                 </li>
               ))}
             </ul>
 
-            <ul className="featured__container-links">
+            <ul className="featured__container-description_links">
               <li>
                 <Icons url={github} classes="icons__links-featured">
                   <FontAwesomeIcon icon={faGithub} />
@@ -68,4 +68,4 @@ const Content = ({ image, title, description, codes, link, github, alt }) => {
   );
 };
 
-export default Content;
+export { Content };

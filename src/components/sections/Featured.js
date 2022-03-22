@@ -1,10 +1,18 @@
-import Title from "../elements/Title";
-import Content from "../elements/Content";
+import { motion } from "framer-motion";
+import { Title } from "../elements/Title";
+import { Content } from "../elements/Content";
 
 const Featured = () => {
   return (
     <>
-      <section id="featured" className="section__featured">
+      <motion.section
+        viewport={{ once: true }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        id="featured"
+        className="section featured"
+      >
         <Title number="02." text="Featured" />
 
         <Content
@@ -26,9 +34,9 @@ const Featured = () => {
           github="https://github.com/carlosmrtzodev/responsive-website"
           alt={true}
         />
-      </section>
+      </motion.section>
     </>
   );
 };
 
-export default Featured;
+export { Featured };

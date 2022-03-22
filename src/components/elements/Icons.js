@@ -13,4 +13,4 @@ const Icons = ({ children, url, classes }) => {
   );
 };
 
-export default Icons;
+export { Icons };
