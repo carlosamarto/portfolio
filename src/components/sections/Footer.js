@@ -10,14 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
-  const variants = {
-    show: {
-      opacity: 1,
-    },
-    hide: {
-      opacity: 0,
-    },
-  };
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
