@@ -1,4 +1,4 @@
-const Links = ({ url, number, text }) => {
+const NavLinks = ({ url, number, text }) => {
   return (
     <>
       <li>
@@ -10,4 +10,4 @@ const Links = ({ url, number, text }) => {
   );
 };
 
-export { Links };
+export { NavLinks };

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Title } from "../elements/Title";
-import { Content } from "../elements/Content";
+import { TitleLine } from "../elements/TitleLine";
+import { FeaturedContent } from "../elements/FeaturedContent";
 
 const Featured = () => {
   return (
@@ -13,9 +13,9 @@ const Featured = () => {
         id="featured"
         className="section featured"
       >
-        <Title number="02." text="Featured" />
+        <TitleLine number="02." text="Featured" />
 
-        <Content
+        <FeaturedContent
           image="/pokedex.png"
           title="Pokedex App"
           description="Pokédex App in Next.js, Tailwind CSS and PokéAPI REST."
@@ -25,7 +25,7 @@ const Featured = () => {
           alt={false}
         />
 
-        <Content
+        <FeaturedContent
           image="/gpt-3.png"
           title="GPT-3"
           description="Fully Responsive Modern UI/UX Website in React.js with React Router."

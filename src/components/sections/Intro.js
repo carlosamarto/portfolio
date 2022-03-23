@@ -1,5 +1,5 @@
-import { Btn } from "../elements/Btn";
 import { motion } from "framer-motion";
+import { Button } from "../elements/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -27,13 +27,15 @@ const Intro = () => {
           learn more.
         </p>
 
-        <Btn
+        <Button
           text="Let’s Talk"
           url="#contact"
           target="_self"
           rel="author"
           classes="py-3 px-12"
-          icon={<FontAwesomeIcon icon={faArrowRight} className="btn__icon" />}
+          icon={
+            <FontAwesomeIcon icon={faArrowRight} className="button__icon" />
+          }
         />
       </motion.section>
     </>

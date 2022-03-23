@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "../elements/Card";
-import { Title } from "../elements/Title";
+import { TitleLine } from "../elements/TitleLine";
 
 const Projects = () => {
   return (
@@ -13,9 +13,17 @@ const Projects = () => {
         id="projects"
         className="section projects"
       >
-        <Title number="03." text="Projects" />
+        <TitleLine number="03." text="Projects" />
 
         <div className="projects__container">
+          <Card
+            link="https://dominiquepanczuch.com/"
+            github="null"
+            title="Dominique"
+            description="Dominique Portfolio Website in WordPress with a custom Template."
+            codes={["WordPress", "JavaScript", "PHP"]}
+          />
+
           <Card
             link="https://pomodoro-app-sage.vercel.app/"
             github="https://github.com/carlosmrtzodev/Pomodoro-app"

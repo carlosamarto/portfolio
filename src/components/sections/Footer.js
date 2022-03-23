@@ -1,4 +1,3 @@
-import { AnimatePresence, motion } from "framer-motion";
 import { Icons } from "../elements/Icons";
 import {
   faGithub,
@@ -6,6 +5,8 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
+import ScrollToTop from "../../Utils/ScrollToTop";
+import { AnimatePresence, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
@@ -21,12 +22,6 @@ const Footer = () => {
       }
     });
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-    });
-  };
 
   return (
     <>
@@ -83,7 +78,7 @@ const Footer = () => {
               className="footer__top"
             >
               <FontAwesomeIcon
-                onClick={scrollToTop}
+                onClick={ScrollToTop}
                 icon={faAnglesUp}
                 className="footer__top-icon"
               />

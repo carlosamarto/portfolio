@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Title } from "../elements/Title";
 import { Skills } from "../elements/Skills";
+import { TitleLine } from "../elements/TitleLine";
 
 const About = () => {
   const skills = [
@@ -23,7 +23,7 @@ const About = () => {
         id="about"
         className="section about"
       >
-        <Title number="01." text="About" />
+        <TitleLine number="01." text="About" />
 
         <div className="about__section-row">
           <div className="about__section-row_container">

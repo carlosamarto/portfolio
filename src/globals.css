@@ -17,17 +17,17 @@
     @apply lg:max-w-5xl md:w-3/4 w-4/5 mx-auto;
   }
 
-  .btn {
-    @apply text-red text-paragraph font-moboto transition-all ease-in-out duration-200 inline-block font-bold border border-red hover:bg-btn py-3 px-12;
+  .button {
+    @apply text-red text-paragraph font-moboto transition-all ease-in-out duration-200 inline-block font-bold border border-red hover:bg-button py-3 px-12;
   }
-  .btn__icon {
+  .button__icon {
     @apply ml-2;
   }
 
-  .btn__menu {
+  .button__menu {
     @apply py-2 px-4;
   }
-  .btn__contact {
+  .button__contact {
     @apply px-12 py-4;
   }
   .intro__title {
@@ -162,43 +162,43 @@
   .featured {
     @apply flex-col gap-12;
   }
-  .featured__container {
+  .featured__content {
     @apply relative;
   }
-  .featured__container-figure {
+  .featured__content-figure {
     @apply lg:w-2/3 lg:drop-shadow-2xl;
   }
-  .featured__container-figure_left {
+  .featured__content-figure_left {
     @apply lg:ml-0;
   }
-  .featured__container-figure_right {
+  .featured__content-figure_right {
     @apply lg:ml-auto;
   }
-  .featured__container-description {
+  .featured__content-description {
     @apply lg:absolute lg:bottom-1/3 flex flex-col gap-8 bg-red lg:hover:bg-hover lg:transition-all lg:ease-in-out lg:duration-200 lg:drop-shadow-2xl lg:w-2/4 px-4 py-2;
   }
-  .featured__container-description_right {
+  .featured__content-description_right {
     @apply lg:right-0;
   }
-  .featured__container-description_left {
+  .featured__content-description_left {
     @apply lg:left-0;
   }
-  .featured__container-description_titles {
+  .featured__content-description_titles {
     @apply flex justify-between items-center;
   }
-  .featured__container-description_text {
+  .featured__content-description_text {
     @apply text-light text-small font-moboto;
   }
-  .featured__container-description_skills {
+  .featured__content-description_skills {
     @apply flex sm:flex-row flex-col justify-between sm:items-center items-end gap-2;
   }
-  .featured__container-description_skills-container {
+  .featured__content-description_skills-container {
     @apply xs:flex xs:mr-0 xs:flex-row flex-col mr-auto gap-2;
   }
-  .featured__container-description_skills-container_text {
+  .featured__content-description_skills-container_text {
     @apply text-light text-small font-moboto;
   }
-  .featured__container-description_links {
+  .featured__content-description_links {
     @apply flex gap-4;
   }
 

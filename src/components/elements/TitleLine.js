@@ -1,4 +1,4 @@
-const Title = ({ number, text }) => {
+const TitleLine = ({ number, text }) => {
   return (
     <h3 className="title__line">
       <span className="title__line-number">{number}</span> {text}
@@ -6,4 +6,4 @@ const Title = ({ number, text }) => {
   );
 };
 
-export { Title };
+export { TitleLine };

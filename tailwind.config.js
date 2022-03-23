@@ -14,7 +14,7 @@ module.exports = {
       light: "#edf2f4",
       gray: "#8d99ae",
       hover: "#d90429",
-      btn: "rgba(239, 35, 60, .15)",
+      button: "rgba(239, 35, 60, .15)",
     },
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],

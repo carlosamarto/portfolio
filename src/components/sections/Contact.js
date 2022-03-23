@@ -1,5 +1,5 @@
-import { Btn } from "../elements/Btn";
 import { motion } from "framer-motion";
+import { Button } from "../elements/Button";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -26,13 +26,13 @@ const Contact = () => {
           following link.
         </p>
 
-        <Btn
+        <Button
           url="mailto:carlosmrtzodev@gmail.com"
           target="_blank"
           rel="noreferrer"
           text="Let's Talk."
-          classes="btn__contact"
-          icon={<FontAwesomeIcon icon={faEnvelope} className="btn__icon" />}
+          classes="button__contact"
+          icon={<FontAwesomeIcon icon={faEnvelope} className="button__icon" />}
         />
       </div>
     </motion.section>

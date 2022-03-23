@@ -8,8 +8,9 @@ const NotFound = () => {
       <section id="404" className="section error">
         <p className="error__message">404: This page could not be found</p>
 
-        <Link to="/" className="btn">
-          Go Back <FontAwesomeIcon icon={faArrowRight} className="btn__icon" />
+        <Link to="/" className="button">
+          Go Back{" "}
+          <FontAwesomeIcon icon={faArrowRight} className="button__icon" />
         </Link>
       </section>
     </>
