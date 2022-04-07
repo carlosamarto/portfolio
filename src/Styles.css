@@ -72,7 +72,7 @@
   }
 
   .section {
-    @apply min-h-screen flex justify-start;
+    @apply flex justify-start xs:my-12 my-4;
   }
 
   .error {
