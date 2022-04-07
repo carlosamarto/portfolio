@@ -1,17 +1,10 @@
-import { motion } from "framer-motion";
 import { Button } from "../elements/Button";
 import { FaArrowRight } from "react-icons/fa";
 
 const Intro = () => {
   return (
     <>
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 2, ease: "easeOut" }}
-        id='intro'
-        className='section intro'>
+      <section id='intro' className='section intro'>
         <h1 className='intro__title'>Hello! I’m</h1>
 
         <h2 className='title'>Carlos Martínez.</h2>
@@ -33,7 +26,7 @@ const Intro = () => {
           classes='py-3 px-12'
           icon={<FaArrowRight />}
         />
-      </motion.section>
+      </section>
     </>
   );
 };

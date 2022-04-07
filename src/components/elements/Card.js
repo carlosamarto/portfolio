@@ -1,16 +1,10 @@
-import { motion } from "framer-motion";
 import { Icons } from "../elements/Icons";
 import { FaGithub, FaExternalLinkAlt, FaFolder } from "react-icons/fa";
 
 const Card = ({ link, github, title, description, codes }) => {
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 2, ease: "easeOut" }}
-        className='projects__card'>
+      <div className='projects__card'>
         <ul className='projects__card-icons'>
           <li className='projects__card-icons_folder'>
             <FaFolder />
@@ -40,7 +34,7 @@ const Card = ({ link, github, title, description, codes }) => {
             </li>
           ))}
         </ul>
-      </motion.div>
+      </div>
     </>
   );
 };

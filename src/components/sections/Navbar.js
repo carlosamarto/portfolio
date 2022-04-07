@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { Menu } from "../elements/Menu";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import { Logo } from "../elements/Logo";
-import { MenuResponsive } from "../elements/MenuResponsive";
+import { RiCloseLine } from "react-icons/ri";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -12,36 +10,52 @@ const Navbar = () => {
   return (
     <>
       <nav className='navbar'>
-        <motion.div
-          initial={{ x: -500 }}
-          animate={{ x: 0 }}
-          transition={{ ease: "easeOut", duration: 2 }}
-          className='navbar__logo'>
+        <div className='navbar__logo'>
           <Link to='/' className='navbar__logo-link'>
-            <Logo />
+            <figure className='navbar__logo-link_container'>
+              <img
+                src='/Logo.svg'
+                alt='Logo'
+                className='navbar__logo-link_container-image'
+              />
+            </figure>
           </Link>
-        </motion.div>
+        </div>
 
-        <motion.ul
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 2 }}
-          className='navbar__menu'>
+        <ul className='navbar__menu'>
           <Menu />
-        </motion.ul>
+        </ul>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 2 }}
-          className='navbar__icon'>
+        <div className='navbar__icon'>
           <FaBars
             onClick={() => setToggleMenu(true)}
             className='navbar__icon-responsive'
           />
-        </motion.div>
+        </div>
 
-        <MenuResponsive toggle={toggleMenu} setToggle={setToggleMenu} />
+        <div
+          className={`navbar__responsive ${
+            toggleMenu ? `navbar__responsive-open` : `navbar__responsive-close`
+          }
+          `}>
+          <div
+            className={`${
+              toggleMenu
+                ? `navbar__responsive-container_show`
+                : `navbar__responsive-container_hidden`
+            }`}>
+            <div className='navbar__responsive-container_icon'>
+              <RiCloseLine
+                onClick={() => setToggleMenu(false)}
+                className='navbar__responsive-container_icon-close'
+              />
+            </div>
+
+            <ul className='navbar__responsive-container_menu'>
+              <Menu />
+            </ul>
+          </div>
+        </div>
       </nav>
     </>
   );

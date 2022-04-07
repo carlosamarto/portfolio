@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Skills } from "../elements/Skills";
 import { TitleLine } from "../elements/TitleLine";
 
@@ -15,13 +14,7 @@ const About = () => {
 
   return (
     <>
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 2, ease: "easeOut" }}
-        id='about'
-        className='section about'>
+      <section id='about' className='section about'>
         <TitleLine number='01.' text='About' />
 
         <div className='about__container'>
@@ -51,7 +44,7 @@ const About = () => {
             />
           </figure>
         </div>
-      </motion.section>
+      </section>
     </>
   );
 };

@@ -1,5 +1,4 @@
 import { Icons } from "./Icons";
-import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const FeaturedContent = ({
@@ -13,12 +12,7 @@ const FeaturedContent = ({
 }) => {
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 2, ease: "easeOut" }}
-        className='featured__content'>
+      <div className='featured__content'>
         <figure
           className={`featured__content-preview ${
             alt
@@ -76,7 +70,7 @@ const FeaturedContent = ({
             </ul>
           </div>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };

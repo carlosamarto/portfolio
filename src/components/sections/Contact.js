@@ -1,16 +1,9 @@
-import { motion } from "framer-motion";
 import { Button } from "../elements/Button";
 import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 2, ease: "easeOut" }}
-      id='contact'
-      className='section contact'>
+    <section id='contact' className='section contact'>
       <div className='contact__container'>
         <h3 className='contact__container-title'>
           <strong className='contact__container-title_number'>04. </strong>
@@ -33,7 +26,7 @@ const Contact = () => {
           icon={<FaEnvelope />}
         />
       </div>
-    </motion.section>
+    </section>
   );
 };
 

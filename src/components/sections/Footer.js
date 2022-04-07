@@ -24,11 +24,7 @@ const Footer = () => {
           <FaCodeBranch className='footer__credits-icon' />
         </a>
 
-        <motion.div
-          initial={{ x: -500 }}
-          animate={{ x: 0 }}
-          transition={{ ease: "easeOut", duration: 2 }}
-          className='footer__social'>
+        <div className='footer__social'>
           <Icons
             url='https://github.com/carlosmrtzodev'
             classes='icons__footer'>
@@ -46,7 +42,7 @@ const Footer = () => {
             classes='icons__footer'>
             <FaTwitter />
           </Icons>
-        </motion.div>
+        </div>
 
         <AnimatePresence>
           {showButton && (
