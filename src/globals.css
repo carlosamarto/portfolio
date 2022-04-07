@@ -6,7 +6,6 @@
   * {
     @apply m-0 p-0 list-none no-underline box-border scroll-smooth;
   }
-
   body {
     @apply bg-dark;
   }
@@ -14,123 +13,126 @@
 
 @layer components {
   .root {
-    @apply lg:max-w-5xl md:w-3/4 w-4/5 mx-auto;
+    @apply lg:max-w-6xl w-4/5 md:w-3/4 mx-auto;
   }
 
-  .button {
-    @apply text-red text-paragraph font-moboto transition-all ease-in-out duration-200 inline-block font-bold border border-red hover:bg-button py-3 px-12;
+  .button__primary {
+    @apply inline-flex items-center gap-2 text-paragraph text-red font-bold font-moboto border border-red hover:bg-button transition-all ease-in-out duration-300 py-3 px-12;
   }
-  .button__icon {
-    @apply ml-2;
-  }
-
-  .button__menu {
+  .button__primary-menu {
     @apply py-2 px-4;
   }
-  .button__contact {
+  .button__primary-contact {
     @apply px-12 py-4;
   }
+
+  .titleline {
+    @apply text-subtitle text-light font-roboto font-bold relative after:content-[''] after:w-4/12 xs:after:w-2/4 after:h-px after:absolute after:top-2/4 after:inline-flex after:bg-red after:ml-4;
+  }
+  .titleline__number {
+    @apply text-paragraph text-red font-moboto font-normal;
+  }
   .intro__title {
-    @apply text-paragraph font-moboto text-red;
+    @apply text-paragraph text-red font-moboto;
   }
   .title {
-    @apply lg:text-title text-mobile sm:leading-none font-roboto font-bold text-light;
+    @apply text-mobile lg:text-title text-light font-roboto font-bold sm:leading-none;
   }
   .title__gray {
-    @apply lg:text-title text-mobile sm:leading-none font-roboto font-bold text-gray;
+    @apply text-mobile lg:text-title text-gray font-roboto font-bold sm:leading-none;
   }
   .subtitle {
-    @apply text-paragraph font-roboto font-bold text-light;
+    @apply text-paragraph text-light font-roboto font-bold;
   }
   .text {
-    @apply text-paragraph font-moboto text-gray;
+    @apply text-paragraph text-gray font-moboto;
   }
+  .text__width {
+    @apply w-full md:w-2/3;
+  }
+
   .strong {
-    @apply font-normal text-red;
+    @apply text-red font-normal;
   }
   .strong__light {
     @apply text-light font-bold;
   }
-  .text__width {
-    @apply md:w-2/3 w-full;
+
+  .icons {
+    @apply transition-all ease-in-out duration-300;
   }
-  .section {
-    @apply flex justify-center xl:min-h-half md:min-h-sections;
+  .icons__featured {
+    @apply text-subtitle text-light;
   }
-  .title__line {
-    @apply font-roboto font-bold text-light relative text-subtitle after:content-[''] after:absolute after:top-2/4 after:inline-flex after:bg-red after:w-2/4 after:h-px after:ml-4;
-  }
-  .title__line-number {
-    @apply text-red text-paragraph font-moboto font-normal;
-  }
-  .icons__links {
-    @apply transition-all ease-in-out duration-200;
-  }
-  .icons__links-featured {
-    @apply text-light text-subtitle hover:brightness-110;
-  }
-  .icons__links-footer {
+  .icons__footer {
     @apply text-subtitle text-light hover:text-hover;
   }
-  .icons__links-projects {
-    @apply text-red hover:text-hover text-subtitle;
+  .icons__projects {
+    @apply text-subtitle text-red hover:text-hover;
+  }
+
+  .section {
+    @apply flex justify-start xs:my-12 my-4;
   }
 
   .error {
-    @apply flex-col gap-6 justify-center items-center;
+    @apply flex-col justify-center items-center gap-6;
   }
   .error__message {
-    @apply text-red text-subtitle font-moboto;
+    @apply text-subtitle text-red font-moboto;
   }
 
   .navbar {
-    @apply flex justify-between items-center lg:justify-end h-24 lg:mb-0 mb-12;
+    @apply h-24 flex justify-between lg:justify-end items-center mb-12 lg:mb-0;
   }
   .navbar__logo {
-    @apply lg:fixed lg:left-5 lg:top-6 block;
+    @apply block lg:fixed lg:left-5 lg:top-3;
   }
-  .navbar__logo-size {
-    @apply w-20 h-20;
+  .navbar__logo-link_container-image {
+    @apply w-16 h-16;
   }
   .navbar__menu {
-    @apply md:flex items-center gap-8 hidden;
+    @apply hidden md:flex items-center gap-8;
   }
-  .navbar__menu-links {
-    @apply hover:text-hover transition-all ease-in-out duration-200 text-light text-paragraph font-roboto;
+  .navbar__menu-items_links {
+    @apply text-paragraph text-light hover:text-hover font-roboto transition-all ease-in-out duration-300;
   }
-  .navbar__menu-links_number {
-    @apply text-red font-normal transition-all ease-in-out duration-200 text-small font-moboto;
+  .navbar__menu-items_links-number {
+    @apply text-small text-red font-moboto font-normal transition-all ease-in-out duration-300;
   }
-  .navbar__menu-icon {
-    @apply text-red hover:text-hover transition-all ease-in-out duration-200 md:hidden cursor-pointer text-subtitle;
+  .navbar__icon {
+    @apply md:hidden;
   }
-  .navbar__menu-responsive {
-    @apply transition-all ease-in-out duration-200 fixed top-0 right-0 bg-dark drop-shadow-2xl h-screen z-20;
+  .navbar__icon-responsive {
+    @apply md:hidden text-subtitle text-red hover:text-hover cursor-pointer transition-all ease-in-out duration-300;
   }
-  .navbar__menu-responsive_open {
+  .navbar__responsive {
+    @apply h-screen fixed top-0 right-0 bg-dark drop-shadow-2xl transition-all ease-in-out duration-300 z-20;
+  }
+  .navbar__responsive-open {
     @apply w-2/4;
   }
-  .navbar__menu-responsive_close {
+  .navbar__responsive-close {
     @apply w-0;
   }
-  .navbar__menu-responsive_effects {
-    @apply opacity-100 delay-200 transition-all ease-in-out duration-200;
+  .navbar__responsive-container_show {
+    @apply opacity-100 transition-all ease-in-out duration-300 delay-300;
   }
-  .navbar__menu-responsive_effects-off {
+  .navbar__responsive-container_hidden {
     @apply opacity-0;
   }
-  .navbar__menu-responsive_icon {
-    @apply block text-right;
+  .navbar__responsive-container_icon {
+    @apply flex justify-end;
   }
-  .navbar__menu-responsive_icon-close {
-    @apply text-red hover:text-hover transition-all ease-in-out duration-200 cursor-pointer text-subtitle m-4;
+  .navbar__responsive-container_icon-close {
+    @apply text-subtitle text-red hover:text-hover cursor-pointer transition-all ease-in-out duration-300 m-4;
   }
-  .navbar__menu-responsive_menu {
-    @apply flex flex-col items-center gap-8;
+  .navbar__responsive-container_menu {
+    @apply flex flex-col items-baseline gap-8 pl-8;
   }
 
   .article {
-    @apply flex-col gap-12 flex min-h-screen;
+    @apply min-h-screen flex flex-col gap-12;
   }
 
   .intro {
@@ -140,23 +142,29 @@
   .about {
     @apply flex-col gap-12;
   }
-  .about__section-row {
-    @apply flex sm:flex-row flex-col;
+  .about__container {
+    @apply flex flex-col sm:flex-row gap-12;
   }
-  .about__section-row_container {
-    @apply flex-col gap-12 flex;
+  .about__container-row {
+    @apply flex flex-col gap-12;
   }
-  .about__section-row_container-skills {
-    @apply grid md:grid-cols-3 grid-cols-2 gap-4;
+  .about__container-row_skills {
+    @apply grid grid-cols-2 md:grid-cols-3 gap-4;
   }
-  .about__section-row_container-skills_icon {
+  .about__container-row_skills-item {
+    @apply flex items-center;
+  }
+  .about__container-row_skills-item_icon {
     @apply text-red mr-2;
   }
-  .about__section-row_container-skills_text {
-    @apply font-bold xs:text-paragraph text-small;
+  .about__container-row_skills-item_text {
+    @apply text-small xs:text-paragraph text-gray font-bold;
   }
-  .about__section-row_image {
-    @apply w-full;
+  .about__container-profile {
+    @apply w-11/12 xs:w-full;
+  }
+  .about__container-profile_image {
+    @apply shadow-image shadow-red;
   }
 
   .featured {
@@ -165,17 +173,17 @@
   .featured__content {
     @apply relative;
   }
-  .featured__content-figure {
+  .featured__content-preview {
     @apply lg:w-2/3 lg:drop-shadow-2xl;
   }
-  .featured__content-figure_left {
+  .featured__content-preview_left {
     @apply lg:ml-0;
   }
-  .featured__content-figure_right {
+  .featured__content-preview_right {
     @apply lg:ml-auto;
   }
   .featured__content-description {
-    @apply lg:absolute lg:bottom-1/3 flex flex-col gap-8 bg-red lg:hover:bg-hover lg:transition-all lg:ease-in-out lg:duration-200 lg:drop-shadow-2xl lg:w-2/4 px-4 py-2;
+    @apply lg:w-2/4 flex flex-col gap-8 lg:absolute lg:bottom-1/3 bg-red lg:hover:bg-hover lg:drop-shadow-2xl lg:transition-all lg:ease-in-out lg:duration-300 p-4;
   }
   .featured__content-description_right {
     @apply lg:right-0;
@@ -187,26 +195,29 @@
     @apply flex justify-between items-center;
   }
   .featured__content-description_text {
-    @apply text-light text-small font-moboto;
+    @apply text-small text-light font-moboto;
   }
   .featured__content-description_skills {
-    @apply flex sm:flex-row flex-col justify-between sm:items-center items-end gap-2;
+    @apply flex flex-col sm:flex-row justify-between items-end sm:items-center gap-2;
   }
-  .featured__content-description_skills-container {
-    @apply xs:flex xs:mr-0 xs:flex-row flex-col mr-auto gap-2;
+  .featured__content-description_skills-list {
+    @apply flex flex-col xs:flex-row mr-auto xs:mr-0 gap-2;
   }
-  .featured__content-description_skills-container_text {
-    @apply text-light text-small font-moboto;
+  .featured__content-description_skills-list_text {
+    @apply text-small text-light font-moboto;
   }
   .featured__content-description_links {
     @apply flex gap-4;
+  }
+  .featured__content-description_links-container_icons {
+    @apply hover:brightness-110 transition-all ease-in-out duration-300;
   }
 
   .projects {
     @apply flex-col gap-12;
   }
   .projects__container {
-    @apply grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12;
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12;
   }
   .projects__card {
     @apply flex flex-col justify-between gap-6 border border-red p-4;
@@ -215,50 +226,53 @@
     @apply flex justify-between items-center;
   }
   .projects__card-icons_folder {
-    @apply text-red text-subtitle;
+    @apply text-subtitle text-red;
   }
   .projects__card-icons_container {
     @apply flex gap-4;
   }
   .projects__card-title {
-    @apply text-paragraph font-roboto font-bold text-light;
+    @apply text-paragraph text-light font-roboto font-bold;
   }
   .projects__card-text {
-    @apply text-gray text-small font-moboto;
+    @apply text-small text-gray font-moboto;
   }
   .projects__card-skills {
-    @apply xs:flex items-center gap-2;
+    @apply flex flex-col xs:flex-row xs:items-center gap-2;
   }
   .projects__card-skills_text {
-    @apply text-gray text-small font-moboto;
+    @apply text-small text-gray font-moboto;
   }
 
   .contact {
     @apply justify-center items-center;
   }
   .contact__container {
-    @apply flex flex-col gap-4 md:w-2/3 w-full text-center;
+    @apply w-full md:w-2/3 flex flex-col gap-4 text-center;
   }
   .contact__container-title {
-    @apply font-roboto font-bold text-light lg:text-title text-mobile leading-none;
+    @apply text-mobile lg:text-title font-roboto font-bold text-light leading-none;
   }
   .contact__container-title_number {
-    @apply text-red font-moboto lg:text-mobile text-subtitle;
+    @apply text-subtitle lg:text-mobile text-red font-moboto;
   }
 
   .footer {
-    @apply justify-center items-center flex lg:flex-row flex-col gap-2 h-24 mt-12;
+    @apply h-24 flex flex-col lg:flex-row justify-center items-center gap-4 mt-12 mb-6;
   }
   .footer__credits {
-    @apply hover:text-hover text-paragraph font-moboto transition-all ease-in-out duration-200 text-gray text-center;
+    @apply flex items-center gap-2 text-paragraph text-gray text-center hover:text-hover font-moboto transition-all ease-in-out duration-300;
+  }
+  .footer__credits-icon {
+    @apply hidden xs:block;
   }
   .footer__social {
-    @apply lg:fixed lg:left-8 lg:bottom-6 flex lg:flex-col flex-row lg:justify-start justify-center lg:gap-2 gap-4;
+    @apply flex flex-row lg:flex-col justify-center lg:justify-start gap-4 lg:fixed lg:left-8 lg:bottom-6;
   }
   .footer__top {
-    @apply fixed bottom-6 md:right-8 right-2.5;
+    @apply fixed bottom-6 right-2 md:right-8;
   }
   .footer__top-icon {
-    @apply text-red hover:text-hover transition-all ease-in-out duration-200 cursor-pointer text-subtitle;
+    @apply text-subtitle text-red hover:text-hover cursor-pointer transition-all ease-in-out duration-300 animate-bounce;
   }
 }

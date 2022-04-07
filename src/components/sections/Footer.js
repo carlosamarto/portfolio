@@ -1,70 +1,50 @@
-import { Icons } from "../elements/Icons";
 import {
-  faGithub,
-  faLinkedinIn,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { useEffect, useState } from "react";
-import ScrollToTop from "../../Utils/ScrollToTop";
+  FaGithub,
+  FaLinkedinIn,
+  FaTwitter,
+  FaAngleDoubleUp,
+  FaCodeBranch,
+} from "react-icons/fa";
+import { Icons } from "../elements/Icons";
+import { UseScroll } from "../../hooks/UseScroll";
 import { AnimatePresence, motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesUp, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 200) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    });
-  }, []);
+  const { showButton, ScrollToTop } = UseScroll();
 
   return (
     <>
-      <footer className="footer">
-        <motion.a
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          whileInView={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
-          href="https://github.com/carlosmrtzodev/portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="footer__credits"
-        >
+      <footer className='footer'>
+        <a
+          href='https://github.com/carlosmrtzodev/portfolio'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='footer__credits'>
           Designed & Built by Carlos Martínez.{" "}
-          <FontAwesomeIcon icon={faCodeBranch} />
-        </motion.a>
+          <FaCodeBranch className='footer__credits-icon' />
+        </a>
 
         <motion.div
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          initial={{ opacity: 0 }}
-          className="footer__social"
-        >
+          initial={{ x: -500 }}
+          animate={{ x: 0 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          className='footer__social'>
           <Icons
-            url="https://github.com/carlosmrtzodev"
-            classes="icons__links-footer"
-          >
-            <FontAwesomeIcon icon={faGithub} />
+            url='https://github.com/carlosmrtzodev'
+            classes='icons__footer'>
+            <FaGithub />
           </Icons>
 
           <Icons
-            url="https://www.linkedin.com/in/carlosmrtzodev/"
-            classes="icons__links-footer"
-          >
-            <FontAwesomeIcon icon={faLinkedinIn} />
+            url='https://www.linkedin.com/in/carlosmrtzodev/'
+            classes='icons__footer'>
+            <FaLinkedinIn />
           </Icons>
 
           <Icons
-            url="https://twitter.com/carlosmrtzodev"
-            classes="icons__links-footer"
-          >
-            <FontAwesomeIcon icon={faTwitter} />
+            url='https://twitter.com/carlosmrtzodev'
+            classes='icons__footer'>
+            <FaTwitter />
           </Icons>
         </motion.div>
 
@@ -72,15 +52,13 @@ const Footer = () => {
           {showButton && (
             <motion.div
               animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              transition={{ ease: "easeOut", duration: 1 }}
               initial={{ opacity: 0 }}
               exit={{ opacity: 0 }}
-              className="footer__top"
-            >
-              <FontAwesomeIcon
+              className='footer__top'>
+              <FaAngleDoubleUp
                 onClick={ScrollToTop}
-                icon={faAnglesUp}
-                className="footer__top-icon"
+                className='footer__top-icon'
               />
             </motion.div>
           )}

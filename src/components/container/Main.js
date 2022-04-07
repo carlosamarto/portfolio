@@ -6,8 +6,8 @@ const Main = ({ children }) => {
     <>
       <Navbar />
 
-      <main>
-        <article className="article">{children}</article>
+      <main className='main'>
+        <article className='article'>{children}</article>
       </main>
 
       <Footer />

@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FaArrowLeft } from "react-icons/fa";
 
 const NotFound = () => {
   return (
     <>
-      <section id="404" className="section error">
-        <p className="error__message">404: This page could not be found</p>
+      <section id='error' className='section error'>
+        <p className='error__message'>404: This page could not be found</p>
 
-        <Link to="/" className="button">
-          Go Back{" "}
-          <FontAwesomeIcon icon={faArrowRight} className="button__icon" />
+        <Link to='/' className='button__primary'>
+          <FaArrowLeft /> Go Back
         </Link>
       </section>
     </>

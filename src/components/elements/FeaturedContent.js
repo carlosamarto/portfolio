@@ -1,7 +1,6 @@
 import { Icons } from "./Icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const FeaturedContent = ({
   image,
@@ -14,15 +13,23 @@ const FeaturedContent = ({
 }) => {
   return (
     <>
-      <div className="featured__content">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        className='featured__content'>
         <figure
-          className={`featured__content-figure ${
+          className={`featured__content-preview ${
             alt
-              ? `featured__content-figure_right`
-              : `featured__content-figure_left`
-          }`}
-        >
-          <img src={image} alt={title} />
+              ? `featured__content-preview_right`
+              : `featured__content-preview_left`
+          }`}>
+          <img
+            src={image}
+            alt={title}
+            className='featured__content-preview_image'
+          />
         </figure>
 
         <div
@@ -30,48 +37,46 @@ const FeaturedContent = ({
             alt
               ? `featured__content-description_left`
               : `featured__content-description_right`
-          }`}
-        >
-          <ul className="featured__content-description_titles">
-            <li>
-              <h4 className="subtitle">Featured Project</h4>
+          }`}>
+          <ul className='featured__content-description_titles'>
+            <li className='featured__content-description_titles-item'>
+              <h4 className='subtitle'>Featured Project</h4>
             </li>
 
-            <li>
-              <h4 className="subtitle">{title}</h4>
+            <li className='featured__content-description_titles-item'>
+              <h4 className='subtitle'>{title}</h4>
             </li>
           </ul>
 
-          <p className="featured__content-description_text">{description}</p>
+          <p className='featured__content-description_text'>{description}</p>
 
-          <div className="featured__content-description_skills">
-            <ul className="featured__content-description_skills-container">
+          <div className='featured__content-description_skills'>
+            <ul className='featured__content-description_skills-list'>
               {codes.map((code) => (
                 <li
                   key={code}
-                  className="featured__content-description_skills-container_text"
-                >
-                  <strong className="strong__light">{code}</strong>
+                  className='featured__content-description_skills-list_text'>
+                  <strong className='strong__light'>{code}</strong>
                 </li>
               ))}
             </ul>
 
-            <ul className="featured__content-description_links">
-              <li>
-                <Icons url={github} classes="icons__links-featured">
-                  <FontAwesomeIcon icon={faGithub} />
+            <ul className='featured__content-description_links'>
+              <li className='featured__content-description_links-container'>
+                <Icons url={github} classes='icons__featured'>
+                  <FaGithub className='featured__content-description_links-container_icons' />
                 </Icons>
               </li>
 
-              <li>
-                <Icons url={link} classes="icons__links-featured">
-                  <FontAwesomeIcon icon={faExternalLink} />
+              <li className='featured__content-description_links-container'>
+                <Icons url={link} classes='icons__featured'>
+                  <FaExternalLinkAlt className='featured__content-description_links-container_icons' />
                 </Icons>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

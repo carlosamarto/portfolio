@@ -3,10 +3,9 @@ const Icons = ({ children, url, classes }) => {
     <>
       <a
         href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`icons__links ${classes}`}
-      >
+        target='_blank'
+        rel='noopener noreferrer'
+        className={`icons ${classes}`}>
         {children}
       </a>
     </>

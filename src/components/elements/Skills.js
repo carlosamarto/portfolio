@@ -1,16 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { FaCaretRight } from "react-icons/fa";
 
 const Skills = ({ text }) => {
   return (
-    <li className="text">
-      <FontAwesomeIcon
-        icon={faCaretRight}
-        className="about__section-row_container-skills_icon"
-      />
-      <strong className="about__section-row_container-skills_text">
-        {text}
-      </strong>
+    <li className='about__container-row_skills-item'>
+      <FaCaretRight className='about__container-row_skills-item_icon' />
+      <strong className='about__container-row_skills-item_text'>{text}</strong>
     </li>
   );
 };

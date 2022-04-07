@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
   theme: {
     screens: {
       xs: "512px",
@@ -9,10 +9,10 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
-      dark: "#2b2d42",
       red: "#ef233c",
-      light: "#edf2f4",
+      dark: "#2b2d42",
       gray: "#8d99ae",
+      light: "#edf2f4",
       hover: "#d90429",
       button: "rgba(239, 35, 60, .15)",
     },
@@ -21,9 +21,8 @@ module.exports = {
       moboto: ["Roboto Mono", "monospace"],
     },
     extend: {
-      minHeight: {
-        sections: "80vh",
-        half: "70vh",
+      boxShadow: {
+        image: "14px 14px 0px 0px",
       },
       fontSize: {
         title: "52px",
