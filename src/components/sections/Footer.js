@@ -38,7 +38,7 @@ const Footer = () => {
           </Icons>
 
           <Icons
-            url='https://twitter.com/carlosmrtzodev'
+            url='https://twitter.com/carlosmrtzo'
             classes='icons__footer'>
             <FaTwitter />
           </Icons>
