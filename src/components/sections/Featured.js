@@ -16,16 +16,6 @@ const Featured = () => {
           github='https://github.com/carlosmrtzodev/pokedex-app'
           alt={false}
         />
-
-        <FeaturedContent
-          image='/gpt-3.png'
-          title='GPT-3'
-          description='Fully Responsive Modern UI/UX Website in React.js and CSS.'
-          codes={["React.js", "JavaScript", "CSS"]}
-          link='https://responsive-website-seven.vercel.app/'
-          github='https://github.com/carlosmrtzodev/responsive-website'
-          alt={true}
-        />
       </section>
     </>
   );
