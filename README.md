@@ -4,7 +4,7 @@
 My Portfolio <br><br>
 </div>
 
-[![Portfolio](./public/preview.png)](https://www.carlosmrtzo.com/)
+[![Portfolio](./public/Preview.png)](https://www.carlosmrtzo.com/)
 
 ## 💼 Used technologies
 
