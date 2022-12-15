@@ -1,7 +1,7 @@
 ## 📄 Intro
 
 <div align="center">
-My Portfolio Website in React.js <br><br>
+My Portfolio <br><br>
 </div>
 
 [![Portfolio Banner](./public/banner.png)](https://www.carlosmrtzo.com/)
