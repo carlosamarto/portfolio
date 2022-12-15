@@ -17,43 +17,11 @@ const Projects = () => {
           />
 
           <Card
-            link='https://pomodoro-app-sage.vercel.app/'
-            github='https://github.com/carlosmrtzodev/Pomodoro-app'
-            title='Pomodoro App'
-            description='Pomodoro App in React.js and Styled Components.'
-            codes={["React.js", "JavaScript", "CSS"]}
-          />
-
-          <Card
-            link='https://simple-user-manager.vercel.app/'
-            github='https://github.com/carlosmrtzodev/simple-user-manager'
-            title='User Manager App'
-            description='Simple User Manager App in React.js and Tailwind CSS.'
-            codes={["React.js", "JavaScript", "Tailwind CSS"]}
-          />
-
-          <Card
             link='https://oshica.com.ve/'
             github={false}
             title='Oshica'
             description='Oshica Website in WordPress with Elementor.'
             codes={["WordPress", "Elementor", "CSS"]}
-          />
-
-          <Card
-            link='https://compound-interest-one.vercel.app/'
-            github='https://github.com/carlosmrtzodev/compound-interest'
-            title='Compound Interest App'
-            description='Simple Compound Interest App in React.js and Styled Components.'
-            codes={["React.js", "JavaScript", "CSS"]}
-          />
-
-          <Card
-            link='https://cart-app-ten.vercel.app/'
-            github='https://github.com/carlosmrtzodev/cart-app'
-            title='Cart App'
-            description='Simple Cart App in React.js and Styled Components. '
-            codes={["React.js", "JavaScript", "CSS"]}
           />
 
           <Card
