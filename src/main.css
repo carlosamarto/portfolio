@@ -25,3 +25,14 @@ h5,
 h6 {
 	font-family: "Quicksand", sans-serif;
 }
+.portfolio {
+	width: 100%;
+	min-height: 100vh;
+	max-width: 144rem;
+	padding: 0 2.4rem;
+}
+@media screen and (min-width: 76.8rem) {
+	.portfolio {
+		padding: 0 12.8rem;
+	}
+}
