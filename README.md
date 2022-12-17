@@ -1,10 +1,10 @@
 ## 📄 Intro
 
 <div align="center">
-My Portfolio <br><br>
+   My Portfolio <br><br>
 </div>
 
-[![Portfolio](./public/Preview.png)](https://www.carlosmrtzo.com/)
+[![Portfolio](./public/preview.png)](https://www.carlosmrtzo.com/)
 
 ## 💼 Used technologies
 
