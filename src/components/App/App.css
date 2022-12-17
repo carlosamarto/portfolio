@@ -2,20 +2,24 @@
 * {
 	margin: 0;
 	padding: 0;
-	list-style: none;
-	text-decoration: none;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	font-family: "Source Sans Pro", sans-serif;
 }
 html {
 	font-size: 62.5%;
 }
 body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	place-items: center;
 	background-color: #2b2d42;
+}
+p,
+span,
+label,
+input,
+button,
+a {
+	font-family: "Source Sans Pro", sans-serif;
 }
 h1,
 h2,
