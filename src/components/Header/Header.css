@@ -1,0 +1,16 @@
+.portfolio--header {
+	display: flex;
+	padding: 2.4rem 0;
+	align-items: center;
+	justify-content: space-between;
+}
+.portfolio--header-logo {
+	width: 4.8rem;
+	height: 4.8rem;
+	display: block;
+}
+.portfolio--header-icon {
+	line-height: 1;
+	color: #ef233c;
+	font-size: 4.8rem;
+}
