@@ -1,9 +1,9 @@
 import "./Main.css";
 
-function Main({ Children }) {
+function Main({ children, openMenu }) {
 	return (
 		<>
-			<main className="main">{Children}</main>
+			<main className={`main ${openMenu && "inactive"}`}>{children}</main>
 		</>
 	);
 }

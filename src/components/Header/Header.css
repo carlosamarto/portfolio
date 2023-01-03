@@ -1,6 +1,7 @@
 .header {
 	top: 0;
 	left: 0;
+	z-index: 1;
 	width: 100%;
 	display: flex;
 	padding: 2.4rem;

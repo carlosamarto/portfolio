@@ -11,6 +11,9 @@ html {
 body {
 	background-color: #2b2d42;
 }
+body.block {
+	overflow: hidden;
+}
 li {
 	list-style: none;
 }

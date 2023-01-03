@@ -3,3 +3,9 @@
 	height: 1024px;
 	max-width: 144rem;
 }
+.main.inactive {
+	user-select: none;
+	pointer-events: none;
+	touch-action: none;
+	filter: blur(0.4rem) brightness(0.6);
+}
