@@ -1,7 +1,7 @@
 import "./Featured.css";
 
 function Featured() {
-	return <>Featured</>;
+	return <></>;
 }
 
 export { Featured };

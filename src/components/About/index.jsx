@@ -1,7 +1,7 @@
 import "./About.css";
 
 function About() {
-	return <>About</>;
+	return <></>;
 }
 
 export { About };

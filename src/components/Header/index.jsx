@@ -1,15 +1,38 @@
 import "./Header.css";
-import { CgMenuRight } from "react-icons/cg";
+import { Logo } from "../Logo/Logo";
 
-function Header() {
+function Header({ scrollDirection, openMenu, setOpenMenu }) {
 	return (
 		<>
-			<header className="portfolio--header">
-				<img src="./Logo.svg" alt="Carlos Martínez Logo" className="portfolio--header-logo" />
+			<header className={`header ${scrollDirection === "down" ? "hide" : "show"}`}>
+				<div>
+					<Logo width="48" height="48" />
+				</div>
 
-				<span className="portfolio--header-icon">
-					<CgMenuRight />
-				</span>
+				<div
+					className={`header--icon ${openMenu && "header--open"}`}
+					onClick={() => setOpenMenu((prevState) => !prevState)}
+				>
+					<div></div>
+				</div>
+
+				<ul className={`header--menu ${openMenu && "header--open"}`}>
+					<li>
+						<a href="#intro">Intro</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#featured">Featured</a>
+					</li>
+					<li>
+						<a href="#projects">Projects</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
 			</header>
 		</>
 	);

@@ -1,10 +1,25 @@
 import "./App.css";
-import { Header, Intro, About, Featured, Projects, Contact, Footer } from "../";
+import { useState } from "react";
+import { useScrollDirection } from "../Hooks/useScrollDirection";
+import { Header, Intro, About, Featured, Projects, Contact, Main, Footer } from "../";
 
 function App() {
+	const scrollDirection = useScrollDirection();
+	const [openMenu, setOpenMenu] = useState(false);
+
 	return (
 		<>
-			<Header />
+			<Header scrollDirection={scrollDirection} openMenu={openMenu} setOpenMenu={setOpenMenu} />
+
+			<Main>
+				<Intro />
+				<About />
+				<Featured />
+				<Projects />
+				<Contact />
+			</Main>
+
+			<Footer />
 		</>
 	);
 }

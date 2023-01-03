@@ -9,8 +9,6 @@ html {
 	font-size: 62.5%;
 }
 body {
-	display: grid;
-	place-items: center;
 	background-color: #2b2d42;
 }
 li {
@@ -35,14 +33,13 @@ h5,
 h6 {
 	font-family: "Quicksand", sans-serif;
 }
-.portfolio {
-	width: 100%;
-	min-height: 100vh;
-	max-width: 144rem;
+#root {
+	display: grid;
 	padding: 0 2.4rem;
+	place-items: center;
 }
 @media screen and (min-width: 76.8rem) {
-	.portfolio {
+	#root {
 		padding: 0 12.8rem;
 	}
 }

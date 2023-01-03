@@ -1,7 +1,7 @@
 import "./Intro.css";
 
 function Intro() {
-	return <>Intro</>;
+	return <></>;
 }
 
 export { Intro };

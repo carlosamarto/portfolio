@@ -1,7 +1,7 @@
 import "./Projects.css";
 
 function Projects() {
-	return <>Projects</>;
+	return <></>;
 }
 
 export { Projects };

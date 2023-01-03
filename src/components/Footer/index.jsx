@@ -1,7 +1,11 @@
 import "./Footer.css";
 
 function Footer() {
-	return <>Footer</>;
+	return (
+		<>
+			<footer></footer>
+		</>
+	);
 }
 
 export { Footer };
