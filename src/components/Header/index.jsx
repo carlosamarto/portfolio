@@ -1,10 +1,15 @@
 import "./Header.css";
 import { Logo } from "../Logo/Logo";
 
-function Header({ scrollDirection, openMenu, setOpenMenu }) {
+function Header({ initialScroll, scrollDirection, openMenu, setOpenMenu }) {
+	console.log(initialScroll);
+
 	return (
 		<>
-			<header className={`header ${scrollDirection === "down" ? "hide" : "show"}`}>
+			<header
+				id={initialScroll ? "shadow" : "header"}
+				className={`header ${scrollDirection === "down" ? "hide" : "show"}`}
+			>
 				<div>
 					<Logo width="48" height="48" />
 				</div>

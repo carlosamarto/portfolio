@@ -10,6 +10,9 @@
 	justify-content: space-between;
 	transition: all 0.2s ease-in-out;
 }
+#shadow.header {
+	box-shadow: none;
+}
 .header.show {
 	box-shadow: rgba(0, 0, 0, 0.16) 0rem 1rem 3.6rem 0rem, rgba(0, 0, 0, 0.06) 0rem 0rem 0rem 0.1rem;
 }

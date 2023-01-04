@@ -4,7 +4,7 @@ import { useScrollDirection } from "../Hooks/useScrollDirection";
 import { Header, Intro, About, Featured, Projects, Contact, Main, Footer } from "../";
 
 function App() {
-	const scrollDirection = useScrollDirection();
+	const [scrollDirection, initialScroll] = useScrollDirection();
 	const [openMenu, setOpenMenu] = useState(false);
 
 	useEffect(() => {
@@ -13,7 +13,12 @@ function App() {
 
 	return (
 		<>
-			<Header scrollDirection={scrollDirection} openMenu={openMenu} setOpenMenu={setOpenMenu} />
+			<Header
+				scrollDirection={scrollDirection}
+				initialScroll={initialScroll}
+				openMenu={openMenu}
+				setOpenMenu={setOpenMenu}
+			/>
 
 			<Main openMenu={openMenu}>
 				<Intro />
