@@ -1,3 +1,6 @@
+#initial.header {
+	box-shadow: none;
+}
 .header {
 	top: 0;
 	left: 0;
@@ -9,9 +12,6 @@
 	align-items: center;
 	justify-content: space-between;
 	transition: all 0.2s ease-in-out;
-}
-#shadow.header {
-	box-shadow: none;
 }
 .header.show {
 	box-shadow: rgba(0, 0, 0, 0.16) 0rem 1rem 3.6rem 0rem, rgba(0, 0, 0, 0.06) 0rem 0rem 0rem 0.1rem;
@@ -74,7 +74,7 @@
 	top: 0;
 	right: 0;
 	width: 75%;
-	gap: 2.4rem;
+	gap: 3.2rem;
 	height: 100vh;
 	display: flex;
 	position: fixed;
@@ -91,8 +91,17 @@
 	visibility: visible;
 	transform: translateX(0vw);
 }
+.header--menu li {
+	width: 65%;
+	text-align: right;
+}
 .header--menu li a {
+	font-size: 3.2rem;
 	color: #edf2f4;
+	line-height: 4rem;
+}
+.header--menu li a span {
 	font-size: 2.4rem;
+	color: #edf2f4;
 	line-height: 3.2rem;
 }
