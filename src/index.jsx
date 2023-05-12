@@ -1,8 +1,8 @@
-import { App } from "./components";
+import { Layout } from "./layout";
 import ReactDOM from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("main")).render(
 	<>
-		<App />
+		<Layout />
 	</>
 );

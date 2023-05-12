@@ -1,5 +1,3 @@
-export { App } from "./App/";
-export { Main } from "./Main";
 export { Intro } from "./Intro/";
 export { About } from "./About/";
 export { Header } from "./Header/";

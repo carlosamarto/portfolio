@@ -8,7 +8,6 @@ function useScrollDirection() {
 		let lastScrollY = window.pageYOffset;
 		lastScrollY === 0 ? setInitialScroll(true) : setInitialScroll(false);
 
-		// function to run on scroll
 		const updateScrollDirection = () => {
 			const scrollY = window.pageYOffset;
 
@@ -25,12 +24,12 @@ function useScrollDirection() {
 			lastScrollY = scrollY > 0 ? scrollY : 0;
 		};
 
-		window.addEventListener("scroll", updateScrollDirection); // add event listener
+		window.addEventListener("scroll", updateScrollDirection);
 
 		return () => {
-			window.removeEventListener("scroll", updateScrollDirection); // clean up
+			window.removeEventListener("scroll", updateScrollDirection);
 		};
-	}, [scrollDirection, initialScroll]); // run when scroll direction changes
+	}, [scrollDirection, initialScroll]);
 
 	return [scrollDirection, initialScroll];
 }

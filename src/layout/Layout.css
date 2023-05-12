@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Open+Sans:ital@0;1&family=Roboto:ital@0;1&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Open Sans', sans-serif;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color: #2b2d42;
+}
+body.locked {
+	overflow: hidden;
+}
+main {
+	width: 100%;
+	max-width: 144rem;
+}
+main.locked {
+	user-select: none;
+	touch-action: none;
+	pointer-events: none;
+	filter: blur(0.4rem) brightness(0.6);
+}
+
+#main {
+	display: grid;
+	padding: 0 2.4rem;
+	place-items: center;
+}
+
+@media screen and (min-width: 76.8rem) {
+	#main {
+		padding: 0 12.8rem;
+	}
+}
