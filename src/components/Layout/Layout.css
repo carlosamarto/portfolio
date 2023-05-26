@@ -1,0 +1,22 @@
+main {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+main.locked {
+	user-select: none;
+	touch-action: none;
+	pointer-events: none;
+	filter: blur(0.4rem) brightness(0.6);
+}
+section {
+	width: 100%;
+	padding: 0 2.4rem;
+	min-height: 100vh;
+}
+
+@media screen and (min-width: 769px) {
+	section {
+		padding: 0;
+	}
+}

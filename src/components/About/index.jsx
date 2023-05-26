@@ -1,7 +1,7 @@
 import "./About.css";
 
 function About() {
-	return <></>;
+	return <><section></section></>;
 }
 
 export { About };
