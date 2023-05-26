@@ -1,8 +1,8 @@
 import "./App.css";
+import { Intro } from "../Screens";
 import { useState, useEffect } from "react";
-import { useScreenSize } from "../Hooks/useScreenSize";
-import { useHeaderScroll } from "../Hooks/useHeaderScroll";
-import { Header, Layout, Intro, About, Footer } from "../Components";
+import { Header, Layout, Footer } from "../Components";
+import { useScreenSize, useHeaderScroll } from "../Hooks";
 
 function App() {
 	// Screen Size - Validate Desktop
@@ -20,7 +20,7 @@ function App() {
 	}, [openMenu]);
 
 	// Menu Items - Items
-	const navMenuItems = [
+	const menuItems = [
 		{ id: "01", title: "Intro", name: "intro" },
 		{ id: "02", title: "About", name: "about" },
 		{ id: "03", title: "Experience", name: "experience" },
@@ -36,12 +36,11 @@ function App() {
 				setOpenMenu={setOpenMenu}
 				isHeaderVisible={isHeaderVisible}
 				prevScrollPos={prevScrollPos}
-				navMenuItems={navMenuItems}
+				menuItems={menuItems}
 			/>
 
 			<Layout openMenu={openMenu}>
 				<Intro />
-				<About />
 			</Layout>
 
 			<Footer />

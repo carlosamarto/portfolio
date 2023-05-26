@@ -6,10 +6,10 @@
 	position: fixed;
 	transition: all 0.4s ease-in-out;
 }
-.header.hide {
+.header.header--hide {
 	transform: translateY(-12rem);
 }
-.header.show .header--nav.header--shadow {
+.header.header--show .header--nav.header--nav_shadow {
 	box-shadow: rgba(0, 0, 0, 0.16) 0rem 1rem 3.6rem 0rem, rgba(0, 0, 0, 0.06) 0rem 0rem 0rem 0.1rem;
 }
 
@@ -27,7 +27,6 @@
 	display: flex;
 	align-items: center;
 }
-
 .header--nav_menu.header--nav_menu-mobile {
 	top: 0;
 	right: 0;
@@ -47,22 +46,6 @@
 .header--nav_menu.header--nav_menu-open {
 	visibility: visible;
 	transform: translateX(0vw);
-}
-
-.header--nav_menu li a {
-	color: #edf2f4;
-	font-size: 1.6rem;
-	line-height: 3.2rem;
-	transition: all 0.4s ease-in-out;
-}
-.header--nav_menu li a:hover {
-	color: #ef233c;
-}
-.header--nav_menu li span {
-	color: #ef233c;
-	font-size: 1.6rem;
-	line-height: 3.2rem;
-	font-family: "Fira Code", monospace;
 }
 
 .header--nav_icon {

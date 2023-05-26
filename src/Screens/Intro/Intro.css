@@ -5,76 +5,63 @@
 	justify-content: center;
 }
 
-.intro--titles {
+.intro div:first-child {
 	gap: 0.8rem;
 	display: flex;
 	flex-direction: column;
 }
-.intro--titles h1 {
-	line-height: 1;
-	font-size: 4rem;
+.intro h1 {
 	color: #edf2f4;
+	font-size: 3.6rem;
+	line-height: 4rem;
 }
-.intro--titles h2 {
+.intro h2 {
 	color: #8d99ae;
-	font-size: 3.2rem;
-	line-height: 3.6rem;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
 }
-
-.intro--button {
-	width: 18rem;
-	color: #ef233c;
-	font-size: 1.6rem;
-	text-align: center;
-	line-height: 2.4rem;
-	padding: 0.8rem 1.6rem;
-	border: 1px solid #ef233c;
-	background-color: transparent;
-	transition: all 0.4s ease-in-out;
-	font-family: "Fira Code", monospace;
-}
-.intro--button:hover {
-	background-color: rgba(239, 35, 60, 0.1);
-}
-
 .intro p {
 	color: #8d99ae;
-	font-size: 1.8rem;
-	line-height: 2.8rem;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
 	font-family: "Fira Code", monospace;
 }
 .intro p span {
 	color: #ef233c;
 }
-
-.intro--social {
-	gap: 1.6rem;
+.intro div:last-child {
+	gap: 1.2rem;
 	display: flex;
 }
-.intro--social a {
+.intro div:last-child a {
 	color: #ef233c;
 	font-size: 2.4rem;
 	line-height: 3.2rem;
 	transition: all 0.4s ease-in-out;
 }
-.intro--social a:hover {
+.intro div:last-child a:hover {
 	color: #d90429;
 	transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
-	.intro--titles h1 {
+	.intro {
+		gap: 2rem;
+	}
+
+	.intro h1 {
 		line-height: 1;
 		color: #edf2f4;
 		font-size: 6.4rem;
 	}
-	.intro--titles h2 {
+	.intro h2 {
 		line-height: 1;
 		color: #8d99ae;
 		font-size: 4.8rem;
 	}
-
 	.intro p {
 		max-width: 66rem;
+		font-size: 1.8rem;
+		line-height: 2.8rem;
 	}
 }

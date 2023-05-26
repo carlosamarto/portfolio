@@ -1,0 +1,22 @@
+.header--nav_menu li a {
+	color: #edf2f4;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	transition: all 0.4s ease-in-out;
+}
+.header--nav_menu li a:hover {
+	color: #ef233c;
+}
+.header--nav_menu li span {
+	color: #ef233c;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-family: "Fira Code", monospace;
+}
+
+@media screen and (min-width: 768px) {
+	.header--nav_menu li a {
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+	}
+}

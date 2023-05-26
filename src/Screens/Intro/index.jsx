@@ -1,11 +1,12 @@
 import "./Intro.css";
+import { Button } from "../../Components";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 function Intro() {
 	return (
 		<>
 			<section className="intro">
-				<div className="intro--titles">
+				<div>
 					<h1>Carlos Martínez.</h1>
 
 					<h2>My goal is to create cool things.</h2>
@@ -16,11 +17,9 @@ function Intro() {
 					Currently, I’m focused on being better at what I do and continuing to learn more.
 				</p>
 
-				<a href="#" className="intro--button">
-					Resume
-				</a>
+				<Button />
 
-				<div className="intro--social">
+				<div>
 					<a href="https://github.com/">
 						<BsGithub />
 					</a>

@@ -1,0 +1,15 @@
+.intro--button {
+	width: 18rem;
+	color: #ef233c;
+	font-size: 1.6rem;
+	text-align: center;
+	line-height: 2.4rem;
+	padding: 0.8rem 1.6rem;
+	border: 1px solid #ef233c;
+	background-color: transparent;
+	transition: all 0.4s ease-in-out;
+	font-family: "Fira Code", monospace;
+}
+.intro--button:hover {
+	background-color: rgba(239, 35, 60, 0.1);
+}
