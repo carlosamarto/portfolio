@@ -1,11 +1,16 @@
 import "./Button.css";
 
-function Button() {
+function Button({ text }) {
 	return (
 		<>
-			<a href="#" className="intro--button">
-				Resume
-			</a>
+			<div>
+				<button class="button">
+					<span class="button--inner">
+						<span class="button--inner_slide"></span>
+						<span class="button--inner_content">{text}</span>
+					</span>
+				</button>
+			</div>
 		</>
 	);
 }

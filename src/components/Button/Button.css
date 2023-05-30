@@ -1,15 +1,45 @@
-.intro--button {
-	width: 18rem;
+.button {
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	background: none;
 	color: #ef233c;
+	font-weight: bold;
 	font-size: 1.6rem;
-	text-align: center;
+	position: relative;
 	line-height: 2.4rem;
-	padding: 0.8rem 1.6rem;
-	border: 1px solid #ef233c;
-	background-color: transparent;
-	transition: all 0.4s ease-in-out;
-	font-family: "Fira Code", monospace;
+	transition: all 0.15s ease-in-out;
 }
-.intro--button:hover {
-	background-color: rgba(239, 35, 60, 0.1);
+.button:active,
+.button:focus {
+	outline: none;
+}
+.button--inner {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	padding: 1.2rem 3.2rem;
+	background-color: transparent;
+	border: 0.1rem solid #ef233c;
+	box-shadow: inset 0rem 0rem 0rem 0.1rem transparent;
+}
+.button--inner_slide {
+	top: 0;
+	width: 0;
+	left: -0.8rem;
+	display: block;
+	bottom: -0.1rem;
+	position: absolute;
+	transform: skew(-15deg);
+	background-color: #ef233c;
+	transition: all 0.2s ease-in-out;
+}
+.button--inner_content {
+	position: relative;
+}
+.button:hover {
+	color: #edf2f4;
+}
+.button:hover .button--inner_slide {
+	width: calc(100% + 2rem);
 }

@@ -4,7 +4,7 @@
 	z-index: 1;
 	width: 100%;
 	position: fixed;
-	transition: all 0.4s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .header.header--hide {
 	transform: translateY(-12rem);
@@ -19,7 +19,7 @@
 	align-items: center;
 	background-color: #2b2d42;
 	justify-content: space-between;
-	transition: all 0.4s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .header--nav_menu {
@@ -34,13 +34,11 @@
 	height: 100vh;
 	position: fixed;
 	visibility: hidden;
-	align-items: flex-end;
-	padding-right: 2.4rem;
 	flex-direction: column;
 	justify-content: center;
 	background-color: #2b2d42;
 	transform: translateX(100vw);
-	transition: all 0.4s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	box-shadow: rgba(0, 0, 0, 0.16) 0rem 1rem 3.6rem 0rem, rgba(0, 0, 0, 0.06) 0rem 0rem 0rem 0.1rem;
 }
 .header--nav_menu.header--nav_menu-open {
@@ -66,7 +64,7 @@
 	align-items: center;
 	background: #ef233c;
 	justify-content: center;
-	transition: all 0.4s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .header--nav_icon > div:after,
 .header--nav_icon > div:before {
@@ -78,7 +76,7 @@
 	height: 0.4rem;
 	position: absolute;
 	background: inherit;
-	transition: all 0.4s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .header--nav_icon > div:after {
 	width: 50%;

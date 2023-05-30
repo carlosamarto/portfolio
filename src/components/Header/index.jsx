@@ -1,5 +1,6 @@
 import "./Header.css";
 import { Logo } from "../Logo";
+import { Button } from "../Button";
 import { MenuItems } from "../MenuItems";
 
 function Header({ isDesktop, openMenu, setOpenMenu, isHeaderVisible, prevScrollPos, menuItems }) {
@@ -23,6 +24,10 @@ function Header({ isDesktop, openMenu, setOpenMenu, isHeaderVisible, prevScrollP
 					{isDesktop ? (
 						<ul className="header--nav_menu">
 							<MenuItems items={menuItems} />
+
+							<li>
+								<Button text="My Resume" />
+							</li>
 						</ul>
 					) : (
 						<ul
@@ -31,6 +36,10 @@ function Header({ isDesktop, openMenu, setOpenMenu, isHeaderVisible, prevScrollP
 							}`}
 						>
 							<MenuItems items={menuItems} />
+
+							<li>
+								<Button text="My Resume" />
+							</li>
 						</ul>
 					)}
 				</nav>
