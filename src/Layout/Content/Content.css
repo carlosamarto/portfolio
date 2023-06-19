@@ -1,22 +1,24 @@
-main {
-	width: 100%;
-	margin: 0 auto;
-	max-width: 102.4rem;
+.content {
+	min-height: 100vh;
 }
-main.main--locked {
+.content--locked.content {
 	user-select: none;
 	touch-action: none;
 	pointer-events: none;
 	filter: blur(0.4rem) brightness(0.6);
 }
-section {
+
+.article {
 	width: 100%;
+	margin: 0 auto;
 	padding: 0 2.4rem;
 	min-height: 100vh;
+	position: relative;
+	max-width: 107.6rem;
 }
 
 @media screen and (min-width: 768px) {
-	section {
+	.article {
 		padding: 0;
 	}
 }

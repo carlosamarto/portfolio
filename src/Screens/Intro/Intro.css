@@ -1,67 +1,50 @@
 .intro {
-	gap: 1.6rem;
+	gap: 2.4rem;
 	display: flex;
+	min-height: 100vh;
+	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 }
-
-.intro div:first-child {
-	gap: 0.8rem;
+.intro__titles {
+	gap: 0.4rem;
 	display: flex;
+	text-align: center;
+	align-items: center;
 	flex-direction: column;
+	justify-content: center;
 }
-.intro h1 {
+.intro__greetings {
+	color: #ef233c;
+	font-size: 1.8rem;
+}
+.intro__title {
 	color: #edf2f4;
-	font-size: 3.6rem;
-	line-height: 4rem;
+	font-size: 3.2rem;
 }
-.intro h2 {
+.intro__subtitle {
 	color: #8d99ae;
 	font-size: 2.4rem;
-	line-height: 3.2rem;
 }
-.intro p {
+.intro__description {
+	width: 100%;
 	color: #8d99ae;
 	font-size: 1.6rem;
-	line-height: 2.4rem;
-	font-family: "Fira Code", monospace;
+	text-align: center;
 }
 .intro p span {
 	color: #ef233c;
 }
-.intro div:last-child {
-	gap: 1.2rem;
-	display: flex;
-}
-.intro div:last-child a {
-	color: #ef233c;
-	font-size: 2.4rem;
-	line-height: 3.2rem;
-	transition: all 0.2s ease-in-out;
-}
-.intro div:last-child a:hover {
-	color: #d90429;
-	transform: scale(1.1);
-}
 
 @media screen and (min-width: 768px) {
-	.intro {
-		gap: 2rem;
+	.intro__title {
+		font-size: 8rem;
 	}
-
-	.intro h1 {
-		line-height: 1;
-		color: #edf2f4;
+	.intro__subtitle {
 		font-size: 6.4rem;
 	}
-	.intro h2 {
-		line-height: 1;
-		color: #8d99ae;
-		font-size: 4.8rem;
-	}
-	.intro p {
-		max-width: 64rem;
-		font-size: 1.8rem;
-		line-height: 2.8rem;
+	.intro__description {
+		width: 61rem;
 	}
 }
+

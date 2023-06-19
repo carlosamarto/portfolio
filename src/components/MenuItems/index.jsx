@@ -1,13 +1,20 @@
 import "./MenuItems.css";
 
-function MenuItems({ items }) {
+import { Button } from "../Button";
+
+function MenuItems({ headerContent }) {
 	return (
 		<>
-			{items.map((item) => (
-				<li key={item.name}>
-					<a href={`#${item.name}`}>
-						<span>{item.id}.</span> {item.title}
-					</a>
+			{headerContent.map((menuItem) => (
+				<li className="menu__item menu__item--fade-down" key={menuItem.name}>
+					{menuItem.name === "menu__button" ? (
+						<Button text={menuItem.title} size="small" />
+					) : (
+						<a className="menu-link" href={`#${menuItem.name}`}>
+							<span className="menu-link__number">{menuItem.id}.</span>
+							<span className="menu-link__title">{menuItem.title}</span>
+						</a>
+					)}
 				</li>
 			))}
 		</>

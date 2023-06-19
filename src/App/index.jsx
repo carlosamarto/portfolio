@@ -1,45 +1,56 @@
 import "./App.css";
+import { useHeaderScroll, useScreenSize } from "../Hooks";
 import { useState, useEffect } from "react";
-import { Header, Layout, Footer } from "../Components";
-import { useScreenSize, useHeaderScroll } from "../Hooks";
+import { Content, Footer, Header, Loader } from "../Layout";
+import { header, footer } from "../Mocks/appContent";
 
 function App() {
+	// Header Scroll - Visible Header on Scroll
+	const [isHeaderVisible, prevScrollPos] = useHeaderScroll();
+
 	// Screen Size - Validate Desktop Screen
 	const isDesktop = useScreenSize();
+
+	// Loader - State to show or hide the Loader
+	const [isLoading, setIsLoading] = useState(true);
 
 	// Header Menu - Open or Close Menu
 	const [openMenu, setOpenMenu] = useState(false);
 
-	// Header Scroll - Visible Header on Scroll
-	const [isHeaderVisible, prevScrollPos] = useHeaderScroll();
+	// App Content - Change Language
+	const [toggleLang, setToggleLang] = useState(false);
 
-	// Header Menu - Lock or Unlock Content
+	// useEffect
 	useEffect(() => {
-		document.body.classList.toggle("locked", openMenu);
-	}, [openMenu]);
+		// Header Menu - Lock or Unlock Content
+		document.body.classList.toggle("body--locked", openMenu);
 
-	// Menu Items - Array of Items in the Nav
-	const menuItems = [
-		{ id: "01", title: "Intro", name: "intro" },
-		{ id: "02", title: "About", name: "about" },
-		{ id: "04", title: "Work", name: "work" },
-		{ id: "05", title: "Contact", name: "contact" },
-	];
+		// Loader - Timeout to finish the loader
+		setTimeout(() => {
+			setIsLoading(false);
+		}, 3000);
+	}, [openMenu]);
 
 	return (
 		<>
-			<Header
-				isDesktop={isDesktop}
-				openMenu={openMenu}
-				setOpenMenu={setOpenMenu}
-				isHeaderVisible={isHeaderVisible}
-				prevScrollPos={prevScrollPos}
-				menuItems={menuItems}
-			/>
+			{isLoading ? (
+				<Loader />
+			) : (
+				<>
+					<Header
+						isHeaderVisible={isHeaderVisible}
+						prevScrollPos={prevScrollPos}
+						isDesktop={isDesktop}
+						openMenu={openMenu}
+						setOpenMenu={setOpenMenu}
+						headerContent={toggleLang ? header.contentEs : header.contentEn}
+					/>
 
-			<Layout openMenu={openMenu}></Layout>
+					<Content openMenu={openMenu}></Content>
 
-			<Footer />
+					<Footer toggleLang={toggleLang} setToggleLang={setToggleLang} footerContent={toggleLang ? footer.contentEs : footer.contentEn} />
+				</>
+			)}
 		</>
 	);
 }

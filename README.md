@@ -1,7 +1,7 @@
 ## 📄 Intro
 
 <div align="center">
-   My Portfolio <br><br>
+   My personal website <br><br>
 </div>
 
 [![Portfolio](./public/preview.png)](https://www.carlosmrtzo.com/)
