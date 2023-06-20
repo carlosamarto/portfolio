@@ -2,21 +2,19 @@ import "./Intro.css";
 
 import { Button } from "../../Components";
 
-function Intro({ setToggleLang, introContent }) {
+function Intro({ introContent }) {
 	return (
 		<>
 			<section id="intro" className="intro">
-				<div className="intro__titles">
-					<span className="intro__greetings">{introContent.greetings}</span>
+				<div className="intro__container">
+					<span className="intro__text intro__text--fade-up">{introContent.text}</span>
 
-					<h1 className="intro__title" onClick={() => setToggleLang((prevState) => !prevState)}>
-						{introContent.title}
-					</h1>
+					<h1 className="intro__title intro__title--fade-up">{introContent.title}</h1>
 
-					<h2 className="intro__subtitle">{introContent.subtitle}</h2>
+					<h2 className="intro__subtitle intro__subtitle--fade-up">{introContent.subtitle}</h2>
 				</div>
 
-				<div>
+				<div className="intro__button">
 					<Button text={introContent.ctaButton} size="big" />
 				</div>
 			</section>

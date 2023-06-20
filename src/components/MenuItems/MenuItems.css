@@ -3,7 +3,7 @@
 }
 .menu__item--fade-down {
 	opacity: 0;
-	transform: translateY(-4rem);
+	transform: translateY(-8rem);
 	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 .menu__item--fade-down:nth-child(1) {
@@ -21,19 +21,18 @@
 .menu__item--fade-down:nth-child(5) {
 	animation: fade-down 0.5s ease-out 1s 1 normal forwards;
 }
-
-.menu-link {
+.menu__link {
 	gap: 0.4rem;
 	display: flex;
 	align-items: baseline;
 	text-decoration: none;
 	font-family: "Fira Code", monospace;
 }
-.menu-link__number {
+.menu__number {
 	color: #ef233c;
 	font-size: 1.4rem;
 }
-.menu-link__title {
+.menu__title {
 	color: #edf2f4;
 	overflow: hidden;
 	font-size: 1.4rem;
@@ -48,14 +47,14 @@
 	background-size: 200% 100%;
 	transition: all 0.2s ease-in-out;
 }
-.menu-link:hover .menu-link__title {
+.menu__link:hover .menu__title {
 	background-position: 0 100%;
 }
 
 @keyframes fade-down {
 	0% {
 		opacity: 0;
-		transform: translateY(-4rem);
+		transform: translateY(-8rem);
 	}
 	100% {
 		opacity: 1;

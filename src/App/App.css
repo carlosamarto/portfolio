@@ -6,18 +6,18 @@
 	box-sizing: border-box;
 }
 
-.page,
-.main,
-.body {
-	min-height: 100vh;
-}
 .page {
+	min-height: 100vh;
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
 .body {
+	min-height: 100vh;
 	background-color: #2b2d42;
 }
-.body--locked.body {
+.body--locked {
 	overflow: hidden;
+}
+.main {
+	min-height: 100vh;
 }

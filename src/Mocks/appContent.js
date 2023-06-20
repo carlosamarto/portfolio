@@ -17,7 +17,7 @@ export const header = {
 
 export const intro = {
 	contentEn: {
-		greetings: "Hi, my name is",
+		text: "Hi, my name is",
 		title: "Carlos Martinez",
 		subtitle: "My goal is to create cool things",
 		description:
@@ -25,7 +25,7 @@ export const intro = {
 		ctaButton: "Get in Contact",
 	},
 	contentEs: {
-		greetings: "Hola, mi nombre es",
+		text: "Hola, mi nombre es",
 		title: "Carlos Martinez",
 		subtitle: "Mi objetivo es crear cosas geniales.",
 		description:
@@ -35,10 +35,18 @@ export const intro = {
 };
 
 export const footer = {
+	social: {
+		github: "https://github.com/carlosmrtzor",
+		instagram: "https://www.instagram.com/devilsncry3/",
+		twitter: "https://twitter.com/devilsncry3",
+		linkedin: "https://www.linkedin.com/in/carlosmrtzo/",
+	},
 	contentEn: {
+		lang: "ES",
 		link: "Designed & Built by Carlos Martínez",
 	},
 	contentEs: {
+		lang: "EN",
 		link: "Diseñado y Construido por Carlos Martínez",
 	},
 };

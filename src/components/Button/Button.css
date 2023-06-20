@@ -9,12 +9,6 @@
 	transition: all 0.2s ease-in-out;
 	font-family: "Fira Code", monospace;
 }
-.button--small.button {
-	font-size: 1.4rem;
-}
-.button--big.button {
-	font-size: 1.8rem;
-}
 .button:active,
 .button:focus {
 	outline: none;
@@ -22,7 +16,12 @@
 .button:hover {
 	color: #edf2f4;
 }
-
+.button--small {
+	font-size: 1.4rem;
+}
+.button--big {
+	font-size: 1.8rem;
+}
 .button__inner {
 	display: block;
 	overflow: hidden;
@@ -32,13 +31,12 @@
 	border: 0.1rem solid #ef233c;
 	box-shadow: inset 0rem 0rem 0rem 0.1rem transparent;
 }
-.button.button--small .button__inner {
+.button--small .button__inner {
 	padding: 1.2rem 2.4rem;
 }
-.button.button--big .button__inner {
+.button--big .button__inner {
 	padding: 1.6rem 3.2rem;
 }
-
 .button__slide {
 	top: 0;
 	width: 0;
@@ -52,7 +50,6 @@
 .button:hover .button__slide {
 	width: calc(100% + 2rem);
 }
-
 .button__content {
 	position: relative;
 }

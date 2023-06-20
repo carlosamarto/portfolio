@@ -1,7 +1,7 @@
 .content {
 	min-height: 100vh;
 }
-.content--locked.content {
+.content--locked {
 	user-select: none;
 	touch-action: none;
 	pointer-events: none;

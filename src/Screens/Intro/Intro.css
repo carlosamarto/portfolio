@@ -1,50 +1,87 @@
 .intro {
-	gap: 2.4rem;
+	gap: 3.2rem;
 	display: flex;
 	min-height: 100vh;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 }
-.intro__titles {
-	gap: 0.4rem;
+.intro__container {
+	gap: 0.8rem;
 	display: flex;
 	text-align: center;
-	align-items: center;
 	flex-direction: column;
-	justify-content: center;
 }
-.intro__greetings {
+.intro__text {
 	color: #ef233c;
+	font-weight: 500;
 	font-size: 1.8rem;
+	font-family: "Fira Code", monospace;
+}
+.intro__text--fade-up {
+	opacity: 0;
+	transform: translateY(8rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.intro__text--fade-up {
+	animation: fade-up 0.5s ease-out 1.6s 1 normal forwards;
 }
 .intro__title {
 	color: #edf2f4;
+	font-weight: 700;
 	font-size: 3.2rem;
+	font-family: "Inter", sans-serif;
+}
+.intro__title--fade-up {
+	opacity: 0;
+	transform: translateY(8rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.intro__title--fade-up {
+	animation: fade-up 0.5s ease-out 1.8s 1 normal forwards;
 }
 .intro__subtitle {
 	color: #8d99ae;
+	font-weight: 700;
 	font-size: 2.4rem;
+	font-family: "Inter", sans-serif;
 }
-.intro__description {
-	width: 100%;
-	color: #8d99ae;
-	font-size: 1.6rem;
-	text-align: center;
+.intro__subtitle--fade-up {
+	opacity: 0;
+	transform: translateY(8rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
-.intro p span {
-	color: #ef233c;
+.intro__subtitle--fade-up {
+	animation: fade-up 0.5s ease-out 2s 1 normal forwards;
+}
+.intro__button {
+	opacity: 0;
+	transform: translateY(8rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.intro__button {
+	animation: fade-up 0.5s ease-out 2.2s 1 normal forwards;
 }
 
 @media screen and (min-width: 768px) {
+	.intro__container {
+		gap: 0;
+	}
 	.intro__title {
 		font-size: 8rem;
 	}
 	.intro__subtitle {
 		font-size: 6.4rem;
 	}
-	.intro__description {
-		width: 61rem;
-	}
 }
 
+@keyframes fade-up {
+	0% {
+		opacity: 0;
+		transform: translateY(8rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

@@ -10,9 +10,9 @@ function MenuItems({ headerContent }) {
 					{menuItem.name === "menu__button" ? (
 						<Button text={menuItem.title} size="small" />
 					) : (
-						<a className="menu-link" href={`#${menuItem.name}`}>
-							<span className="menu-link__number">{menuItem.id}.</span>
-							<span className="menu-link__title">{menuItem.title}</span>
+						<a className="menu__link" href={`#${menuItem.name}`}>
+							<span className="menu__number">{menuItem.id}.</span>
+							<span className="menu__title">{menuItem.title}</span>
 						</a>
 					)}
 				</li>

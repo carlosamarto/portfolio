@@ -2,7 +2,8 @@ import "./App.css";
 import { useHeaderScroll, useScreenSize } from "../Hooks";
 import { useState, useEffect } from "react";
 import { Content, Footer, Header, Loader } from "../Layout";
-import { header, footer } from "../Mocks/appContent";
+import { Intro } from "../Screens";
+import { header, intro, footer } from "../Mocks/appContent";
 
 function App() {
 	// Header Scroll - Visible Header on Scroll
@@ -46,9 +47,16 @@ function App() {
 						headerContent={toggleLang ? header.contentEs : header.contentEn}
 					/>
 
-					<Content openMenu={openMenu}></Content>
+					<Content openMenu={openMenu}>
+						<Intro introContent={toggleLang ? intro.contentEs : intro.contentEn} />
+					</Content>
 
-					<Footer toggleLang={toggleLang} setToggleLang={setToggleLang} footerContent={toggleLang ? footer.contentEs : footer.contentEn} />
+					<Footer
+						toggleLang={toggleLang}
+						setToggleLang={setToggleLang}
+						footerContent={toggleLang ? footer.contentEs : footer.contentEn}
+						social={footer.social}
+					/>
 				</>
 			)}
 		</>

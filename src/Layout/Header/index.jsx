@@ -5,17 +5,17 @@ function Header({ isHeaderVisible, prevScrollPos, isDesktop, openMenu, setOpenMe
 	return (
 		<>
 			<header className={`header ${isHeaderVisible ? "header--show" : "header--hide"}`}>
-				<nav className={`nav ${prevScrollPos > 0 ? "nav--shadow" : "nav--initial"}`}>
-					<a href="/" className="logo">
+				<nav className={`header__nav ${prevScrollPos > 0 ? "header__nav--shadow" : "header__nav--initial"}`}>
+					<a href="/" className="logo logo--fade-down">
 						C
 					</a>
 
 					{!isDesktop && (
 						<div
-							className={`menu-icon menu-icon--fade-down ${openMenu ? "menu-icon--open" : "menu-icon--close"}`}
+							className={`hamburger hamburger--fade-down ${openMenu ? "hamburger--open" : "hamburger--close"}`}
 							onClick={() => setOpenMenu((prevState) => !prevState)}
 						>
-							<div className="menu-icon__inner"></div>
+							<div className="hamburger__inner"></div>
 						</div>
 					)}
 
