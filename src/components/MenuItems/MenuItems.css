@@ -21,20 +21,22 @@
 .menu__item--fade-down:nth-child(5) {
 	animation: fade-down 0.5s ease-out 1s 1 normal forwards;
 }
-.menu__link {
+.item {
 	gap: 0.4rem;
 	display: flex;
 	align-items: baseline;
 	text-decoration: none;
 	font-family: "Fira Code", monospace;
 }
-.menu__number {
+.item__number {
 	color: #ef233c;
+	font-weight: 500;
 	font-size: 1.4rem;
 }
-.menu__title {
+.item__title {
 	color: #edf2f4;
 	overflow: hidden;
+	font-weight: 500;
 	font-size: 1.4rem;
 	position: relative;
 	display: inline-block;
@@ -47,7 +49,7 @@
 	background-size: 200% 100%;
 	transition: all 0.2s ease-in-out;
 }
-.menu__link:hover .menu__title {
+.item:hover .item__title {
 	background-position: 0 100%;
 }
 

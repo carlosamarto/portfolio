@@ -21,11 +21,11 @@ function Header({ isHeaderVisible, prevScrollPos, isDesktop, openMenu, setOpenMe
 
 					{isDesktop ? (
 						<ul className="menu">
-							<MenuItems headerContent={headerContent} />
+							<MenuItems className="menu__item--fade-down" headerContent={headerContent} />
 						</ul>
 					) : (
 						<ul className={`menu menu--mobile ${openMenu ? "menu--open" : "menu--close"}`}>
-							<MenuItems headerContent={headerContent} />
+							<MenuItems className="menu__item--fade-down" headerContent={headerContent} />
 						</ul>
 					)}
 				</nav>

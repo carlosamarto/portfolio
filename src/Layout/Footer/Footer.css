@@ -18,18 +18,17 @@
 	opacity: 0;
 	transform: translateX(-8rem);
 	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-.footer__social--fade-left {
 	animation: fade-left 0.5s ease-out 1.2s 1 normal forwards;
 }
 .footer__credits {
-	color: #edf2f4;
+	color: #ef233c;
 	overflow: hidden;
+	font-weight: 500;
 	font-size: 1.6rem;
 	position: relative;
 	display: inline-block;
 	text-decoration: none;
-	background: linear-gradient(to right, #ef233c, #ef233c 50%, #edf2f4 50%);
+	background: linear-gradient(to right, #d90429, #d90429 50%, #ef233c 50%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -43,6 +42,7 @@
 }
 .footer__lang {
 	color: #ef233c;
+	font-weight: 500;
 	font-size: 1.8rem;
 	transition: all 0.2s ease-in-out;
 	font-family: "Fira Code", monospace;
@@ -54,17 +54,14 @@
 	opacity: 0;
 	transform: translateX(8rem);
 	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-.footer__lang--fade-right {
 	animation: fade-right 0.5s ease-out 1.4s 1 normal forwards;
 }
 
-.icon {
+.social {
 	color: #ef233c;
-	font-size: 2.4rem;
 	transition: all 0.2s ease-in-out;
 }
-.icon:hover {
+.social:hover {
 	color: #d90429;
 	transform: translateY(-0.4rem);
 }

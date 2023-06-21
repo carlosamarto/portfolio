@@ -4,6 +4,7 @@
 	cursor: pointer;
 	background: none;
 	color: #ef233c;
+	font-weight: 500;
 	font-size: 1.6rem;
 	position: relative;
 	transition: all 0.2s ease-in-out;

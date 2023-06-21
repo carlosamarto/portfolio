@@ -6,25 +6,25 @@ function Footer({ setToggleLang, footerContent, social }) {
 		<>
 			<footer className="footer">
 				<div className="footer__social footer__social--fade-left">
-					<a href={social.github} className="icon">
-						<SlSocialGithub className="icon__github" />
+					<a href={social.github} className="social">
+						<SlSocialGithub size="2.4rem" className="social__github" />
 					</a>
 
-					<a href={social.instagram} className="icon">
-						<SlSocialInstagram className="icon__instagram" />
+					<a href={social.instagram} className="social">
+						<SlSocialInstagram size="2.4rem" className="social__instagram" />
 					</a>
 
-					<a href={social.twitter} className="icon">
-						<SlSocialTwitter className="icon__twitter" />
+					<a href={social.twitter} className="social">
+						<SlSocialTwitter size="2.4rem" className="social__twitter" />
 					</a>
 
-					<a href={social.linkedin} className="icon">
-						<SlSocialLinkedin className="icon__linkedin" />
+					<a href={social.linkedin} className="social">
+						<SlSocialLinkedin size="2.4rem" className="social__linkedin" />
 					</a>
 				</div>
 
-				<a href="#" className="footer__credits">
-					{footerContent.link}
+				<a href={footerContent.link} className="footer__credits">
+					{footerContent.credits}
 				</a>
 
 				<span

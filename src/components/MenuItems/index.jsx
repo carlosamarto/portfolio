@@ -2,17 +2,17 @@ import "./MenuItems.css";
 
 import { Button } from "../Button";
 
-function MenuItems({ headerContent }) {
+function MenuItems({ className, headerContent }) {
 	return (
 		<>
 			{headerContent.map((menuItem) => (
-				<li className="menu__item menu__item--fade-down" key={menuItem.name}>
+				<li className={`${className ? `menu__item ${className}` : "menu__item"}`} key={menuItem.name}>
 					{menuItem.name === "menu__button" ? (
-						<Button text={menuItem.title} size="small" />
+						<Button size="small" text={menuItem.title} />
 					) : (
-						<a className="menu__link" href={`#${menuItem.name}`}>
-							<span className="menu__number">{menuItem.id}.</span>
-							<span className="menu__title">{menuItem.title}</span>
+						<a className="item" href={`#${menuItem.name}`}>
+							<span className="item__number">{menuItem.id}.</span>
+							<span className="item__title">{menuItem.title}</span>
 						</a>
 					)}
 				</li>

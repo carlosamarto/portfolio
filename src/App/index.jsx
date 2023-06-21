@@ -26,11 +26,14 @@ function App() {
 		// Header Menu - Lock or Unlock Content
 		document.body.classList.toggle("body--locked", openMenu);
 
+		// App Content - Change lang in HTML tag
+		document.documentElement.lang = toggleLang ? "es" : "en";
+
 		// Loader - Timeout to finish the loader
 		setTimeout(() => {
 			setIsLoading(false);
 		}, 3000);
-	}, [openMenu]);
+	}, [openMenu, toggleLang]);
 
 	return (
 		<>

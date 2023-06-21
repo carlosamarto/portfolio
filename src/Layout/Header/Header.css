@@ -31,8 +31,6 @@
 	opacity: 0;
 	transform: translateY(-8rem);
 	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-.logo--fade-down {
 	animation: fade-down 0.5s ease-out 0s 1 normal forwards;
 }
 
@@ -50,8 +48,6 @@
 	opacity: 0;
 	transform: translateY(-8rem);
 	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-.hamburger--fade-down {
 	animation: fade-down 0.5s ease-out 0.2s 1 normal forwards;
 }
 .hamburger__inner {

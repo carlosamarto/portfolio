@@ -6,17 +6,16 @@ function Intro({ introContent }) {
 	return (
 		<>
 			<section id="intro" className="intro">
-				<div className="intro__container">
-					<span className="intro__text intro__text--fade-up">{introContent.text}</span>
+				<span className="intro__subtitle intro__subtitle--fade-up">{introContent.text}</span>
 
-					<h1 className="intro__title intro__title--fade-up">{introContent.title}</h1>
+				<h1 className="intro__title intro__title--fade-up">{introContent.title}</h1>
 
-					<h2 className="intro__subtitle intro__subtitle--fade-up">{introContent.subtitle}</h2>
-				</div>
+				<p
+					className="intro__description intro__description--fade-up"
+					dangerouslySetInnerHTML={{ __html: introContent.description }}
+				/>
 
-				<div className="intro__button">
-					<Button text={introContent.ctaButton} size="big" />
-				</div>
+				<Button className="button--fade-up" size="big" text={introContent.ctaButton} />
 			</section>
 		</>
 	);

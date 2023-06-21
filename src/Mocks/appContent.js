@@ -2,35 +2,33 @@ export const header = {
 	contentEn: [
 		{ id: "01", title: "Intro", name: "intro" },
 		{ id: "02", title: "About", name: "about" },
-		{ id: "04", title: "Work", name: "work" },
-		{ id: "05", title: "Contact", name: "contact" },
-		{ id: "06", title: "My Resume", name: "menu__button" },
+		{ id: "03", title: "Projects", name: "project" },
+		{ id: "04", title: "Contact", name: "contact" },
+		{ id: "05", title: "Resume", name: "menu__button" },
 	],
 	contentEs: [
 		{ id: "01", title: "Introducción", name: "intro" },
-		{ id: "02", title: "Sobre mi", name: "about" },
-		{ id: "04", title: "Mi Trabajo", name: "work" },
-		{ id: "05", title: "Contacto", name: "contact" },
-		{ id: "06", title: "Mi Curriculum", name: "menu__button" },
+		{ id: "02", title: "Sobre mí", name: "about" },
+		{ id: "03", title: "Proyectos", name: "project" },
+		{ id: "04", title: "Contacto", name: "contact" },
+		{ id: "05", title: "Curriculum", name: "menu__button" },
 	],
 };
 
 export const intro = {
 	contentEn: {
 		text: "Hi, my name is",
-		title: "Carlos Martinez",
-		subtitle: "My goal is to create cool things",
+		title: "Carlos Martínez.",
 		description:
-			"I’m a <span>Front End Developer</span> specialized in creating cool and unique style websites and interfaces. Currently, I’m focused on being better at what I do and continuing to learn more.",
+			"<strong class='intro__strong'>Front-End Developer</strong> passionate about creating web pages that stand out for their great style.",
 		ctaButton: "Get in Contact",
 	},
 	contentEs: {
-		text: "Hola, mi nombre es",
-		title: "Carlos Martinez",
-		subtitle: "Mi objetivo es crear cosas geniales.",
+		text: "Hola, me llamo",
+		title: "Carlos Martínez.",
 		description:
-			"Soy un <span>Desarrollador Front-End</span> especializado en crear sitios web e interfaces de estilo genial y único. Actualmente, estoy enfocado en ser mejor en lo que hago y seguir aprendiendo más.",
-		ctaButton: "Ponerse en contacto",
+			"<strong class='intro__strong'>Front-End Developer</strong> apasionado en crear páginas webs que destaquen por su gran estilo.",
+		ctaButton: "Contáctame",
 	},
 };
 
@@ -43,10 +41,12 @@ export const footer = {
 	},
 	contentEn: {
 		lang: "ES",
-		link: "Designed & Built by Carlos Martínez",
+		credits: "Designed & Built by Carlos Martínez",
+		link: "https://github.com/carlosmrtzor/portfolio",
 	},
 	contentEs: {
 		lang: "EN",
-		link: "Diseñado y Construido por Carlos Martínez",
+		credits: "Diseñado y Construido por Carlos Martínez",
+		link: "https://github.com/carlosmrtzor/portfolio",
 	},
 };
