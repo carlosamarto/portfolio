@@ -2,7 +2,7 @@ import "./App.css";
 import { useHeaderScroll, useScreenSize } from "../Hooks";
 import { useState, useEffect } from "react";
 import { Content, Footer, Header, Loader } from "../Layout";
-import { Intro } from "../Screens";
+import { Intro } from "../Sections";
 import { header, intro, footer } from "../Mocks/appContent";
 
 function App() {
@@ -55,6 +55,7 @@ function App() {
 					</Content>
 
 					<Footer
+						openMenu={openMenu}
 						toggleLang={toggleLang}
 						setToggleLang={setToggleLang}
 						footerContent={toggleLang ? footer.contentEs : footer.contentEn}

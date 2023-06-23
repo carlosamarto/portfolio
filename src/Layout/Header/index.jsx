@@ -1,33 +1,38 @@
 import "./Header.css";
-import { MenuItems } from "../../Components/";
+import { Button } from "../../Components/";
 
 function Header({ isHeaderVisible, prevScrollPos, isDesktop, openMenu, setOpenMenu, headerContent }) {
 	return (
 		<>
 			<header className={`header ${isHeaderVisible ? "header--show" : "header--hide"}`}>
-				<nav className={`header__nav ${prevScrollPos > 0 ? "header__nav--shadow" : "header__nav--initial"}`}>
+				<nav className={`${prevScrollPos > 0 ? "nav nav--overlay" : "nav"}`}>
 					<a href="/" className="logo logo--fade-down">
 						C
 					</a>
 
 					{!isDesktop && (
 						<div
-							className={`hamburger hamburger--fade-down ${openMenu ? "hamburger--open" : "hamburger--close"}`}
+							className={`${openMenu ? "hamburger hamburger--animate" : "hamburger"} hamburger--fade-down`}
 							onClick={() => setOpenMenu((prevState) => !prevState)}
 						>
 							<div className="hamburger__inner"></div>
 						</div>
 					)}
 
-					{isDesktop ? (
-						<ul className="menu">
-							<MenuItems className="menu__item--fade-down" headerContent={headerContent} />
-						</ul>
-					) : (
-						<ul className={`menu menu--mobile ${openMenu ? "menu--open" : "menu--close"}`}>
-							<MenuItems className="menu__item--fade-down" headerContent={headerContent} />
-						</ul>
-					)}
+					<ul className={`${openMenu ? "menu menu--mobile" : "menu"}`}>
+						{headerContent.menu.map((menuItem) => (
+							<li className="menu__item menu__item--fade-down" key={menuItem.name}>
+								<a className="menu__link" href={`#${menuItem.name}`}>
+									<span className="menu__number">{menuItem.id}.</span>
+									<span className="menu__text">{menuItem.title}</span>
+								</a>
+							</li>
+						))}
+
+						<li className="menu__item menu__item--fade-down">
+							<Button link={headerContent.link} size="small" text={headerContent.button} />
+						</li>
+					</ul>
 				</nav>
 			</header>
 		</>
