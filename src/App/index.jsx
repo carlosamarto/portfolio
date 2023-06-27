@@ -1,43 +1,52 @@
 import "./App.css";
-import { useHeaderScroll, useScreenSize } from "../Hooks";
-import { useState, useEffect } from "react";
+import { useHeaderScroll, useLoadingContent, useOpenMenu, useScreenSize, useToggleLang } from "../Hooks";
 import { Content, Footer, Header, Loader } from "../Layout";
-import { Intro } from "../Sections";
-import { header, intro, footer } from "../Mocks/appContent";
+import { Intro, About } from "../Sections";
+import { appContent } from "../Mocks";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
-	// Header Scroll - Visible Header on Scroll
+	// Visible header on scroll
 	const [isHeaderVisible, prevScrollPos] = useHeaderScroll();
 
-	// Screen Size - Validate Desktop Screen
+	// Validate loading state
+	const isLoadingContent = useLoadingContent();
+
+	// Open / Close menu
+	const [openMenu, setOpenMenu] = useOpenMenu();
+
+	// Validate desktop screen
 	const isDesktop = useScreenSize();
 
-	// Loader - State to show or hide the Loader
-	const [isLoading, setIsLoading] = useState(true);
+	// Change website language
+	const [lang, toggleLang] = useToggleLang("LANG_V1", "en");
 
-	// Header Menu - Open or Close Menu
-	const [openMenu, setOpenMenu] = useState(false);
+	// Set content language
+	const data = lang === "en" ? appContent.english : appContent.spanish;
 
-	// App Content - Change Language
-	const [toggleLang, setToggleLang] = useState(false);
+	const sectionRef = useRef(null);
+	const [isVisible, setIsVisible] = useState(false);
 
-	// useEffect
 	useEffect(() => {
-		// Header Menu - Lock or Unlock Content
-		document.body.classList.toggle("body--locked", openMenu);
+		const handleScroll = () => {
+			const scrollPosition = window.scrollY + window.innerHeight;
+			const sectionPosition = sectionRef.current.offsetTop;
 
-		// App Content - Change lang in HTML tag
-		document.documentElement.lang = toggleLang ? "es" : "en";
+			if (scrollPosition > sectionPosition) {
+				setIsVisible(true);
+			}
+		};
 
-		// Loader - Timeout to finish the loader
-		setTimeout(() => {
-			setIsLoading(false);
-		}, 3000);
-	}, [openMenu, toggleLang]);
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
 	return (
 		<>
-			{isLoading ? (
+			{isLoadingContent ? (
 				<Loader />
 			) : (
 				<>
@@ -47,19 +56,29 @@ function App() {
 						isDesktop={isDesktop}
 						openMenu={openMenu}
 						setOpenMenu={setOpenMenu}
-						headerContent={toggleLang ? header.contentEs : header.contentEn}
+						menuLinks={appContent.menuLinks}
+						data={data.header}
 					/>
 
 					<Content openMenu={openMenu}>
-						<Intro introContent={toggleLang ? intro.contentEs : intro.contentEn} />
+						<Intro titleName={appContent.titleName} linkButton={appContent.menuLinks[3].link} data={data.intro} />
+
+						<About
+							profileImage={appContent.profileImage}
+							skills={appContent.skills}
+							isVisible={isVisible}
+							sectionRef={sectionRef}
+							data={data.about}
+						/>
 					</Content>
 
 					<Footer
 						openMenu={openMenu}
+						lang={lang}
 						toggleLang={toggleLang}
-						setToggleLang={setToggleLang}
-						footerContent={toggleLang ? footer.contentEs : footer.contentEn}
-						social={footer.social}
+						social={appContent.social}
+						portfolioLink={appContent.portfolioLink}
+						data={data.footer}
 					/>
 				</>
 			)}

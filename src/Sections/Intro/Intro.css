@@ -15,6 +15,8 @@
 }
 .intro__text {
 	color: #ef233c;
+	font-weight: 500;
+	line-height: 1.5;
 	font-size: 1.8rem;
 	text-align: center;
 	font-family: "Fira Code", monospace;
@@ -26,7 +28,7 @@
 	line-height: 1;
 	color: #edf2f4;
 	font-weight: 700;
-	font-size: 3.2rem;
+	font-size: 2.4rem;
 	text-align: center;
 	font-family: "Inter", sans-serif;
 }
@@ -36,6 +38,7 @@
 .intro__description {
 	color: #8d99ae;
 	font-weight: 500;
+	line-height: 1.5;
 	font-size: 1.6rem;
 	text-align: center;
 	font-family: "Fira Code", monospace;
@@ -51,8 +54,8 @@
 .button--fade-up {
 	opacity: 0;
 	transform: translateY(8rem);
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 	animation: fade-up 0.6s ease-out 1.2s 1 normal forwards;
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 @media screen and (min-width: 768px) {

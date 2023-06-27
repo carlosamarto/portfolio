@@ -2,20 +2,20 @@ import "./Intro.css";
 
 import { Button } from "../../Components";
 
-function Intro({ introContent }) {
+function Intro({ titleName, linkButton, data }) {
 	return (
 		<>
 			<section id="intro" className="intro">
-				<span className="intro__text intro__text--fade-up">{introContent.text}</span>
+				<span className="intro__text intro__text--fade-up">{data.title}</span>
 
-				<h1 className="intro__title intro__title--fade-up">Carlos Martínez</h1>
+				<h1 className="intro__title intro__title--fade-up">{titleName}</h1>
 
 				<p
 					className="intro__description intro__description--fade-up"
-					dangerouslySetInnerHTML={{ __html: introContent.description }}
+					dangerouslySetInnerHTML={{ __html: data.description }}
 				/>
 
-				<Button link="#contact" className="button--fade-up" size="big" text={introContent.button} />
+				<Button link={linkButton} className="button--fade-up" size="big" text={data.textButton} />
 			</section>
 		</>
 	);

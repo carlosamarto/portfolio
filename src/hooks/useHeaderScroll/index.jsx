@@ -1,36 +1,45 @@
 import { useState, useEffect } from "react";
 
-const useHeaderScroll = () => {
-	// Header Visible - Store Visibility
+function useHeaderScroll() {
+	// Store header visibility
 	const [isHeaderVisible, setIsHeaderVisible] = useState(true);
 
-	// Previous Scroll - Value
+	// Store previous scroll position
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 
-	// Scroll Events - Update Header
+	// Update header visibility
 	useEffect(() => {
+		// Handle scroll events
 		const handleScroll = () => {
 			const currentScrollPos = window.pageYOffset;
 
+			// Check if at the top of the page
 			if (currentScrollPos === 0) {
 				setIsHeaderVisible(true);
-			} else if (prevScrollPos < currentScrollPos && isHeaderVisible) {
+			}
+			// Scrolling down & header is visible
+			else if (prevScrollPos < currentScrollPos && isHeaderVisible) {
 				setIsHeaderVisible(false);
-			} else if (prevScrollPos > currentScrollPos && !isHeaderVisible) {
+			}
+			// Scrolling up & header is not visible
+			else if (prevScrollPos > currentScrollPos && !isHeaderVisible) {
 				setIsHeaderVisible(true);
 			}
 
+			// Update the previous scroll position
 			setPrevScrollPos(currentScrollPos);
 		};
 
+		// Add scroll event listener
 		window.addEventListener("scroll", handleScroll);
 
+		// Cleanup to remove scroll event listener
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, [isHeaderVisible, prevScrollPos]);
 
 	return [isHeaderVisible, prevScrollPos];
-};
+}
 
 export { useHeaderScroll };

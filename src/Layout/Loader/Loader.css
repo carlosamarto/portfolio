@@ -2,6 +2,7 @@
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	line-height: 1;
 	color: #ef233c;
 	font-size: 6.4rem;
 	align-items: center;

@@ -1,16 +1,22 @@
 import { useState, useEffect } from "react";
 
 function useScreenSize() {
-	// Min Width - Store Desktop
+	// Store desktop screen size
 	const [isDesktop, setIsDesktop] = useState(window.matchMedia("(min-width: 768px)").matches);
 
-	// Detect Changes - in Window Size
+	// Window size
 	useEffect(() => {
-		const mediaQuery = window.matchMedia("(min-width: 768px)");
-		const handleMediaQueryChange = (e) => setIsDesktop(e.matches);
+		// Desktop screen size
+		const screenSize = window.matchMedia("(min-width: 768px)");
 
-		mediaQuery.addListener(handleMediaQueryChange);
-		return () => mediaQuery.removeListener(handleMediaQueryChange);
+		// Handle changes in the screen size
+		const handleScreenSizeChange = (e) => setIsDesktop(e.matches);
+
+		// Add a listener for changes
+		screenSize.addListener(handleScreenSizeChange);
+
+		// Remove the listener
+		return () => screenSize.removeListener(handleScreenSizeChange);
 	}, []);
 
 	return isDesktop;

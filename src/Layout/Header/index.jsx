@@ -1,7 +1,7 @@
 import "./Header.css";
 import { Button } from "../../Components/";
 
-function Header({ isHeaderVisible, prevScrollPos, isDesktop, openMenu, setOpenMenu, headerContent }) {
+function Header({ isHeaderVisible, prevScrollPos, isDesktop, openMenu, setOpenMenu, menuLinks, data }) {
 	return (
 		<>
 			<header className={`header ${isHeaderVisible ? "header--show" : "header--hide"}`}>
@@ -20,17 +20,17 @@ function Header({ isHeaderVisible, prevScrollPos, isDesktop, openMenu, setOpenMe
 					)}
 
 					<ul className={`${openMenu ? "menu menu--mobile" : "menu"}`}>
-						{headerContent.menu.map((menuItem) => (
-							<li className="menu__item menu__item--fade-down" key={menuItem.name}>
-								<a className="menu__link" href={`#${menuItem.name}`}>
-									<span className="menu__number">{menuItem.id}.</span>
-									<span className="menu__text">{menuItem.title}</span>
+						{data.menu.map((item, index) => (
+							<li className="menu__item menu__item--fade-down" key={index}>
+								<a className="menu__link" href={menuLinks[index].link}>
+									<span className="menu__number">{index <= 9 ? `0${index + 1}` : index + 1}.</span>
+									<span className="menu__text">{item.text}</span>
 								</a>
 							</li>
 						))}
 
 						<li className="menu__item menu__item--fade-down">
-							<Button link={headerContent.link} size="small" text={headerContent.button} />
+							<Button link={data.linkButton} size="small" text={data.textButton} />
 						</li>
 					</ul>
 				</nav>

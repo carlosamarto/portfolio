@@ -1,7 +1,7 @@
 import "./Footer.css";
-import { SlSocialGithub, SlSocialInstagram, SlSocialTwitter, SlSocialLinkedin } from "react-icons/sl";
+import { SlSocialGithub, SlSocialInstagram, SlSocialTwitter, SlSocialLinkedin, SlRocket } from "react-icons/sl";
 
-function Footer({ openMenu, toggleLang, setToggleLang, footerContent, social }) {
+function Footer({ openMenu, lang, toggleLang, social, portfolioLink, data }) {
 	return (
 		<>
 			<footer className={`footer ${openMenu ? "footer--locked" : "footer--unlocked"}`}>
@@ -23,16 +23,16 @@ function Footer({ openMenu, toggleLang, setToggleLang, footerContent, social }) 
 					</a>
 				</div>
 
-				<a href="https://github.com/carlosmrtzor/portfolio" className="footer__link">
-					{footerContent.link}
+				<a href={portfolioLink} className="footer__link">
+					{data.text} <SlRocket size="1.8rem" className="footer__icon" />
 				</a>
 
-				<div className={`toggle ${toggleLang ? "toggle--es" : "toggle--en"} toggle--fade-right`}>
-					<dir className="toggle__en" onClick={() => setToggleLang(false)}>
+				<div className={`toggle ${lang === "es" ? "toggle--es" : "toggle--en"} toggle--fade-right`}>
+					<dir className="toggle__en" onClick={() => toggleLang("en")}>
 						En
 					</dir>
 
-					<div className="toggle__es" onClick={() => setToggleLang(true)}>
+					<div className="toggle__es" onClick={() => toggleLang("es")}>
 						Es
 					</div>
 

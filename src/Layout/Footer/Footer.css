@@ -1,17 +1,43 @@
 .footer {
 	gap: 1.6rem;
 	display: flex;
+	padding: 2.4rem;
 	text-align: center;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	padding: 0 2.4rem 2.4rem;
 }
 .footer--locked {
 	user-select: none;
 	touch-action: none;
 	pointer-events: none;
 	filter: blur(0.4rem) brightness(0.6);
+}
+.footer__link {
+	gap: 0.4rem;
+	color: #edf2f4;
+	overflow: hidden;
+	line-height: 1.5;
+	font-weight: 500;
+	font-size: 1.6rem;
+	position: relative;
+	align-items: center;
+	display: inline-flex;
+	text-decoration: none;
+	background: linear-gradient(to right, #ef233c, #ef233c 50%, #edf2f4 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-position: 100%;
+	background-size: 200% 100%;
+	transition: all 0.2s ease-in-out;
+	font-family: "Fira Code", monospace;
+}
+.footer__link:hover {
+	background-position: 0 100%;
+}
+.footer__icon {
+	color: #ef233c;
 }
 
 .social {
@@ -36,27 +62,6 @@
 	transform: translateY(-0.4rem);
 }
 
-.footer__link {
-	color: #edf2f4;
-	overflow: hidden;
-	font-weight: 500;
-	font-size: 1.6rem;
-	position: relative;
-	display: inline-block;
-	text-decoration: none;
-	background: linear-gradient(to right, #ef233c, #ef233c 50%, #edf2f4 50%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-position: 100%;
-	background-size: 200% 100%;
-	transition: all 0.2s ease-in-out;
-	font-family: "Fira Code", monospace;
-}
-.footer__link:hover {
-	background-position: 0 100%;
-}
-
 .toggle {
 	display: flex;
 	cursor: pointer;
@@ -73,6 +78,7 @@
 .toggle__es {
 	z-index: 2;
 	color: #ef233c;
+	line-height: 1.5;
 	font-weight: 500;
 	font-size: 1.4rem;
 	text-align: center;
@@ -87,7 +93,7 @@
 .toggle__slide {
 	top: 0;
 	width: 3.28rem;
-	height: 2.24rem;
+	height: 2.5rem;
 	position: absolute;
 	background-color: #ef233c;
 	transition: all 0.2s ease-in-out;
@@ -125,6 +131,7 @@
 		transform: translateX(0);
 	}
 }
+
 @keyframes fade-right {
 	0% {
 		opacity: 0;
