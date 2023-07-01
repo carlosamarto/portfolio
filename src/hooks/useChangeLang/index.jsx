@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 
-function useToggleLang({ key, initialValue }) {
+function useChangeLang({ key, initialValue }) {
 	// Store language
 	const [lang, setLang] = useState(() => {
 		// Get the stored value from localStorage
 		const storedValue = localStorage.getItem(key);
+
 		// Use the stored value or the initial value
 		return storedValue !== null ? storedValue : initialValue;
 	});
@@ -25,4 +26,4 @@ function useToggleLang({ key, initialValue }) {
 	return [lang, toggleLang];
 }
 
-export { useToggleLang };
+export { useChangeLang };

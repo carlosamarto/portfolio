@@ -1,6 +1,7 @@
 import "./Button.css";
 
 function Button({ link, className, size, text }) {
+	// Render UI Component
 	return (
 		<>
 			<a href={link} className={`${className ? `button ${className}` : "button"} button--${size || "default"}`}>

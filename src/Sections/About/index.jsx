@@ -1,33 +1,28 @@
 import "./About.css";
+import { Title } from "../../Components/Title";
 
-function About({ profileImage, skills, isVisible, sectionRef, data }) {
+function About({ data }) {
+	// Render UI Section
 	return (
 		<>
-			<section id="about" className={`about ${isVisible ? "fade-in" : ""}`} ref={sectionRef}>
-				<div className="about__presentation">
-					<div className="about__titles">
-						<span className="about__number">01.</span>
-						<h2 className="about__title">{data.title}</h2>
-					</div>
+			<section id="about" className="about">
+				<Title number={data.number} title={data.title} />
 
-					<div className="about__line"></div>
-				</div>
-
-				<div className="about__content">
-					<div className="about__box">
+				<div className="about__container">
+					<div className="about__content">
 						<p className="about__description" dangerouslySetInnerHTML={{ __html: data.description }} />
 
-						<ul className="about__skills">
-							{skills.map((skill, index) => (
-								<li key={index} className="about__skill">
-									{skill.name}
+						<ul className="about__list">
+							{data.skills.map((skill) => (
+								<li key={skill.name} className="about__skills">
+									<span className="about__skill">{skill.name}</span>
 								</li>
 							))}
 						</ul>
 					</div>
 
 					<figure className="about__figure">
-						<img src={profileImage} alt={data.imageCaption} className="about__image" />
+						<img src={data.profile} alt={data.caption} title={data.caption} className="about__image" />
 					</figure>
 				</div>
 			</section>

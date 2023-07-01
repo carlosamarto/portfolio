@@ -1,7 +1,7 @@
 .content {
 	min-height: 100vh;
 }
-.content--locked {
+.content--lock {
 	user-select: none;
 	touch-action: none;
 	pointer-events: none;
@@ -14,10 +14,16 @@
 	padding: 0 2.4rem;
 	min-height: 100vh;
 	position: relative;
-	max-width: 102.4rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
+	.article {
+		padding: 0 2.4rem;
+		max-width: 102.4rem;
+	}
+}
+
+@media screen and (min-width: 1366px) {
 	.article {
 		padding: 0;
 	}

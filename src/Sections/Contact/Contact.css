@@ -1,0 +1,48 @@
+.contact {
+	gap: 1.6rem;
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.contact__subtitle {
+	color: #ef233c;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 1.8rem;
+	font-family: "Fira Code", monospace;
+}
+.contact__title {
+	line-height: 1;
+	color: #edf2f4;
+	font-weight: 700;
+	font-size: 3.2rem;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+}
+.contact__text {
+	width: 52.8rem;
+	color: #8d99ae;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 1.6rem;
+	text-align: center;
+	font-family: "Fira Code", monospace;
+}
+.contact__strong {
+	font-weight: 500;
+	color: #ef233c;
+}
+
+@media screen and (min-width: 768px) {
+	.contact__title {
+		font-size: 7.2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contact__text {
+		width: 100%;
+	}
+}

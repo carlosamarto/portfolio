@@ -1,0 +1,59 @@
+.project {
+	gap: 1.6rem;
+	display: flex;
+	padding: 2.4rem;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 0.1rem solid #ef233c;
+}
+.project__header {
+	gap: inherit;
+	display: flex;
+	flex-direction: column;
+}
+.project__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.project__folder {
+	color: #ef233c;
+}
+.project__links {
+	gap: 1.2rem;
+	display: flex;
+	align-items: center;
+}
+.project__link {
+	color: #8d99ae;
+	transition: all 0.2s ease-in-out;
+}
+.project__link:hover {
+	color: #ef233c;
+}
+.project__title {
+	line-height: 1.5;
+	color: #edf2f4;
+	font-weight: 500;
+	font-size: 2.4rem;
+	font-family: "Inter", sans-serif;
+}
+.project__description {
+	line-height: 1.5;
+	color: #8d99ae;
+	font-weight: 500;
+	font-size: 1.6rem;
+	font-family: "Fira Code", monospace;
+}
+.project__skills {
+	gap: 1.6rem;
+	display: flex;
+	list-style: none;
+}
+.project__name {
+	line-height: 1.5;
+	color: #8d99ae;
+	font-weight: 500;
+	font-size: 1.4rem;
+	font-family: "Fira Code", monospace;
+}

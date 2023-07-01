@@ -1,21 +1,21 @@
 ## 📄 Intro
 
 <div align="center">
-   My personal website <br><br>
+   My personal portfolio to collect my experience and work, built in React. <br><br>
 </div>
 
 [![Portfolio](./public/preview.png)](https://www.carlosmrtzo.com/)
 
 ## 💼 Used technologies
 
-![](https://img.shields.io/badge/Markup-HTML-informational?style=for-the-badge&logo=html5&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
-![](https://img.shields.io/badge/Style-CSS-informational?style=for-the-badge&logo=css3&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
-![](https://img.shields.io/badge/Code-JavaScript-informational?style=for-the-badge&logo=JavaScript&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
-![](https://img.shields.io/badge/Code-React.js-informational?style=for-the-badge&logo=react&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
+![](https://img.shields.io/badge/Skill-HTML-informational?style=for-the-badge&logo=html5&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
+![](https://img.shields.io/badge/Skill-CSS-informational?style=for-the-badge&logo=css3&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
+![](https://img.shields.io/badge/Skill-JavaScript-informational?style=for-the-badge&logo=JavaScript&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
+![](https://img.shields.io/badge/Skill-React.js-informational?style=for-the-badge&logo=react&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
 
 ## 🚨 Forking this repo
 
-You can fork this repo and please give me proper credit, enjoy 😊
+You are free to fork this repository, either to see the code or use the portfolio, always giving the respective credits. 💪🏻
 
 ## 🛠 Installation & Set Up
 
@@ -28,7 +28,7 @@ You can fork this repo and please give me proper credit, enjoy 😊
 2. Start the development server
 
    ```sh
-   npm start
+   npm run dev
    ```
 
 ## 🚀 Building and Running for Production
@@ -38,3 +38,12 @@ You can fork this repo and please give me proper credit, enjoy 😊
    ```sh
    npm run build
    ```
+## 🎨 Color Palette
+
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Primary        | ![#ef233c](https://via.placeholder.com/10/ef233c?text=+) `#ef233c` |
+| Secondary      | ![#d90429](https://via.placeholder.com/10/d90429?text=+) `#d90429` |
+| Body           | ![#2b2d42](https://via.placeholder.com/10/2b2d42?text=+) `#2b2d42` |
+| Text           | ![#edf2f4](https://via.placeholder.com/10/edf2f4?text=+) `#edf2f4` |
+| Text Secondary | ![#8d99ae](https://via.placeholder.com/10/8d99ae?text=+) `#8d99ae` |

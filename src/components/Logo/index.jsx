@@ -1,6 +1,7 @@
 import "./Logo.css";
 
 function Logo({ width, height }) {
+	// Render UI Component
 	return (
 		<>
 			<a href="/" className="logo logo--fade-down">

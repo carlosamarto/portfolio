@@ -6,22 +6,3 @@
 	transform: translateX(100%);
 	transition: all 0.2s ease-in-out;
 }
-
-.logo--fade-down {
-	opacity: 0;
-	transform: translateY(-4rem);
-	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-@keyframes fade-down {
-	0% {
-		opacity: 0;
-		transform: translateY(-4rem);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-.logo--fade-down {
-	animation: fade-down 0.5s ease-out 0s 1 normal forwards;
-}

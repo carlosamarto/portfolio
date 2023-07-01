@@ -1,20 +1,18 @@
 import "./Contact.css";
 import { Button } from "../../Components";
 
-function Contact({ titleName, linkButton, data }) {
+function Contact({ data }) {
+	// Render UI Section
 	return (
 		<>
 			<section id="contact" className="contact">
-				<h3 className="contact__text">{data.title}</h3>
+				<h4 className="contact__subtitle">{data.subtitle}</h4>
 
-				<h2 className="contact__title">{titleName}</h2>
+				<h2 className="contact__title">{data.title}</h2>
 
-				<p
-					className="contact__description contact__description--fade-up"
-					dangerouslySetInnerHTML={{ __html: data.description }}
-				/>
+				<p className="contact__text contact__text--fade-up" dangerouslySetInnerHTML={{ __html: data.text }} />
 
-				<Button link={linkButton} size="default" text={data.textButton} />
+				<Button link={data.link} size="default" text={data.button} />
 			</section>
 		</>
 	);

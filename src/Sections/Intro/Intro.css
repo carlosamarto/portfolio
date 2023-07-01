@@ -1,19 +1,12 @@
 .intro {
-	gap: 2.4rem;
+	gap: 1.6rem;
 	display: flex;
 	min-height: 100vh;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 }
-.intro__text--fade-up,
-.intro__title--fade-up,
-.intro__description--fade-up {
-	opacity: 0;
-	transform: translateY(8rem);
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-.intro__text {
+.intro__subtitle {
 	color: #ef233c;
 	font-weight: 500;
 	line-height: 1.5;
@@ -21,21 +14,16 @@
 	text-align: center;
 	font-family: "Fira Code", monospace;
 }
-.intro__text--fade-up {
-	animation: fade-up 0.6s ease-out 0.6s 1 normal forwards;
-}
 .intro__title {
 	line-height: 1;
 	color: #edf2f4;
 	font-weight: 700;
-	font-size: 2.4rem;
+	font-size: 7.2rem;
 	text-align: center;
 	font-family: "Inter", sans-serif;
 }
-.intro__title--fade-up {
-	animation: fade-up 0.6s ease-out 0.8s 1 normal forwards;
-}
-.intro__description {
+.intro__text {
+	width: 52.8rem;
 	color: #8d99ae;
 	font-weight: 500;
 	line-height: 1.5;
@@ -47,47 +35,18 @@
 	font-weight: 500;
 	color: #ef233c;
 }
-.intro__description--fade-up {
-	animation: fade-up 0.6s ease-out 1s 1 normal forwards;
-}
 
-.button--fade-up {
-	opacity: 0;
-	transform: translateY(8rem);
-	animation: fade-up 0.6s ease-out 1.2s 1 normal forwards;
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-@media screen and (min-width: 768px) {
-	.intro__text--fade-up {
-		animation: fade-up 0.6s ease-out 1.8s 1 normal forwards;
-	}
+@media screen and (min-width: 1024px) {
 	.intro__title {
 		font-size: 9.6rem;
 	}
-	.intro__title--fade-up {
-		animation: fade-up 0.6s ease-out 2s 1 normal forwards;
-	}
-	.intro__description {
-		width: 52.8rem;
-	}
-	.intro__description--fade-up {
-		animation: fade-up 0.6s ease-out 2.2s 1 normal forwards;
-	}
-
-	.button--fade-up {
-		animation: fade-up 0.6s ease-out 2.4s 1 normal forwards;
-	}
 }
 
-@keyframes fade-up {
-	0% {
-		opacity: 0;
-		transform: translateY(8rem);
+@media screen and (max-width: 768px) {
+	.intro__title {
+		font-size: 3.2rem;
 	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
+	.intro__text {
+		width: 100%;
 	}
 }
