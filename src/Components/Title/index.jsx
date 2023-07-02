@@ -8,8 +8,6 @@ function Title({ number, title }) {
 					<span className="title__number">{number}</span>
 					{title}
 				</h2>
-
-				<div className="title__line" data-content="Title Line" aria-hidden="true"></div>
 			</div>
 		</>
 	);

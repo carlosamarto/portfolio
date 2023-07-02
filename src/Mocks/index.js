@@ -54,7 +54,7 @@ export const content = {
 					website: "https://pokedex-app-rouge.vercel.app/",
 					github: "https://github.com/carlosmrtzodev/pokedex-app",
 					title: "Pokédex",
-					description: "Pokédex in Next.js to consult the information of all pokemon by consuming an api.",
+					description: "Pokédex in Next.js to make consults by consuming an api.",
 					skills: ["React", "Next.js", "Tailwind"],
 				},
 				{
@@ -167,7 +167,7 @@ export const content = {
 		contact: {
 			subtitle: "04. ¿Que sigue?",
 			title: "Ponte en contacto",
-			text: "Actualmente estoy abierto a nuevas oportunidades laborales, si quieres contactarme puedes hacerlo a mediante redes o enviarme un <strong class='contact__strong'>E-mail</strong> al siguiente enlace.",
+			text: "Actualmente estoy abierto a nuevas oportunidades laborales, si quieres contactarme puedes hacerlo por mis redes o enviarme un <strong class='contact__strong'>E-mail</strong> al siguiente enlace.",
 			link: "mailto:carlosmrtzo@gmail.com",
 			button: "Hablemos",
 		},

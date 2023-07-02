@@ -26,6 +26,7 @@
 	font-size: 1.8rem;
 }
 .button__inner {
+	z-index: 2;
 	display: block;
 	overflow: hidden;
 	position: relative;
@@ -40,9 +41,11 @@
 .button--big .button__inner {
 	padding: 1.2rem 3.2rem;
 }
-.button__slide {
+.button__content::before {
 	top: 0;
 	width: 0;
+	z-index: -1;
+	content: "";
 	left: -0.8rem;
 	display: block;
 	bottom: -0.1rem;
@@ -50,9 +53,6 @@
 	background-color: #ef233c;
 	transition: all 0.2s ease-in-out;
 }
-.button:hover .button__slide {
+.button:hover .button__content::before {
 	width: calc(100% + 2rem);
-}
-.button__content {
-	position: relative;
 }
