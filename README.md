@@ -3,12 +3,12 @@
 <div align="center">
    <h1 align="center" style="color: #ef233c;">Carlos Martínez</h1>
 
-   <img src="./Logo.svg" alt="Logo" />
+   <img src="./public/Logo.svg" alt="Logo" />
 
    My personal portfolio to collect my experience and work, built in React. <br><br>
 </div>
 
-[![Portfolio](./public/preview.png)](https://www.carlosmrtzo.com/)
+<!-- [![Portfolio](./public/preview.png)](https://www.carlosmrtzo.com/) -->
 
 ## 💼 Used technologies
 
@@ -40,7 +40,7 @@ You are free to fork this repository, either to see the code or use the portfoli
 1. Generate a production build
 
    ```sh
-   npm run build
+   vite build
    ```
 
 ## 🎨 Color Palette
