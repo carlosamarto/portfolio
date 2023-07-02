@@ -167,7 +167,7 @@ export const content = {
 		contact: {
 			subtitle: "04. ¿Que sigue?",
 			title: "Ponte en contacto",
-			text: "Actualmente estoy abierto a nuevas oportunidades laborales, si quieres contactarme puedes hacerlo a través de mis redes o enviarme un <strong class='contact__strong'>E-mail</strong> al siguiente enlace.",
+			text: "Actualmente estoy abierto a nuevas oportunidades laborales, si quieres contactarme puedes hacerlo a mediante redes o enviarme un <strong class='contact__strong'>E-mail</strong> al siguiente enlace.",
 			link: "mailto:carlosmrtzo@gmail.com",
 			button: "Hablemos",
 		},
