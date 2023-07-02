@@ -4,7 +4,7 @@ function Logo({ width, height }) {
 	// Render UI Component
 	return (
 		<>
-			<a href="/" className="logo logo--fade-down">
+			<a href="/" className="logo">
 				<svg width={width} height={height} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g clipPath="url(#clip0_96_2)">
 						<mask

@@ -1,5 +1,5 @@
 import "./Header.css";
-import { Button, Item } from "../../Components/";
+import { Button, Item, Logo } from "../../Components/";
 
 function Header({ isHeaderVisible, prevScrollPos, openMenu, setOpenMenu, data }) {
 	// Render UI Layout
@@ -11,9 +11,7 @@ function Header({ isHeaderVisible, prevScrollPos, openMenu, setOpenMenu, data })
 				}`}
 			>
 				<nav className="nav">
-					<a href="/" className="logo">
-						C
-					</a>
+					<Logo width={48} height={48} />
 
 					<div className="hamburger">
 						<div

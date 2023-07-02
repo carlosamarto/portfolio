@@ -13,22 +13,30 @@ function Project({ website, github, title, description, skills }) {
 							<SlFolder size="3.2rem" className="project__icons" />
 						</div>
 
-						<div className="project__links">
+						<ul className="project__list">
 							{github && (
-								<a href={github} className="project__link">
-									<SlSocialGithub size="2.4rem" className="project__icons" />
-								</a>
+								<li className="project__items">
+									<a href={github} className="project__item">
+										<SlSocialGithub size="2.4rem" className="project__icons" />
+									</a>
+								</li>
 							)}
 
 							{website && (
-								<a href={website} className="project__link">
-									<VscLinkExternal size="2.4rem" className="project__icons" />
-								</a>
+								<li className="project__items">
+									<a href={website} className="project__item">
+										<VscLinkExternal size="2.4rem" className="project__icons" />
+									</a>
+								</li>
 							)}
-						</div>
+						</ul>
 					</div>
 
-					<h3 className="project__title">{title}</h3>
+					<h3 className="project__title">
+						<a href={website || github} className="project__link">
+							{title}
+						</a>
+					</h3>
 
 					<p className="project__description">{description}</p>
 				</header>

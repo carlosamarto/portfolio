@@ -36,14 +36,6 @@
 	list-style: none;
 }
 
-.logo {
-	line-height: 1;
-	color: #ef233c;
-	font-size: 6.4rem;
-	text-decoration: none;
-	font-family: "Inter", sans-serif;
-}
-
 .hamburger {
 	z-index: 999;
 	display: block;

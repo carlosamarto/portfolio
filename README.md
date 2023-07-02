@@ -1,6 +1,10 @@
 ## 📄 Intro
 
 <div align="center">
+   <h1 align="center" style="color: #ef233c;">Carlos Martínez</h1>
+
+   <img src="./Logo.svg" alt="Logo" />
+
    My personal portfolio to collect my experience and work, built in React. <br><br>
 </div>
 
@@ -38,6 +42,7 @@ You are free to fork this repository, either to see the code or use the portfoli
    ```sh
    npm run build
    ```
+
 ## 🎨 Color Palette
 
 | Color          | Hex                                                                |

@@ -2,9 +2,14 @@
 	gap: 1.6rem;
 	display: flex;
 	padding: 2.4rem;
+	position: relative;
 	flex-direction: column;
 	justify-content: space-between;
 	border: 0.1rem solid #ef233c;
+	transition: all 0.2s ease-in-out;
+}
+.project:hover {
+	transform: translateY(-1.2rem);
 }
 .project__header {
 	gap: inherit;
@@ -19,24 +24,45 @@
 .project__folder {
 	color: #ef233c;
 }
-.project__links {
+.project__list {
 	gap: 1.2rem;
 	display: flex;
 	align-items: center;
 }
-.project__link {
+.project__items {
+	list-style: none;
+}
+.project__item {
+	z-index: 2;
 	color: #8d99ae;
+	position: relative;
+	text-decoration: none;
 	transition: all 0.2s ease-in-out;
 }
-.project__link:hover {
+.project__item:hover {
 	color: #ef233c;
 }
-.project__title {
+.project__link {
 	line-height: 1.5;
 	color: #edf2f4;
 	font-weight: 500;
 	font-size: 2.4rem;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
 	font-family: "Inter", sans-serif;
+}
+.project__link::before {
+	top: 0;
+	left: 0;
+	z-index: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}
+.project:hover .project__link {
+	color: #ef233c;
 }
 .project__description {
 	line-height: 1.5;
