@@ -1,11 +1,13 @@
 ## 📄 Intro
 
 <div align="center">
-   <h1 align="center" style="color: #ef233c;">Carlos Martínez</h1>
+   <h1 align="center">Carlos Martínez</h1>
 
-   <img src="./public/Logo.svg" alt="Logo" />
+   <img src="./public/Logo.svg" alt="Logo" width="142" height="142" />
 
-   My personal portfolio to collect my experience and work, built in React. <br><br>
+   <p>My personal portfolio to collect my experience and work, built in React.</p> 
+   
+   <br><br>
 </div>
 
 <!-- [![Portfolio](./public/preview.png)](https://www.carlosmrtzo.com/) -->

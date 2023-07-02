@@ -16,7 +16,7 @@ function Project({ website, github, title, description, skills }) {
 						<ul className="project__list">
 							{github && (
 								<li className="project__items">
-									<a href={github} className="project__item">
+									<a href={github} target="_blank" rel="noopener noreferrer" className="project__item">
 										<SlSocialGithub size="2.4rem" className="project__icons" />
 									</a>
 								</li>
@@ -24,7 +24,7 @@ function Project({ website, github, title, description, skills }) {
 
 							{website && (
 								<li className="project__items">
-									<a href={website} className="project__item">
+									<a href={website} target="_blank" rel="noopener noreferrer" className="project__item">
 										<VscLinkExternal size="2.4rem" className="project__icons" />
 									</a>
 								</li>
@@ -33,7 +33,7 @@ function Project({ website, github, title, description, skills }) {
 					</div>
 
 					<h3 className="project__title">
-						<a href={website || github} className="project__link">
+						<a href={website || github} target="_blank" rel="noopener noreferrer" className="project__link">
 							{title}
 						</a>
 					</h3>

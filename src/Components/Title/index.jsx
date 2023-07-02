@@ -9,7 +9,7 @@ function Title({ number, title }) {
 					{title}
 				</h2>
 
-				<div className="title__line"></div>
+				<div className="title__line" data-content="Title Line" aria-hidden="true"></div>
 			</div>
 		</>
 	);

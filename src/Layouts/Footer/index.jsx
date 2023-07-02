@@ -7,38 +7,38 @@ function Footer({ lang, toggleLang, openMenu, data }) {
 		<>
 			<footer className={`footer ${openMenu ? "footer--lock" : "footer--unlock"}`}>
 				<div className="social">
-					<a href={data.social.github} className="social__links">
+					<a href={data.social.github} target="_blank" rel="noopener noreferrer" className="social__links">
 						<SlSocialGithub size="2.4rem" className="social__icons" />
 					</a>
 
-					<a href={data.social.instagram} className="social__links">
+					<a href={data.social.instagram} target="_blank" rel="noopener noreferrer" className="social__links">
 						<SlSocialInstagram size="2.4rem" className="social__icons" />
 					</a>
 
-					<a href={data.social.twitter} className="social__links">
+					<a href={data.social.twitter} target="_blank" rel="noopener noreferrer" className="social__links">
 						<SlSocialTwitter size="2.4rem" className="social__icons" />
 					</a>
 
-					<a href={data.social.linkedin} className="social__links">
+					<a href={data.social.linkedin} target="_blank" rel="noopener noreferrer" className="social__links">
 						<SlSocialLinkedin size="2.4rem" className="social__icons" />
 					</a>
 				</div>
 
-				<a href={data.link} className="repository">
+				<p className="repository">
 					<SlRocket size="1.8rem" color="#ef233c" className="repository__icons" />
 					{data.text}
-				</a>
+				</p>
 
 				<div className={`toggle ${lang === data.en ? "toggle--en" : "toggle--es"}`}>
-					<dir className="toggle__en" onClick={() => toggleLang(data.en)}>
+					<button className="toggle__en" onClick={() => toggleLang(data.en)}>
 						{data.en}
-					</dir>
+					</button>
 
-					<div className="toggle__es" onClick={() => toggleLang(data.es)}>
+					<button className="toggle__es" onClick={() => toggleLang(data.es)}>
 						{data.es}
-					</div>
+					</button>
 
-					<div className="toggle__slide"></div>
+					<div className="toggle__slide" data-content="toggle Slide" aria-hidden="true"></div>
 				</div>
 			</footer>
 		</>

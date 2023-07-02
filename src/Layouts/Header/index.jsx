@@ -13,16 +13,16 @@ function Header({ isHeaderVisible, prevScrollPos, openMenu, setOpenMenu, data })
 				<nav className="nav">
 					<Logo width={48} height={48} />
 
-					<div className="hamburger">
+					<button aria-label="Menu" className="hamburger">
 						<div
 							className={`hamburger__menu ${openMenu ? "hamburger__menu--active" : "hamburger__menu--inactive"}`}
 							onClick={() => setOpenMenu((prevState) => !prevState)}
 						>
 							<div className="hamburger__inner"></div>
 						</div>
-					</div>
+					</button>
 
-					<aside className={`aside ${openMenu ? "aside--open" : "aside--close"}`}>
+					<aside aria-hidden="true" className={`aside ${openMenu ? "aside--open" : "aside--close"}`}>
 						<nav className="aside__nav">
 							<ul className="aside__menu">
 								{data.menu.map((item) => (
@@ -30,7 +30,7 @@ function Header({ isHeaderVisible, prevScrollPos, openMenu, setOpenMenu, data })
 								))}
 
 								<li className="aside__button">
-									<Button link={data.link} size="small" text={data.button} />
+									<Button link={data.link} target size="small" text={data.button} />
 								</li>
 							</ul>
 						</nav>
@@ -42,7 +42,7 @@ function Header({ isHeaderVisible, prevScrollPos, openMenu, setOpenMenu, data })
 						))}
 
 						<li className="menu__button">
-							<Button link={data.link} size="small" text={data.button} />
+							<Button link={data.link} target size="small" text={data.button} />
 						</li>
 					</ul>
 				</nav>
