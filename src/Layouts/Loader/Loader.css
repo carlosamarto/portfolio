@@ -2,10 +2,22 @@
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	line-height: 1;
-	color: #ef233c;
-	font-size: 6.4rem;
 	align-items: center;
 	justify-content: center;
-	font-family: "Inter", sans-serif;
+}
+
+.loader .logo {
+	animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
 }

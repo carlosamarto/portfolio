@@ -3,6 +3,6 @@
 	transition: all 0.2s ease-in-out;
 }
 .logo:hover .logo__background {
-	transform: translateX(100%);
+	fill: #ef233c;
 	transition: all 0.2s ease-in-out;
 }

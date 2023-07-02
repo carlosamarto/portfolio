@@ -11,7 +11,9 @@ function Header({ isHeaderVisible, prevScrollPos, openMenu, setOpenMenu, data })
 				}`}
 			>
 				<nav className="nav">
-					<Logo width={48} height={48} />
+					<a href="/">
+						<Logo width={48} height={48} />
+					</a>
 
 					<button aria-label="Menu" className="hamburger">
 						<div
