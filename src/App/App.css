@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Inter:wght@500;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.page {
+	font-size: 62.5%;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+}
+
+.body {
+	min-height: 100vh;
+	background-color: #2b2d42;
+}
+.body--lock {
+	overflow: hidden;
+}
+
+.main {
+	min-height: 100vh;
+}

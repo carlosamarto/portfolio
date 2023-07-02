@@ -1,0 +1,30 @@
+.content {
+	min-height: 100vh;
+}
+.content--lock {
+	user-select: none;
+	touch-action: none;
+	pointer-events: none;
+	filter: blur(0.4rem) brightness(0.6);
+}
+
+.article {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2.4rem;
+	min-height: 100vh;
+	position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+	.article {
+		padding: 0 2.4rem;
+		max-width: 102.4rem;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.article {
+		padding: 0;
+	}
+}

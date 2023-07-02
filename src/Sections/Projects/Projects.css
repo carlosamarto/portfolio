@@ -1,0 +1,19 @@
+.projects {
+	gap: 6.4rem;
+	display: flex;
+	padding: 8rem 0;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+}
+.projects__grid {
+	gap: 2.4rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+}
+
+@media screen and (max-width: 768px) {
+	.projects {
+		gap: 2.4rem;
+	}
+}

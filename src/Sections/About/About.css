@@ -1,0 +1,94 @@
+.about {
+	gap: 6.4rem;
+	display: flex;
+	padding: 8rem 0;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+}
+.about__container {
+	gap: 3.2rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.about__content {
+	gap: 2.4rem;
+	display: flex;
+	flex-direction: column;
+}
+.about__description {
+	color: #8d99ae;
+	line-height: 1.5;
+	font-weight: 500;
+	font-size: 1.6rem;
+	font-family: "Fira Code", monospace;
+}
+.about__strong {
+	color: #ef233c;
+	line-height: 1.5;
+	font-weight: 500;
+}
+.about__list {
+	gap: 1.2rem;
+	width: 42rem;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.about__skills {
+	list-style: none;
+}
+.about__skill {
+	gap: 1.2rem;
+	display: flex;
+	color: #8d99ae;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 1.4rem;
+	align-items: center;
+	font-family: "Fira Code", monospace;
+}
+.about__skill::before {
+	content: "";
+	width: 0.6rem;
+	height: 0.6rem;
+	background: #ef233c;
+}
+.about__image {
+	width: 32rem;
+	height: 32rem;
+	display: block;
+	border: 0.1rem solid #ef233c;
+}
+.about__work {
+	gap: 1.6rem;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+	.about__container {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about {
+		gap: 2.4rem;
+	}
+	.about__list {
+		width: 32rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	.about__image {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.about__list {
+		width: 100%;
+	}
+}
