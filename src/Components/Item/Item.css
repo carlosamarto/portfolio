@@ -1,0 +1,33 @@
+.item {
+	list-style: none;
+}
+.item__link {
+	gap: 0.4rem;
+	display: flex;
+	align-items: baseline;
+	text-decoration: none;
+	font-family: "Fira Code", monospace;
+}
+.item__number {
+	color: #ef233c;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 1.4rem;
+}
+.item__text {
+	color: #edf2f4;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 1.4rem;
+	text-decoration: none;
+	background-clip: text;
+	background: linear-gradient(to right, #ef233c, #ef233c 50%, #edf2f4 50%);
+	background-position: 100%;
+	background-size: 200% 100%;
+	-webkit-background-clip: text;
+	transition: all 0.2s ease-in-out;
+	-webkit-text-fill-color: transparent;
+}
+.item__link:hover .item__text {
+	background-position: 0 100%;
+}

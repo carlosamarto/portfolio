@@ -1,0 +1,8 @@
+.logo:hover .logo__letter {
+	fill: #edf2f4;
+	transition: all 0.2s ease-in-out;
+}
+.logo:hover .logo__background {
+	transform: translateX(100%);
+	transition: all 0.2s ease-in-out;
+}
