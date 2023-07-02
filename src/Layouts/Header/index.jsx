@@ -1,5 +1,5 @@
 import "./Header.css";
-import { Button, Item, Logo } from "../../Components/";
+import { Button, Item, Logo } from "../../Components";
 
 function Header({ isHeaderVisible, prevScrollPos, openMenu, setOpenMenu, data }) {
 	// Render UI Layout
