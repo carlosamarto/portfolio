@@ -6,7 +6,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	border: 0.1rem solid #ef233c;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 .card-project:hover {
 	transform: translateY(-1.2rem);
@@ -37,7 +37,7 @@
 	color: #8d99ae;
 	position: relative;
 	text-decoration: none;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 .card-project__links:hover {
 	color: #ef233c;
@@ -46,12 +46,12 @@
 	line-height: 1.5;
 	font-weight: 500;
 	font-size: 2.4rem;
-	transition: all 0.2s ease-in-out;
 	font-family: "Inter", sans-serif;
 }
 .card-project__url {
 	color: #edf2f4;
 	text-decoration: none;
+	transition: all 0.4s ease-in-out;
 }
 .card-project__url::before {
 	top: 0;

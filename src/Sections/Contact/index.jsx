@@ -4,7 +4,7 @@ import { Context } from "../../Context";
 import { Button } from "../../Components";
 
 function Contact() {
-	// Use Context
+	// Accessing values from the context using useContext hook
 	const { data } = useContext(Context);
 
 	// Render UI Section

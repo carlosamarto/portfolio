@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Context } from "../../Context";
 
 function Content({ children }) {
-	// Use Context
+	// Accessing values from the context using useContext hook
 	const { openMenu } = useContext(Context);
 
 	//Render UI Layout

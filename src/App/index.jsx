@@ -2,9 +2,10 @@ import "./App.css";
 import { useChangeLang, useHeaderScroll, useLoadingContent, useOpenMenu } from "../Hooks";
 import { Context } from "../Context";
 import { Content, Footer, Header, Loader } from "../Layouts";
-import { Intro, About, Projects, Contact } from "../Sections";
+import { About, Contact, Intro, Projects } from "../Sections";
 import { content } from "../Mocks";
 
+// Main
 function App() {
 	// Toggles between language options
 	const [lang, toggleLang] = useChangeLang("LANG_V1", "en");
@@ -24,6 +25,7 @@ function App() {
 	// Render app with props
 	return (
 		<>
+			{/* Context Provider */}
 			<Context.Provider
 				value={{
 					lang,
@@ -35,23 +37,26 @@ function App() {
 					data,
 				}}
 			>
+				{/* Conditional Rendering */}
 				{isLoadingContent ? (
+					// Render Loader component if isLoadingContent is true
 					<Loader />
 				) : (
+					// Render the main content if isLoadingContent is false
 					<>
 						<Header />
 
 						<Content>
-							<Intro data={data.intro} />
+							<Intro />
 
-							<About data={data.about} />
+							<About />
 
-							<Projects data={data.projects} />
+							<Projects />
 
-							<Contact data={data.contact} />
+							<Contact />
 						</Content>
 
-						<Footer lang={lang} toggleLang={toggleLang} openMenu={openMenu} data={data.footer} />
+						<Footer />
 					</>
 				)}
 			</Context.Provider>

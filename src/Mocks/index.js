@@ -8,7 +8,7 @@ export const content = {
 				{ menuNumber: "04.", menuText: "Contact", menuLink: "#contact" },
 			],
 			buttonText: "Resume",
-			ButtonLink: "Resume.pdf",
+			buttonLink: "Resume.pdf",
 		},
 		intro: {
 			subtitle: "Hello, my name is",

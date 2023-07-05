@@ -4,7 +4,7 @@ import { Context } from "../../Context";
 import { Button } from "../../Components";
 
 function Intro() {
-	// Use Context
+	// Accessing values from the context using useContext hook
 	const { data } = useContext(Context);
 
 	// Render UI Section
@@ -17,7 +17,7 @@ function Intro() {
 
 				<p className="intro__text" dangerouslySetInnerHTML={{ __html: data.intro.text }} />
 
-				<Button link={data.intro.buttonLink} size="big" text={data.intro.buttonText} />
+				<Button link={data.intro.buttonLink} text={data.intro.buttonText} />
 			</section>
 		</>
 	);

@@ -72,7 +72,7 @@
 	.about {
 		gap: 2.4rem;
 	}
-	.about__technologies {
+	.about__list {
 		width: 32rem;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
@@ -83,7 +83,7 @@
 }
 
 @media screen and (max-width: 425px) {
-	.about__technologies {
+	.about__list {
 		width: 100%;
 	}
 }

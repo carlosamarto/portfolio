@@ -5,7 +5,7 @@ import { SlRocket } from "react-icons/sl";
 import { LanguageButton, SocialBar } from "../../Components";
 
 function Footer() {
-	// Use Context
+	// Accessing values from the context using useContext hook
 	const { openMenu, data } = useContext(Context);
 
 	// Render UI Layout

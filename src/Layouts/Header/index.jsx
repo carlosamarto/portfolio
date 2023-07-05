@@ -4,7 +4,7 @@ import { Context } from "../../Context";
 import { Logo, Menu, MenuAside, MenuIcon } from "../../Components";
 
 function Header() {
-	// Use Context
+	// Accessing values from the context using useContext hook
 	const { isHeaderVisible, prevScrollPos } = useContext(Context);
 
 	// Render UI Layout

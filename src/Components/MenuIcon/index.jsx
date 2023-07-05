@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Context } from "../../Context";
 
 function MenuIcon() {
-	// Use Context
+	// Accessing values from the context using useContext hook
 	const { openMenu, setOpenMenu } = useContext(Context);
 
 	// Render UI Component

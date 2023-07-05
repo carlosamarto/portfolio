@@ -5,7 +5,7 @@ import { Button } from "../Button";
 import { MenuItem } from "../MenuItem";
 
 function MenuAside() {
-	// Use Context
+	// Accessing values from the context using useContext hook
 	const { openMenu, data } = useContext(Context);
 
 	//Render UI Component

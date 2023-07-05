@@ -5,7 +5,7 @@ import { Button } from "../Button";
 import { MenuItem } from "../MenuItem";
 
 function Menu() {
-	// Use Context
+	// Accessing values from the context using useContext hook
 	const { data } = useContext(Context);
 
 	//Render UI Component
@@ -22,7 +22,7 @@ function Menu() {
 				))}
 
 				<li className="menu__button">
-					<Button link={data.header.buttonLink} target size="small" text={data.header.buttonText} />
+					<Button link={data.header.buttonLink} text={data.header.buttonText} external />
 				</li>
 			</ul>
 		</>

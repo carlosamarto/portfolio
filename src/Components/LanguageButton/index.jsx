@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Context } from "../../Context";
 
 function LanguageButton({ langTagEn, langTagEs }) {
-	// Use Context
+	// Accessing values from the context using useContext hook
 	const { lang, toggleLang } = useContext(Context);
 
 	// Render UI Layout
