@@ -5,7 +5,7 @@
 
 <br><br>
 
-   <img src="./public/Image.png" alt="Image" width="240" height="240" />
+   <img src="./public/Image.png" alt="Image" width="1200" height="630" />
 
 <br><br>
 
