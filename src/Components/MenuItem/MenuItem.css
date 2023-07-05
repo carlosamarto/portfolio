@@ -19,7 +19,7 @@
 	font-weight: 500;
 	line-height: 1.5;
 	font-size: 1.4rem;
-	transition: all 0.4s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .menu-item__link:hover .menu-item__text {
 	color: #ef233c;
