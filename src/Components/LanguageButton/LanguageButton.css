@@ -27,10 +27,10 @@
 	background-color: #ef233c;
 	transition: all 0.2s ease-in-out;
 }
-.toggle--en .toggle__button {
+.toggle--en .toggle__button:nth-child(1) {
 	color: #edf2f4;
 }
-.toggle--es .toggle__button {
+.toggle--es .toggle__button:nth-child(2) {
 	color: #edf2f4;
 }
 .toggle--en .toggle__slide {
