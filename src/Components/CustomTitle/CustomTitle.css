@@ -1,9 +1,9 @@
-.title {
+.custom-title {
 	display: flex;
 	position: relative;
 	justify-content: center;
 }
-.title__heading {
+.custom-title__heading {
 	gap: 0.4rem;
 	line-height: 1;
 	color: #edf2f4;
@@ -16,16 +16,16 @@
 	background-color: #2b2d42;
 	font-family: "Inter", sans-serif;
 }
-.title__heading::after {
-	content: "";
+.custom-title__heading::after {
 	top: 50%;
 	z-index: -1;
 	width: 100%;
+	content: "";
 	height: 0.1rem;
 	position: absolute;
 	background-color: #ef233c;
 }
-.title__number {
+.custom-title__number {
 	color: #ef233c;
 	line-height: 1.5;
 	font-weight: 500;
@@ -34,7 +34,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	.title__heading {
+	.custom-title__heading {
 		font-size: 3.2rem;
 	}
 }

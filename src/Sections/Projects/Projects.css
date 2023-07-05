@@ -6,7 +6,7 @@
 	flex-direction: column;
 	justify-content: center;
 }
-.projects__grid {
+.projects__cards {
 	gap: 2.4rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));

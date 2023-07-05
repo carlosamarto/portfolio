@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function useHeaderScroll() {
+const useHeaderScroll = () => {
 	// Header Visible - Store Visibility
 	const [isHeaderVisible, setIsHeaderVisible] = useState(true);
 
@@ -37,6 +37,6 @@ function useHeaderScroll() {
 	}, [isHeaderVisible, prevScrollPos]);
 
 	return [isHeaderVisible, prevScrollPos];
-}
+};
 
 export { useHeaderScroll };

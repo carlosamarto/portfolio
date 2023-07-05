@@ -1,28 +1,38 @@
 import "./About.css";
-import { Title } from "../../Components/Title";
+import { useContext } from "react";
+import { Context } from "../../Context";
+import { CustomTitle } from "../../Components";
 
-function About({ data }) {
+function About() {
+	// Use Context
+	const { data } = useContext(Context);
+
 	// Render UI Section
 	return (
 		<>
 			<section id="about" className="about">
-				<Title number={data.number} title={data.title} />
+				<CustomTitle number={data.about.sectionNumber} customTitle={data.about.title} />
 
 				<div className="about__container">
 					<div className="about__content">
-						<p className="about__description" dangerouslySetInnerHTML={{ __html: data.description }} />
+						<p className="about__description" dangerouslySetInnerHTML={{ __html: data.about.description }} />
 
 						<ul className="about__list">
-							{data.skills.map((skill) => (
-								<li key={skill.name} className="about__skills">
-									<span className="about__skill">{skill.name}</span>
+							{data.about.technologies.map((technology) => (
+								<li key={technology.technologyName} className="about__technologies">
+									<span className="about__technology">{technology.technologyName}</span>
 								</li>
 							))}
 						</ul>
 					</div>
 
 					<figure className="about__figure">
-						<img src={data.profile} alt={data.caption} title={data.caption} className="about__image" />
+						<img
+							src={data.about.imageProfile}
+							alt={data.about.imageCaption}
+							title={data.about.imageCaption}
+							className="about__image"
+						/>
 					</figure>
 				</div>
 			</section>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function useChangeLang({ key, initialValue }) {
+const useChangeLang = ({ key, initialValue }) => {
 	// Store language
 	const [lang, setLang] = useState(() => {
 		// Get the stored value from localStorage
@@ -24,6 +24,6 @@ function useChangeLang({ key, initialValue }) {
 	};
 
 	return [lang, toggleLang];
-}
+};
 
 export { useChangeLang };

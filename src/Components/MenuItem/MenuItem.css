@@ -1,0 +1,26 @@
+.menu-item {
+	list-style: none;
+}
+.menu-item__link {
+	gap: 0.4rem;
+	display: flex;
+	align-items: baseline;
+	text-decoration: none;
+	font-family: "Fira Code", monospace;
+}
+.menu-item__number {
+	color: #ef233c;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 1.4rem;
+}
+.menu-item__text {
+	color: #edf2f4;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 1.4rem;
+	transition: all 0.4s ease-in-out;
+}
+.menu-item__link:hover .menu-item__text {
+	color: #ef233c;
+}

@@ -1,0 +1,15 @@
+.menu {
+	gap: 3.2rem;
+	display: none;
+	align-items: center;
+	justify-content: flex-end;
+}
+.menu__button {
+	list-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.menu {
+		display: flex;
+	}
+}

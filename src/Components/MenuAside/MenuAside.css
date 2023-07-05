@@ -1,0 +1,39 @@
+.aside {
+	top: 0;
+	right: 0;
+	width: 75%;
+	height: 100vh;
+	position: fixed;
+	visibility: hidden;
+	background-color: #2b2d42;
+	transform: translateX(100%);
+	transition: all 0.2s ease-in-out;
+	box-shadow: rgba(0, 0, 0, 0.16) 0rem 1rem 3.6rem 0rem, rgba(0, 0, 0, 0.06) 0rem 0rem 0rem 0.1rem;
+}
+.aside--open {
+	visibility: visible;
+	transform: translateX(0);
+}
+.aside__nav {
+	display: flex;
+	height: inherit;
+	flex-direction: column;
+	justify-content: center;
+}
+.aside__menu {
+	gap: 3.2rem;
+	display: flex;
+	padding: 2.4rem;
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: center;
+}
+.aside__button {
+	list-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.aside {
+		display: none;
+	}
+}

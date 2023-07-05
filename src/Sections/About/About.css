@@ -35,10 +35,10 @@
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-.about__skills {
+.about__technologies {
 	list-style: none;
 }
-.about__skill {
+.about__technology {
 	gap: 1.2rem;
 	display: flex;
 	color: #8d99ae;
@@ -48,7 +48,7 @@
 	align-items: center;
 	font-family: "Fira Code", monospace;
 }
-.about__skill::before {
+.about__technology::before {
 	content: "";
 	width: 0.6rem;
 	height: 0.6rem;
@@ -59,11 +59,6 @@
 	height: 32rem;
 	display: block;
 	border: 0.1rem solid #ef233c;
-}
-.about__work {
-	gap: 1.6rem;
-	display: flex;
-	flex-direction: column;
 }
 
 @media screen and (min-width: 1024px) {
@@ -77,7 +72,7 @@
 	.about {
 		gap: 2.4rem;
 	}
-	.about__list {
+	.about__technologies {
 		width: 32rem;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
@@ -88,7 +83,7 @@
 }
 
 @media screen and (max-width: 425px) {
-	.about__list {
+	.about__technologies {
 		width: 100%;
 	}
 }

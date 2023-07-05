@@ -1,6 +1,11 @@
 import "./Content.css";
+import { useContext } from "react";
+import { Context } from "../../Context";
 
-function Content({ children, openMenu }) {
+function Content({ children }) {
+	// Use Context
+	const { openMenu } = useContext(Context);
+
 	//Render UI Layout
 	return (
 		<>

@@ -1,0 +1,24 @@
+.social {
+	gap: 1.6rem;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+.social__link {
+	color: #ef233c;
+	transition: all 0.4s ease-in-out;
+}
+.social__link:hover {
+	color: #d90429;
+	transform: translateY(-0.4rem);
+}
+
+@media screen and (min-width: 1366px) {
+	.social {
+		left: 6.4rem;
+		bottom: 2.4rem;
+		position: fixed;
+		flex-direction: column;
+	}
+}

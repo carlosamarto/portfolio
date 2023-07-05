@@ -5,19 +5,3 @@
 	align-items: center;
 	justify-content: center;
 }
-
-.loader .logo {
-	animation: rotate 1.5s infinite linear;
-}
-
-@keyframes rotate {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(1.1);
-	}
-	100% {
-		transform: scale(1);
-	}
-}

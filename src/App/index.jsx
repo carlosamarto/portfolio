@@ -1,5 +1,6 @@
 import "./App.css";
 import { useChangeLang, useHeaderScroll, useLoadingContent, useOpenMenu } from "../Hooks";
+import { Context } from "../Context";
 import { Content, Footer, Header, Loader } from "../Layouts";
 import { Intro, About, Projects, Contact } from "../Sections";
 import { content } from "../Mocks";
@@ -11,7 +12,8 @@ function App() {
 	// Tracks header visibility and previous scroll position
 	const [isHeaderVisible, prevScrollPos] = useHeaderScroll();
 
-	const isLoading = useLoadingContent();
+	// Validate the state for load the content
+	const isLoadingContent = useLoadingContent();
 
 	// Controls the open/close state of the menu
 	const [openMenu, setOpenMenu] = useOpenMenu();
@@ -22,31 +24,37 @@ function App() {
 	// Render app with props
 	return (
 		<>
-			{isLoading ? (
-				<Loader />
-			) : (
-				<>
-					<Header
-						isHeaderVisible={isHeaderVisible}
-						prevScrollPos={prevScrollPos}
-						openMenu={openMenu}
-						setOpenMenu={setOpenMenu}
-						data={data.header}
-					/>
+			<Context.Provider
+				value={{
+					lang,
+					toggleLang,
+					isHeaderVisible,
+					prevScrollPos,
+					openMenu,
+					setOpenMenu,
+					data,
+				}}
+			>
+				{isLoadingContent ? (
+					<Loader />
+				) : (
+					<>
+						<Header />
 
-					<Content openMenu={openMenu}>
-						<Intro data={data.intro} />
+						<Content>
+							<Intro data={data.intro} />
 
-						<About data={data.about} />
+							<About data={data.about} />
 
-						<Projects data={data.projects} />
+							<Projects data={data.projects} />
 
-						<Contact data={data.contact} />
-					</Content>
+							<Contact data={data.contact} />
+						</Content>
 
-					<Footer lang={lang} toggleLang={toggleLang} openMenu={openMenu} data={data.footer} />
-				</>
-			)}
+						<Footer lang={lang} toggleLang={toggleLang} openMenu={openMenu} data={data.footer} />
+					</>
+				)}
+			</Context.Provider>
 		</>
 	);
 }

@@ -6,7 +6,7 @@ function Loader() {
 	return (
 		<>
 			<div className="loader">
-				<Logo width={136} height={136} />
+				<Logo width={144} height={144} />
 			</div>
 		</>
 	);

@@ -1,22 +1,19 @@
 import "./Button.css";
 
-function Button({ link, target, size, text }) {
+function Button({ link, external, text }) {
 	// Render UI Component
 	return (
 		<>
-			{target ? (
-				<a href={link} target="_blank" rel="noopener noreferrer" className={`button button--${size || "default"}`}>
-					<span className="button__inner">
-						<span className="button__content">{text}</span>
-					</span>
-				</a>
-			) : (
-				<a href={link} className={`button button--${size || "default"}`}>
-					<span className="button__inner">
-						<span className="button__content">{text}</span>
-					</span>
-				</a>
-			)}
+			<a
+				href={link}
+				target={external ? "_blank" : null}
+				rel={external ? "noopener noreferrer" : null}
+				className="button"
+			>
+				<span className="button__inner">
+					<span className="button__content">{text}</span>
+				</span>
+			</a>
 		</>
 	);
 }

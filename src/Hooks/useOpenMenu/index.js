@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function useOpenMenu() {
+const useOpenMenu = () => {
 	// Controls the open/close state of the menu
 	const [openMenu, setOpenMenu] = useState(false);
 
@@ -28,6 +28,6 @@ function useOpenMenu() {
 	}, [openMenu]);
 
 	return [openMenu, setOpenMenu];
-}
+};
 
 export { useOpenMenu };

@@ -1,22 +1,27 @@
 import "./Projects.css";
-import { Project, Title } from "../../Components";
+import { useContext } from "react";
+import { Context } from "../../Context";
+import { CardProject, CustomTitle } from "../../Components";
 
-function Projects({ data }) {
+function Projects() {
+	// Use Context
+	const { data } = useContext(Context);
+
 	// Render UI Section
 	return (
 		<>
 			<section id="projects" className="projects">
-				<Title number={data.number} title={data.title} />
+				<CustomTitle number={data.projects.sectionNumber} customTitle={data.projects.title} />
 
-				<ul className="projects__grid">
-					{data.cards.map((project) => (
-						<Project
-							key={project.title}
-							website={project.website}
-							github={project.github}
-							title={project.title}
-							description={project.description}
-							skills={project.skills}
+				<ul className="projects__cards">
+					{data.projects.cardProjects.map((cardProject) => (
+						<CardProject
+							key={cardProject.title}
+							website={cardProject.website}
+							github={cardProject.github}
+							title={cardProject.title}
+							description={cardProject.description}
+							technologies={cardProject.technologies}
 						/>
 					))}
 				</ul>

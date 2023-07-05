@@ -3,7 +3,7 @@
 <div align="center">
    <h1 align="center">Carlos Martínez</h1>
 
-   <img src="./public/Logo.svg" alt="Logo" width="142" height="142" />
+   <img src="./public/Logo.svg" alt="Logo" width="500" height="500" />
 
    <p>My personal portfolio to collect my experience and work, built in React.</p> 
    

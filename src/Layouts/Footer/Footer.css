@@ -13,24 +13,7 @@
 	pointer-events: none;
 	filter: blur(0.4rem) brightness(0.6);
 }
-
-.social {
-	gap: 1.6rem;
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: center;
-}
-.social__links {
-	color: #ef233c;
-	transition: all 0.2s ease-in-out;
-}
-.social__links:hover {
-	color: #d90429;
-	transform: translateY(-0.4rem);
-}
-
-.repository {
+.footer__text {
 	gap: 0.8rem;
 	display: flex;
 	color: #8d99ae;
@@ -39,60 +22,4 @@
 	font-size: 1.6rem;
 	align-items: center;
 	font-family: "Fira Code", monospace;
-}
-
-.toggle {
-	display: flex;
-	cursor: pointer;
-	position: relative;
-	border: 0.1rem #ef233c solid;
-}
-.toggle__en,
-.toggle__es {
-	z-index: 2;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	color: #ef233c;
-	line-height: 1.5;
-	font-weight: 500;
-	font-size: 1.4rem;
-	text-align: center;
-	padding: 0.2rem 0.8rem;
-	background: transparent;
-	text-transform: capitalize;
-	font-family: "Fira Code", monospace;
-}
-.toggle--en .toggle__en,
-.toggle--es .toggle__es {
-	color: #edf2f4;
-}
-.toggle__slide {
-	top: 0;
-	width: 3.28rem;
-	height: 2.5rem;
-	position: absolute;
-	background-color: #ef233c;
-	transition: all 0.2s ease-in-out;
-}
-.toggle--en .toggle__slide {
-	transform: translateX(0);
-}
-.toggle--es .toggle__slide {
-	transform: translateX(100%);
-}
-
-@media screen and (min-width: 1366px) {
-	.social {
-		left: 6.4rem;
-		bottom: 2.4rem;
-		position: fixed;
-		flex-direction: column;
-	}
-
-	.toggle {
-		right: 6.4rem;
-		bottom: 2.4rem;
-		position: fixed;
-	}
 }

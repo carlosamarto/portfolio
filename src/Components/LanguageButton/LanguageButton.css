@@ -1,0 +1,49 @@
+.toggle {
+	display: flex;
+	cursor: pointer;
+	position: relative;
+	border: 0.1rem #ef233c solid;
+}
+.toggle__button {
+	z-index: 2;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #ef233c;
+	line-height: 1.5;
+	font-weight: 500;
+	font-size: 1.4rem;
+	text-align: center;
+	padding: 0.2rem 0.8rem;
+	background: transparent;
+	text-transform: capitalize;
+	font-family: "Fira Code", monospace;
+}
+.toggle__slide {
+	top: 0;
+	width: 3.28rem;
+	height: 2.5rem;
+	position: absolute;
+	background-color: #ef233c;
+	transition: all 0.2s ease-in-out;
+}
+.toggle--en .toggle__button {
+	color: #edf2f4;
+}
+.toggle--es .toggle__button {
+	color: #edf2f4;
+}
+.toggle--en .toggle__slide {
+	transform: translateX(0);
+}
+.toggle--es .toggle__slide {
+	transform: translateX(100%);
+}
+
+@media screen and (min-width: 1366px) {
+	.toggle {
+		right: 6.4rem;
+		bottom: 2.4rem;
+		position: fixed;
+	}
+}
