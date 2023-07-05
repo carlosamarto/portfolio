@@ -5,7 +5,6 @@ import { Content, Footer, Header, Loader } from "../Layouts";
 import { About, Contact, Intro, Projects } from "../Sections";
 import { content } from "../Mocks";
 
-// Main
 function App() {
 	// Toggles between language options
 	const [lang, toggleLang] = useChangeLang("LANG_V1", "en");
@@ -22,7 +21,7 @@ function App() {
 	// Selects the content data based on the current language
 	const data = lang === "en" ? content.english : content.spanish;
 
-	// Render app with props
+	// Render App
 	return (
 		<>
 			{/* Context Provider */}
