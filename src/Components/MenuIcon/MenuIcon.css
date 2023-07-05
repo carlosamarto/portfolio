@@ -5,6 +5,12 @@
 	position: relative;
 	background: transparent;
 }
+.menu-icon--animation-start {
+	opacity: 0;
+	transform: translateY(8rem);
+	transition: all 0.6s ease-in-out;
+	animation: fade-down 0.6s ease-out 0.2s 1 normal forwards;
+}
 .menu-icon__content {
 	width: 4rem;
 	display: flex;

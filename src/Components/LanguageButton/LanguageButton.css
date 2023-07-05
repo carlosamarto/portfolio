@@ -46,4 +46,10 @@
 		bottom: 2.4rem;
 		position: fixed;
 	}
+	.toggle--animation-start {
+		opacity: 0;
+		transform: translateX(8rem);
+		transition: all 0.6s ease-in-out;
+		animation: fade-left 0.6s ease-out 2.2s 1 normal forwards;
+	}
 }

@@ -5,7 +5,7 @@ import { Logo, Menu, MenuAside, MenuIcon } from "../../Components";
 
 function Header() {
 	// Accessing values from the context using useContext hook
-	const { isHeaderVisible, prevScrollPos } = useContext(Context);
+	const { isAnimationFinished, isHeaderVisible, prevScrollPos } = useContext(Context);
 
 	// Render UI Layout
 	return (
@@ -16,7 +16,10 @@ function Header() {
 				}`}
 			>
 				<nav className="nav">
-					<a href="/" className="nav__logo">
+					<a
+						href="/"
+						className={`nav__logo ${isAnimationFinished ? "nav__logo--animation-done" : "nav__logo--animation-start"}`}
+					>
 						<Logo width={48} height={48} />
 					</a>
 

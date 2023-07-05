@@ -6,12 +6,12 @@ import { MenuItem } from "../MenuItem";
 
 function Menu() {
 	// Accessing values from the context using useContext hook
-	const { data } = useContext(Context);
+	const { isAnimationFinished, data } = useContext(Context);
 
 	//Render UI Component
 	return (
 		<>
-			<ul className="menu">
+			<ul className={`menu ${isAnimationFinished ? "menu--animation-done" : "menu--animation-start"}`}>
 				{data.header.menuItems.map((item) => (
 					<MenuItem
 						key={item.menuNumber}

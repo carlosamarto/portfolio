@@ -4,12 +4,16 @@ import { Context } from "../../Context";
 
 function LanguageButton({ langTagEn, langTagEs }) {
 	// Accessing values from the context using useContext hook
-	const { lang, toggleLang } = useContext(Context);
+	const { isAnimationFinished, lang, toggleLang } = useContext(Context);
 
 	// Render UI Layout
 	return (
 		<>
-			<div className={`toggle ${lang === langTagEn ? "toggle--en" : "toggle--es"}`}>
+			<div
+				className={`toggle ${lang === langTagEn ? "toggle--en" : "toggle--es"} ${
+					isAnimationFinished ? "toggle--animation-done" : "toggle--animation-start"
+				}`}
+			>
 				<button className="toggle__button" onClick={() => toggleLang(langTagEn)}>
 					{langTagEn}
 				</button>

@@ -21,4 +21,10 @@
 		position: fixed;
 		flex-direction: column;
 	}
+	.social--animation-start {
+		opacity: 0;
+		transform: translateX(-8rem);
+		transition: all 0.6s ease-in-out;
+		animation: fade-right 0.6s ease-out 2s 1 normal forwards;
+	}
 }

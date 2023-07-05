@@ -5,12 +5,15 @@ import { Button } from "../../Components";
 
 function Intro() {
 	// Accessing values from the context using useContext hook
-	const { data } = useContext(Context);
+	const { isAnimationFinished, data } = useContext(Context);
 
 	// Render UI Section
 	return (
 		<>
-			<section id="intro" className="intro">
+			<section
+				id="intro"
+				className={`intro ${isAnimationFinished ? "intro--animation-done" : "intro--animation-start"}`}
+			>
 				<h4 className="intro__subtitle">{data.intro.subtitle}</h4>
 
 				<h1 className="intro__title">{data.intro.title}</h1>

@@ -1,11 +1,14 @@
 import "./App.css";
-import { useChangeLang, useHeaderScroll, useLoadingContent, useOpenMenu } from "../Hooks";
+import { useAnimationTimer, useChangeLang, useHeaderScroll, useLoadingContent, useOpenMenu } from "../Hooks";
 import { Context } from "../Context";
 import { Content, Footer, Header, Loader } from "../Layouts";
 import { About, Contact, Intro, Projects } from "../Sections";
 import { content } from "../Mocks";
 
 function App() {
+	// Call the custom hook to get the timer animation status
+	const isAnimationFinished = useAnimationTimer();
+
 	// Toggles between language options
 	const [lang, toggleLang] = useChangeLang("LANG_V1", "en");
 
@@ -27,6 +30,7 @@ function App() {
 			{/* Context Provider */}
 			<Context.Provider
 				value={{
+					isAnimationFinished,
 					lang,
 					toggleLang,
 					isHeaderVisible,
