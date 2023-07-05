@@ -11,7 +11,7 @@
 .card-project:hover {
 	transform: translateY(-1.2rem);
 }
-.card-project:hover .card-project__title {
+.card-project:hover .card-project__url {
 	color: #ef233c;
 }
 .card-project__header {
@@ -44,13 +44,13 @@
 }
 .card-project__title {
 	line-height: 1.5;
-	color: #edf2f4;
 	font-weight: 500;
 	font-size: 2.4rem;
 	transition: all 0.2s ease-in-out;
 	font-family: "Inter", sans-serif;
 }
 .card-project__url {
+	color: #edf2f4;
 	text-decoration: none;
 }
 .card-project__url::before {
