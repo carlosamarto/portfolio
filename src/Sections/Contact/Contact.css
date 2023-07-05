@@ -1,10 +1,17 @@
 .contact {
+	opacity: 0;
 	gap: 1.6rem;
 	display: flex;
 	min-height: 100vh;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	transform: translateY(12rem);
+	transition: all 0.8s ease-in-out;
+}
+.contact--animation {
+	opacity: 1;
+	transform: translateY(0);
 }
 .contact__subtitle {
 	color: #ef233c;

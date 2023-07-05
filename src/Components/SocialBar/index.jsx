@@ -7,7 +7,7 @@ function SocialBar({ links }) {
 	// Accessing values from the context using useContext hook
 	const { isAnimationFinished } = useContext(Context);
 
-	//Render UI Component
+	// Render UI Component
 	return (
 		<>
 			<div className={`social ${isAnimationFinished ? "social--animation-done" : "social--animation-start"}`}>
