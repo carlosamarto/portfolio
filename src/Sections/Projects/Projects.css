@@ -9,7 +9,7 @@
 .projects__cards {
 	gap: 2.4rem;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
 }
 
 @media screen and (max-width: 768px) {
