@@ -9,7 +9,7 @@
 
    <br><br>
 
-   <h2>My personal portfolio to collect my experience and work, built in React.</h2> 
+   <h2>My personal portfolio to collect my experience and work, built in React.</h2>
    
    <br><br>
 </div>
