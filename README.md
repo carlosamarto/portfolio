@@ -5,7 +5,7 @@
 
 <br><br>
 
-   <img src="./public/Image.png" alt="Image" width="1200" height="630" />
+   <img src="./public/Logo.svg" alt="Logo" width="240" height="240" />
 
 <br><br>
 
@@ -18,10 +18,10 @@
 
 ## 💼 Used technologies
 
-![](https://img.shields.io/badge/HTML-informational?style=for-the-badge&logo=html5&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
-![](https://img.shields.io/badge/CSS-informational?style=for-the-badge&logo=css3&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
-![](https://img.shields.io/badge/JavaScript-informational?style=for-the-badge&logo=JavaScript&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
-![](https://img.shields.io/badge/React.js-informational?style=for-the-badge&logo=react&logoColor=edf2f4&color=ef233c&labelColor=2b2d42)
+![](https://img.shields.io/badge/HTML-informational?style=for-the-badge&logo=html5&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
+![](https://img.shields.io/badge/CSS-informational?style=for-the-badge&logo=css3&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
+![](https://img.shields.io/badge/JavaScript-informational?style=for-the-badge&logo=JavaScript&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
+![](https://img.shields.io/badge/React.js-informational?style=for-the-badge&logo=react&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
 
 ## 🚨 Forking this repo
 
