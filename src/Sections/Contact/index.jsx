@@ -17,7 +17,7 @@ function Contact() {
 
 				<p className="contact__text contact__text--fade-up" dangerouslySetInnerHTML={{ __html: data.contact.text }} />
 
-				<Button link={data.contact.buttonLink} target size="default" text={data.contact.buttonText} />
+				<Button link={data.contact.buttonLink} text={data.contact.buttonText} external />
 			</section>
 		</>
 	);
