@@ -106,7 +106,7 @@ export const content = {
 				{ menuNumber: "04.", menuText: "Contacto", menuLink: "#contact" },
 			],
 			buttonText: "Curriculum",
-			ButtonLink: "Curriculum.pdf",
+			buttonLink: "Curriculum.pdf",
 		},
 		intro: {
 			subtitle: "Hola, me llamo",
