@@ -15,13 +15,25 @@ function CardProject({ website, github, title, description, technologies }) {
 
 						<div className="card-project__icons">
 							{github && (
-								<a href={github} target="_blank" rel="noopener noreferrer" className="card-project__links">
+								<a
+									href={github}
+									aria-label="Project Github"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="card-project__links"
+								>
 									<SlSocialGithub size="2.4rem" className="card-project__icon" />
 								</a>
 							)}
 
 							{website && (
-								<a href={website} target="_blank" rel="noopener noreferrer" className="card-project__links">
+								<a
+									href={website}
+									aria-label="Project Website"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="card-project__links"
+								>
 									<VscLinkExternal size="2.4rem" className="card-project__icon" />
 								</a>
 							)}
