@@ -4,8 +4,10 @@
 }
 .content--lock {
 	user-select: none;
+	user-select: none;
 	touch-action: none;
 	pointer-events: none;
+	-webkit-user-select: none;
 	filter: blur(0.4rem) brightness(0.6);
 }
 
