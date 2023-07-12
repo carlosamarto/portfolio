@@ -4,6 +4,9 @@ import { Context } from "../Context";
 import { Content, Footer, Header, Loader } from "../Layouts";
 import { About, Contact, Intro, Projects } from "../Sections";
 import { content } from "../Mocks";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 function App() {
 	// Call the custom hook to get the timer animation status
