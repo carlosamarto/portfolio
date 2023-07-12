@@ -3,11 +3,10 @@
 	transition: all 0.2s ease-in-out;
 }
 .content--lock {
-	user-select: none;
-	user-select: none;
 	touch-action: none;
 	pointer-events: none;
 	-webkit-user-select: none;
+	user-select: none;
 	filter: blur(0.4rem) brightness(0.6);
 }
 
