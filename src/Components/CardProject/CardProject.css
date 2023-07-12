@@ -34,7 +34,7 @@
 }
 .card-project__links {
 	z-index: 2;
-	color: #8d99ae;
+	color: #edf2f4;
 	position: relative;
 	text-decoration: none;
 	transition: all 0.2s ease-in-out;
@@ -79,7 +79,7 @@
 }
 .card-project__technology {
 	line-height: 1.5;
-	color: #8d99ae;
+	color: #edf2f4;
 	font-weight: 500;
 	font-size: 1.4rem;
 	font-family: "Fira Code", monospace;
