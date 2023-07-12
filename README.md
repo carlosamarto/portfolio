@@ -3,11 +3,11 @@
 <div align="center">
    <h1 align="center">Carlos Martínez</h1>
 
-   <br><br>
+<br><br>
 
    <img src="./public/Logo.svg" alt="Logo" width="240" height="240" />
 
-   <br><br>
+<br><br>
 
    <p></p>My personal portfolio to collect my experience and work, built in React.</p>
 </div>
