@@ -18,6 +18,7 @@ function Header() {
 				<nav className="nav">
 					<a
 						href="/"
+						aria-label="Home"
 						className={`nav__logo ${isAnimationFinished ? "nav__logo--animation-done" : "nav__logo--animation-start"}`}
 					>
 						<Logo width={48} height={48} />

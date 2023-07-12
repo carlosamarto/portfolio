@@ -10,6 +10,7 @@ function MenuIcon() {
 	return (
 		<>
 			<button
+				type="button"
 				className={`menu-icon ${isAnimationFinished ? "menu-icon--animation-done" : "menu-icon--animation-start"}`}
 				aria-label="Menu Icon"
 			>

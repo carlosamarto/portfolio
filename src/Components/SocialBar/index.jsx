@@ -11,19 +11,31 @@ function SocialBar({ links }) {
 	return (
 		<>
 			<div className={`social ${isAnimationFinished ? "social--animation-done" : "social--animation-start"}`}>
-				<a href={links.github} target="_blank" rel="noopener noreferrer" className="social__link">
+				<a href={links.github} aria-label="github" target="_blank" rel="noopener noreferrer" className="social__link">
 					<SlSocialGithub size="2.4rem" className="social__icon" />
 				</a>
 
-				<a href={links.instagram} target="_blank" rel="noopener noreferrer" className="social__link">
+				<a
+					href={links.instagram}
+					aria-label="instagram"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="social__link"
+				>
 					<SlSocialInstagram size="2.4rem" className="social__icon" />
 				</a>
 
-				<a href={links.twitter} target="_blank" rel="noopener noreferrer" className="social__link">
+				<a href={links.twitter} aria-label="twitter" target="_blank" rel="noopener noreferrer" className="social__link">
 					<SlSocialTwitter size="2.4rem" className="social__icon" />
 				</a>
 
-				<a href={links.linkedin} target="_blank" rel="noopener noreferrer" className="social__link">
+				<a
+					href={links.linkedin}
+					aria-label="linkedin"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="social__link"
+				>
 					<SlSocialLinkedin size="2.4rem" className="social__icon" />
 				</a>
 			</div>

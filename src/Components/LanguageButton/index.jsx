@@ -14,11 +14,11 @@ function LanguageButton({ langTagEn, langTagEs }) {
 					isAnimationFinished ? "toggle--animation-done" : "toggle--animation-start"
 				}`}
 			>
-				<button className="toggle__button" onClick={() => toggleLang(langTagEn)}>
+				<button type="button" className="toggle__button" onClick={() => toggleLang(langTagEn)}>
 					{langTagEn}
 				</button>
 
-				<button className="toggle__button" onClick={() => toggleLang(langTagEs)}>
+				<button type="button" className="toggle__button" onClick={() => toggleLang(langTagEs)}>
 					{langTagEs}
 				</button>
 
