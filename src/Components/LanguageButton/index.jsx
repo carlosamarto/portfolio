@@ -21,8 +21,6 @@ function LanguageButton({ langTagEn, langTagEs }) {
 				<button type="button" className="toggle__button" onClick={() => toggleLang(langTagEs)}>
 					{langTagEs}
 				</button>
-
-				<div className="toggle__slide" data-content="toggle Slide" aria-hidden="true"></div>
 			</div>
 		</>
 	);
