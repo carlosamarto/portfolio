@@ -1,6 +1,7 @@
 import "./SocialBar.css";
 import { useContext } from "react";
 import { Context } from "../../Context";
+import { ImCodepen } from "react-icons/im";
 import { SlSocialGithub, SlSocialInstagram, SlSocialTwitter, SlSocialLinkedin } from "react-icons/sl";
 
 function SocialBar({ links }) {
@@ -37,6 +38,10 @@ function SocialBar({ links }) {
 					className="social__link"
 				>
 					<SlSocialLinkedin size="2.4rem" className="social__icon" />
+				</a>
+
+				<a href={links.codepen} aria-label="codepen" target="_blank" rel="noopener noreferrer" className="social__link">
+					<ImCodepen size="2.4rem" className="social__icon" />
 				</a>
 			</div>
 		</>

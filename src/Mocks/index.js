@@ -58,6 +58,13 @@ export const content = {
 					technologies: ["React", "Next.js", "Tailwind"],
 				},
 				{
+					website: "https://tic-tac-toe-five-rosy.vercel.app/",
+					github: "https://github.com/carlosmrtzor/tic-tac-toe",
+					title: "Tic Tac Toe.",
+					description: "Tic Tac Toe Game in React using useEffect and LocalStorage.",
+					technologies: ["React"],
+				},
+				{
 					website: "https://dominiquepanczuch.com/",
 					title: "Dominique",
 					description: "Designer Portfolio for Dominique Panczuch built on WordPress.",
@@ -91,6 +98,7 @@ export const content = {
 				instagram: "https://www.instagram.com/devilsncry3/",
 				twitter: "https://twitter.com/devilsncry3",
 				linkedin: "https://www.linkedin.com/in/carlosmrtzo/",
+				codepen: "https://codepen.io/carlosmrtzo",
 			},
 			langEn: "en",
 			langEs: "es",
@@ -156,6 +164,13 @@ export const content = {
 					technologies: ["React", "Next.js", "Tailwind"],
 				},
 				{
+					website: "https://tic-tac-toe-five-rosy.vercel.app/",
+					github: "https://github.com/carlosmrtzor/tic-tac-toe",
+					title: "Tic Tac Toe.",
+					description: "Tic Tac Toe Game en React usando useEffect y LocalStorage.",
+					technologies: ["React"],
+				},
+				{
 					website: "https://dominiquepanczuch.com/",
 					title: "Dominique",
 					description: "Portafolio de diseñador para Dominique Panczuch, construido en WordPress.",
@@ -189,6 +204,7 @@ export const content = {
 				instagram: "https://www.instagram.com/devilsncry3/",
 				twitter: "https://twitter.com/devilsncry3",
 				linkedin: "https://www.linkedin.com/in/carlosmrtzo/",
+				codepen: "https://codepen.io/carlosmrtzo",
 			},
 			langEn: "en",
 			langEs: "es",
