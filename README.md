@@ -6,7 +6,7 @@
 
    <h3 align="center">Carlos Martínez</h3>
 
-   <p></p>Preview Portfolio.</p>
+   <p></p>My personal portfolio to collect my experience and work, built in React.</p>
 </div>
 
 ## 💼 Used technologies
