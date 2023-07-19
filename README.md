@@ -1,9 +1,10 @@
 ## 📄 Intro
 
 <div align="center">
-   <h1 align="center">Carlos Martínez</h1>
 
 [![Portfolio](./public/Logo.svg)](https://www.carlosmrtzo.com/)
+
+   <h3 align="center">Carlos Martínez</h3>
 
    <p></p>My personal portfolio to collect my experience and work, built in React.</p>
 </div>
