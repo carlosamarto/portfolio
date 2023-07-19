@@ -1,5 +1,5 @@
 import "./App.css";
-import { useAnimationTimer, useChangeLang, useHeaderScroll, useLoadingContent, useOpenMenu } from "../Hooks/index";
+import { useAnimationTimer, useChangeLang, useHeaderScroll, useLoadingContent, useOpenMenu } from "../Hooks";
 import { Context } from "../Context";
 import { Content, Footer, Header, Loader } from "../Layouts";
 import { About, Contact, Intro, Projects } from "../Sections";
