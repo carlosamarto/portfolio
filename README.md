@@ -5,23 +5,21 @@
 
 <br><br>
 
-   <img src="./public/Logo.svg" alt="Logo" width="240" height="240" />
+[![Portfolio](./public/Logo.svg)](https://www.carlosmrtzo.com/)
 
 <br><br>
 
    <p></p>My personal portfolio to collect my experience and work, built in React.</p>
 </div>
 
-<!-- [![Portfolio](./public/preview.png)](https://www.carlosmrtzo.com/) -->
-
 ## 💼 Used technologies
 
 ![](https://img.shields.io/badge/HTML-informational?style=for-the-badge&logo=html5&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
 ![](https://img.shields.io/badge/CSS-informational?style=for-the-badge&logo=css3&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
 ![](https://img.shields.io/badge/JavaScript-informational?style=for-the-badge&logo=JavaScript&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
-![](https://img.shields.io/badge/React.js-informational?style=for-the-badge&logo=react&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
+![](https://img.shields.io/badge/ReactJS-informational?style=for-the-badge&logo=react&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
 
-## 🚨 Forking this repo
+## 🚨 Forking this repository
 
 You are free to fork this repository, either to see the code or use the portfolio, always giving the respective credits. 💪🏻
 
