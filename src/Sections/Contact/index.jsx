@@ -2,7 +2,7 @@ import "./Contact.css";
 import { useContext } from "react";
 import { Context } from "../../Context";
 import { Button } from "../../Components";
-import { useSectionAnimation } from "../../Hooks";
+import { useSectionAnimation } from "../../CustomHooks";
 
 function Contact() {
 	// Detect if an element is visible on the screen

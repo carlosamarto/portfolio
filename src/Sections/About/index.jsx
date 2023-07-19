@@ -2,7 +2,7 @@ import "./About.css";
 import { useContext } from "react";
 import { Context } from "../../Context";
 import { CustomTitle } from "../../Components";
-import { useSectionAnimation } from "../../Hooks";
+import { useSectionAnimation } from "../../CustomHooks";
 
 function About() {
 	// Detect if an element is visible on the screen
