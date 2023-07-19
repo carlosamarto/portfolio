@@ -2,7 +2,7 @@ import "./Projects.css";
 import { useContext } from "react";
 import { Context } from "../../Context";
 import { CardProject, CustomTitle } from "../../Components";
-import { useSectionAnimation } from "../../CustomHooks";
+import { useSectionAnimation } from "../../Hooks";
 
 function Projects() {
 	// Detect if an element is visible on the screen
