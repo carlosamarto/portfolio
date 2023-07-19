@@ -9,7 +9,7 @@ const useAnimationTimer = () => {
 		// Create a timer that sets `isTimerFinished` to `true` after 5.5 seconds (5500 milliseconds)
 		const timer = setTimeout(() => {
 			setIsAnimationFinished(true);
-		}, 5500);
+		}, 6000);
 
 		// Clear the timer when the component is unmounted or the dependency array changes.
 		return () => clearTimeout(timer);
