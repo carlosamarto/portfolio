@@ -62,7 +62,7 @@ export const content = {
 					website: "https://tic-tac-toe-five-rosy.vercel.app/",
 					github: "https://github.com/carlosmrtzor/tic-tac-toe",
 					title: "Tic Tac Toe",
-					description: "Tic Tac Toe Game in React using useEffect and LocalStorage, from Midudev's course.",
+					description: "Tic Tac Toe in React using useEffect and LocalStorage, from Midudev's course.",
 					technologies: ["ReactJS"],
 				},
 				{
@@ -168,7 +168,7 @@ export const content = {
 					website: "https://tic-tac-toe-five-rosy.vercel.app/",
 					github: "https://github.com/carlosmrtzor/tic-tac-toe",
 					title: "Tic Tac Toe",
-					description: "Juego Tic Tac Toe en React usando useEffect y LocalStorage, del curso de Midudev.",
+					description: "Tic Tac Toe en React usando useEffect y LocalStorage, del curso de Midudev.",
 					technologies: ["ReactJS"],
 				},
 				{
