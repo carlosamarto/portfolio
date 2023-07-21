@@ -1,4 +1,5 @@
-.intro {
+/* Introduction */
+.introduction {
 	gap: 1.6rem;
 	display: flex;
 	min-height: 100vh;
@@ -6,24 +7,24 @@
 	flex-direction: column;
 	justify-content: center;
 }
-.intro--animation-start > * {
+.introduction--animation-start > * {
 	opacity: 0;
 	transform: translateY(8rem);
 	transition: all 0.6s ease-in-out;
 }
-.intro--animation-start .intro__subtitle {
+.introduction--animation-start .introduction__subtitle {
 	animation: fade-up 0.6s ease-out 0.4s 1 normal forwards;
 }
-.intro--animation-start .intro__title {
+.introduction--animation-start .introduction__title {
 	animation: fade-up 0.6s ease-out 0.6s 1 normal forwards;
 }
-.intro--animation-start .intro__text {
+.introduction--animation-start .introduction__text {
 	animation: fade-up 0.6s ease-out 0.8s 1 normal forwards;
 }
-.intro--animation-start .button {
+.introduction--animation-start .button {
 	animation: fade-up 0.6s ease-out 1s 1 normal forwards;
 }
-.intro__subtitle {
+.introduction__subtitle {
 	color: #ef233c;
 	font-weight: 500;
 	line-height: 1.5;
@@ -31,7 +32,7 @@
 	text-align: center;
 	font-family: "Fira Code", monospace;
 }
-.intro__title {
+.introduction__title {
 	line-height: 1;
 	color: #edf2f4;
 	font-weight: 700;
@@ -39,7 +40,7 @@
 	text-align: center;
 	font-family: "Inter", sans-serif;
 }
-.intro__text {
+.introduction__text {
 	width: 52.8rem;
 	color: #8d99ae;
 	font-weight: 500;
@@ -48,34 +49,35 @@
 	text-align: center;
 	font-family: "Fira Code", monospace;
 }
-.intro__strong {
+.introduction__strong {
 	font-weight: 500;
 	color: #ef233c;
 }
 
+/* Media Queries */
 @media screen and (min-width: 1024px) {
-	.intro--animation-start .intro__subtitle {
+	.introduction--animation-start .introduction__subtitle {
 		animation: fade-up 0.6s ease-out 1.2s 1 normal forwards;
 	}
-	.intro--animation-start .intro__title {
+	.introduction--animation-start .introduction__title {
 		animation: fade-up 0.6s ease-out 1.4s 1 normal forwards;
 	}
-	.intro--animation-start .intro__text {
+	.introduction--animation-start .introduction__text {
 		animation: fade-up 0.6s ease-out 1.6s 1 normal forwards;
 	}
-	.intro--animation-start .button {
+	.introduction--animation-start .button {
 		animation: fade-up 0.6s ease-out 1.8s 1 normal forwards;
 	}
-	.intro__title {
+	.introduction__title {
 		font-size: 9.6rem;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.intro__title {
+	.introduction__title {
 		font-size: 3.2rem;
 	}
-	.intro__text {
+	.introduction__text {
 		width: 100%;
 	}
 }

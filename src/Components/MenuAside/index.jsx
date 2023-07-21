@@ -11,9 +11,9 @@ function MenuAside() {
 	//Render UI Component
 	return (
 		<>
-			<aside className={`aside ${openMenu ? "aside--open" : "aside--close"}`} aria-hidden="true">
-				<nav className="aside__nav">
-					<ul className="aside__menu">
+			<aside className={`menu-aside ${openMenu ? "menu-aside--open" : "menu-aside--close"}`} aria-hidden="true">
+				<nav className="menu-aside__nav">
+					<ul className="menu-aside__menu">
 						{data.header.menuItems.map((item) => (
 							<MenuItem
 								key={item.menuNumber}
@@ -23,7 +23,7 @@ function MenuAside() {
 							/>
 						))}
 
-						<li className="aside__button">
+						<li className="menu-aside__button">
 							<Button link={data.header.buttonLink} text={data.header.buttonText} external />
 						</li>
 					</ul>

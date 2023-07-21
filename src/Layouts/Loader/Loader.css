@@ -1,3 +1,4 @@
+/* Loader */
 .loader {
 	width: 100vw;
 	height: 100vh;
@@ -17,6 +18,7 @@
 	animation: loaderOpacity 0.4s ease-in 1.5s forwards;
 }
 
+/* Animations */
 @keyframes loaderDraw {
 	to {
 		stroke-dashoffset: 0;

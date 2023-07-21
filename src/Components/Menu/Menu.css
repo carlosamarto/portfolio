@@ -1,3 +1,4 @@
+/* Menu */
 .menu {
 	gap: 3.2rem;
 	display: none;
@@ -28,6 +29,7 @@
 	animation: fade-down 0.6s ease-out 1s 1 normal forwards;
 }
 
+/* Media Queries */
 @media screen and (min-width: 1024px) {
 	.menu {
 		display: flex;

@@ -1,3 +1,4 @@
+/* Custom-title */
 .custom-title {
 	display: flex;
 	position: relative;
@@ -33,6 +34,7 @@
 	font-family: "Fira Code", monospace;
 }
 
+/* Media Queries */
 @media screen and (min-width: 768px) {
 	.custom-title__heading {
 		font-size: 3.2rem;

@@ -1,3 +1,4 @@
+/* Projects */
 .projects {
 	opacity: 0;
 	gap: 6.4rem;
@@ -19,6 +20,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
 }
 
+/* Media Queries */
 @media screen and (max-width: 768px) {
 	.projects {
 		gap: 2.4rem;

@@ -11,9 +11,17 @@ function SocialBar({ links }) {
 	// Render UI Component
 	return (
 		<>
-			<div className={`social ${isAnimationFinished ? "social--animation-done" : "social--animation-start"}`}>
-				<a href={links.github} aria-label="github" target="_blank" rel="noopener noreferrer" className="social__link">
-					<SlSocialGithub size="2.4rem" className="social__icon" />
+			<div
+				className={`social-bar ${isAnimationFinished ? "social-bar--animation-done" : "social-bar--animation-start"}`}
+			>
+				<a
+					href={links.github}
+					aria-label="github"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="social-bar__link"
+				>
+					<SlSocialGithub size="2.4rem" className="social-bar__icon" />
 				</a>
 
 				<a
@@ -21,13 +29,19 @@ function SocialBar({ links }) {
 					aria-label="instagram"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="social__link"
+					className="social-bar__link"
 				>
-					<SlSocialInstagram size="2.4rem" className="social__icon" />
+					<SlSocialInstagram size="2.4rem" className="social-bar__icon" />
 				</a>
 
-				<a href={links.twitter} aria-label="twitter" target="_blank" rel="noopener noreferrer" className="social__link">
-					<SlSocialTwitter size="2.4rem" className="social__icon" />
+				<a
+					href={links.twitter}
+					aria-label="twitter"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="social-bar__link"
+				>
+					<SlSocialTwitter size="2.4rem" className="social-bar__icon" />
 				</a>
 
 				<a
@@ -35,13 +49,19 @@ function SocialBar({ links }) {
 					aria-label="linkedin"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="social__link"
+					className="social-bar__link"
 				>
-					<SlSocialLinkedin size="2.4rem" className="social__icon" />
+					<SlSocialLinkedin size="2.4rem" className="social-bar__icon" />
 				</a>
 
-				<a href={links.codepen} aria-label="codepen" target="_blank" rel="noopener noreferrer" className="social__link">
-					<ImCodepen size="2.4rem" className="social__icon" />
+				<a
+					href={links.codepen}
+					aria-label="codepen"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="social-bar__link"
+				>
+					<ImCodepen size="2.4rem" className="social-bar__icon" />
 				</a>
 			</div>
 		</>

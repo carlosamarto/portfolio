@@ -1,12 +1,12 @@
 import "./App.css";
 import { useAnimationTimer, useChangeLang, useHeaderScroll, useLoadingContent, useOpenMenu } from "../Hooks";
 import { Context } from "../Context";
-import { Content, Footer, Header, Loader } from "../Layouts";
-import { About, Contact, Intro, Projects } from "../Sections";
+import { Footer, Header, Loader, Main } from "../Layouts";
+import { About, Contact, Introduction, Projects } from "../Sections";
 import { content } from "../Mocks";
 import { inject } from "@vercel/analytics";
 
-inject();
+inject(); // Inject Vercel Analytics
 
 function App() {
 	// Call the custom hook to get the timer animation status
@@ -52,15 +52,15 @@ function App() {
 					<>
 						<Header />
 
-						<Content>
-							<Intro />
+						<Main>
+							<Introduction />
 
 							<About />
 
 							<Projects />
 
 							<Contact />
-						</Content>
+						</Main>
 
 						<Footer />
 					</>

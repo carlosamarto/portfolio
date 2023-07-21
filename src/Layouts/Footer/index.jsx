@@ -2,7 +2,7 @@ import "./Footer.css";
 import { useContext } from "react";
 import { Context } from "../../Context";
 import { SlRocket } from "react-icons/sl";
-import { LanguageButton, SocialBar } from "../../Components";
+import { ToggleLanguage, SocialBar } from "../../Components";
 
 function Footer() {
 	// Accessing values from the context using useContext hook
@@ -19,7 +19,7 @@ function Footer() {
 					{data.footer.text}
 				</p>
 
-				<LanguageButton langTagEn={data.footer.langEn} langTagEs={data.footer.langEs} />
+				<ToggleLanguage langTagEn={data.footer.langEn} langTagEs={data.footer.langEs} />
 			</footer>
 		</>
 	);
