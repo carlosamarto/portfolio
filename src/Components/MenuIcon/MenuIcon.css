@@ -1,3 +1,4 @@
+/* Menu-icon */
 .menu-icon {
 	border: none;
 	z-index: 999;
@@ -58,6 +59,7 @@
 	opacity: 0;
 }
 
+/* Media Queries */
 @media screen and (min-width: 1024px) {
 	.menu-icon {
 		display: none;

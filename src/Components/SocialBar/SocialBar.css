@@ -1,27 +1,29 @@
-.social {
+/* Social-bar */
+.social-bar {
 	gap: 1.6rem;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 	justify-content: center;
 }
-.social__link {
+.social-bar__link {
 	color: #ef233c;
 	transition: all 0.2s ease-in-out;
 }
-.social__link:hover {
+.social-bar__link:hover {
 	color: #d90429;
 	transform: translateY(-0.4rem);
 }
 
+/* Media Queries */
 @media screen and (min-width: 1366px) {
-	.social {
+	.social-bar {
 		left: 6.4rem;
 		bottom: 2.4rem;
 		position: fixed;
 		flex-direction: column;
 	}
-	.social--animation-start {
+	.social-bar--animation-start {
 		opacity: 0;
 		transform: translateX(-8rem);
 		transition: all 0.6s ease-in-out;

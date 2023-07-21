@@ -1,8 +1,9 @@
 export const content = {
+	// Mock with the content of the website
 	english: {
 		header: {
 			menuItems: [
-				{ menuNumber: "01.", menuText: "Intro", menuLink: "#intro" },
+				{ menuNumber: "01.", menuText: "Introduction", menuLink: "#introduction" },
 				{ menuNumber: "02.", menuText: "About", menuLink: "#about" },
 				{ menuNumber: "03.", menuText: "Projects", menuLink: "#projects" },
 				{ menuNumber: "04.", menuText: "Contact", menuLink: "#contact" },
@@ -10,10 +11,10 @@ export const content = {
 			buttonText: "Resume",
 			buttonLink: "Resume.pdf",
 		},
-		intro: {
+		introduction: {
 			subtitle: "Hello, my name is",
 			title: "Carlos Martínez",
-			text: "<strong class='intro__strong'>Front-End Developer</strong> passionate about creating web pages that stand out for their great style.",
+			text: "<strong class='introduction__strong'>Front-End Developer</strong> passionate about creating web pages that stand out for their great style.",
 			buttonLink: "#contact",
 			buttonText: "Contact me",
 		},
@@ -116,10 +117,10 @@ export const content = {
 			buttonText: "Curriculum",
 			buttonLink: "Curriculum.pdf",
 		},
-		intro: {
+		introduction: {
 			subtitle: "Hola, me llamo",
 			title: "Carlos Martínez",
-			text: "<strong class='intro__strong'>Front-End Developer</strong> apasionado en crear páginas webs que destaquen por su gran estilo.",
+			text: "<strong class='introduction__strong'>Front-End Developer</strong> apasionado en crear páginas webs que destaquen por su gran estilo.",
 			buttonLink: "#contact",
 			buttonText: "Contáctame",
 		},

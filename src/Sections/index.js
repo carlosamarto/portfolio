@@ -1,4 +1,5 @@
+// Exports
 export { About } from "./About";
 export { Contact } from "./Contact";
-export { Intro } from "./Intro";
+export { Introduction } from "./Introduction";
 export { Projects } from "./Projects";

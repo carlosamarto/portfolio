@@ -1,3 +1,4 @@
+/* App */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Inter:wght@500;700&display=swap");
 
 * {
@@ -20,10 +21,11 @@
 	overflow: hidden;
 }
 
-.main {
+.root {
 	min-height: 100vh;
 }
 
+/* Animations */
 @keyframes fade-up {
 	0% {
 		opacity: 0;

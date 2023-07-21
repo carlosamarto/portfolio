@@ -1,3 +1,4 @@
+/* Contact */
 .contact {
 	opacity: 0;
 	gap: 1.6rem;
@@ -42,6 +43,7 @@
 	color: #ef233c;
 }
 
+/* Media Queries */
 @media screen and (min-width: 768px) {
 	.contact__title {
 		font-size: 7.2rem;
