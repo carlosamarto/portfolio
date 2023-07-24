@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-// Custom hook to detect if a section is visible on the screen and trigger an animation
+// Custom hook
 const useSectionAnimation = () => {
 	const [isVisible, setIsVisible] = useState(false);
 	const sectionRef = useRef(null);

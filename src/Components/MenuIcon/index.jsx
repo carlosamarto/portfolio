@@ -2,11 +2,11 @@ import "./MenuIcon.css";
 import { useContext } from "react";
 import { Context } from "../../Context";
 
+// Render UI Component
 function MenuIcon() {
 	// Accessing values from the context using useContext hook
 	const { isAnimationFinished, openMenu, setOpenMenu } = useContext(Context);
 
-	// Render UI Component
 	return (
 		<>
 			<button

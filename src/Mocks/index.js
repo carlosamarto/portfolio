@@ -1,5 +1,5 @@
+// Mock with the content of the website
 export const content = {
-	// Mock with the content of the website
 	english: {
 		header: {
 			menuItems: [

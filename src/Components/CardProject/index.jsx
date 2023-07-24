@@ -2,8 +2,8 @@ import "./CardProject.css";
 import { VscLinkExternal } from "react-icons/vsc";
 import { SlSocialGithub, SlFolder } from "react-icons/sl";
 
+// Render UI Component
 function CardProject({ website, github, title, description, technologies }) {
-	// Render UI Component
 	return (
 		<>
 			<li className="card-project">

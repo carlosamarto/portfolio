@@ -1,7 +1,7 @@
 import "./CustomTitle.css";
 
+// Render UI Component
 function CustomTitle({ number, customTitle }) {
-	// Render UI Component
 	return (
 		<>
 			<div className="custom-title">

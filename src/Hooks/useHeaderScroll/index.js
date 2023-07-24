@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+// Custom hook
 const useHeaderScroll = () => {
 	// Header Visible - Store Visibility
 	const [isHeaderVisible, setIsHeaderVisible] = useState(true);

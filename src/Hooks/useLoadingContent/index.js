@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+// Custom hook
 const useLoadingContent = () => {
 	// State variable to track the loading state of the content
 	const [isLoadingContent, setIsLoadingContent] = useState(true);

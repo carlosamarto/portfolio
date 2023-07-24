@@ -4,11 +4,11 @@ import { Context } from "../../Context";
 import { Button } from "../Button";
 import { MenuItem } from "../MenuItem";
 
+//Render UI Component
 function Menu() {
 	// Accessing values from the context using useContext hook
 	const { isAnimationFinished, data } = useContext(Context);
 
-	//Render UI Component
 	return (
 		<>
 			<ul className={`menu ${isAnimationFinished ? "menu--animation-done" : "menu--animation-start"}`}>

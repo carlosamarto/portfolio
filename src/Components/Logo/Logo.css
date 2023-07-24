@@ -1,9 +1,0 @@
-/* Logo */
-.nav__logo .logo:hover .logo__letter {
-	fill: #edf2f4;
-	transition: all 0.2s ease-in-out;
-}
-.nav__logo .logo:hover .logo__background {
-	fill: #ef233c;
-	transition: all 0.2s ease-in-out;
-}

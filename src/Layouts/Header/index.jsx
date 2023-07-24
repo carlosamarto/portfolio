@@ -3,11 +3,11 @@ import { useContext } from "react";
 import { Context } from "../../Context";
 import { Logo, Menu, MenuAside, MenuIcon } from "../../Components";
 
+// Render UI Layout
 function Header() {
 	// Accessing values from the context using useContext hook
 	const { isAnimationFinished, isHeaderVisible, prevScrollPos } = useContext(Context);
 
-	// Render UI Layout
 	return (
 		<>
 			<header

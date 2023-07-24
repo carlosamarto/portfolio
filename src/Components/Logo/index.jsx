@@ -1,7 +1,7 @@
 import "./Logo.css";
 
+// Render UI Component
 function Logo({ width, height }) {
-	// Render UI Component
 	return (
 		<>
 			<svg

@@ -4,6 +4,7 @@ import { Context } from "../../Context";
 import { Button } from "../../Components";
 import { useSectionAnimation } from "../../Hooks";
 
+// Render UI Section
 function Contact() {
 	// Detect if an element is visible on the screen
 	const { isVisible, sectionRef } = useSectionAnimation();
@@ -11,7 +12,6 @@ function Contact() {
 	// Accessing values from the context using useContext hook
 	const { data } = useContext(Context);
 
-	// Render UI Section
 	return (
 		<>
 			<section id="contact" className={`contact ${isVisible ? "contact--animation" : ""}`} ref={sectionRef}>

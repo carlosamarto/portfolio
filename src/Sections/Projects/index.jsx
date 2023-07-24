@@ -4,6 +4,7 @@ import { Context } from "../../Context";
 import { CardProject, CustomTitle } from "../../Components";
 import { useSectionAnimation } from "../../Hooks";
 
+// Render UI Section
 function Projects() {
 	// Detect if an element is visible on the screen
 	const { isVisible, sectionRef } = useSectionAnimation();
@@ -11,7 +12,6 @@ function Projects() {
 	// Accessing values from the context using useContext hook
 	const { data } = useContext(Context);
 
-	// Render UI Section
 	return (
 		<>
 			<section id="projects" className={`projects ${isVisible ? "projects--animation" : ""}`} ref={sectionRef}>

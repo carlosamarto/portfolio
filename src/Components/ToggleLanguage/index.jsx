@@ -2,11 +2,11 @@ import "./ToggleLanguage.css";
 import { useContext } from "react";
 import { Context } from "../../Context";
 
+// Render UI Component
 function ToggleLanguage({ langTagEn, langTagEs }) {
 	// Accessing values from the context using useContext hook
 	const { isAnimationFinished, lang, toggleLang } = useContext(Context);
 
-	// Render UI Layout
 	return (
 		<>
 			<div

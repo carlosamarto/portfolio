@@ -3,11 +3,11 @@ import { useContext } from "react";
 import { Context } from "../../Context";
 import { Button } from "../../Components";
 
+// Render UI Section
 function Introduction() {
 	// Accessing values from the context using useContext hook
 	const { isAnimationFinished, data } = useContext(Context);
 
-	// Render UI Section
 	return (
 		<>
 			<section

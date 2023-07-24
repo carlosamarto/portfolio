@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-// Custom hook to return `true` after 5.5 seconds and `false` before that time.
+// Custom hook
 const useAnimationTimer = () => {
 	// State to hold the timer status
 	const [isAnimationFinished, setIsAnimationFinished] = useState(false);

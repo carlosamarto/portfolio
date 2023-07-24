@@ -1,7 +1,7 @@
 import "./MenuItem.css";
 
+// Render UI Component
 function MenuItem({ menuLink, menuNumber, menuText }) {
-	// Render UI Component
 	return (
 		<>
 			<li className="menu-item">

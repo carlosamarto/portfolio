@@ -1,7 +1,7 @@
 import "./Button.css";
 
+// Render UI Component
 function Button({ link, external, text }) {
-	// Render UI Component
 	return (
 		<>
 			<a
