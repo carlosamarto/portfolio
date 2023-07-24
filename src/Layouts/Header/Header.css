@@ -8,6 +8,9 @@
 	background-color: #2b2d42;
 	transition: all 0.2s ease-in-out;
 }
+.body--lock .header--hide {
+	transform: translateY(0);
+}
 .header--hide {
 	transform: translateY(-100%);
 }
