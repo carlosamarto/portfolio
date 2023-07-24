@@ -20,6 +20,9 @@
 .body--lock {
 	overflow: hidden;
 }
+.body--lock .header--hide {
+	transform: translateY(0);
+}
 
 .root {
 	min-height: 100vh;

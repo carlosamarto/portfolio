@@ -1,8 +1,8 @@
 import "./Loader.css";
 import { Logo } from "../../Components";
 
+// Render UI Layout
 function Loader() {
-	// Render UI Layout
 	return (
 		<>
 			<div className="loader">

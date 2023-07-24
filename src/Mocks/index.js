@@ -1,5 +1,5 @@
+// Mock with the content of the website
 export const content = {
-	// Mock with the content of the website
 	english: {
 		header: {
 			menuItems: [
@@ -52,11 +52,11 @@ export const content = {
 					technologies: ["ReactJS"],
 				},
 				{
-					website: "https://pokedex-app-rouge.vercel.app/",
-					github: "https://github.com/carlosmrtzodev/pokedex-app",
+					website: "https://pokedex-pearl-two.vercel.app/",
+					github: "https://github.com/carlosmrtzor/pokedex",
 					title: "Pokédex",
-					description: "Pokédex in Next.js to make consults by consuming an api.",
-					technologies: ["ReactJS", "Next.js", "Tailwind CSS"],
+					description: "Pokédex in React, TailwindCSS working with the consumption of an API with Axios.",
+					technologies: ["ReactJS", "Tailwind CSS"],
 				},
 				{
 					website: "https://tic-tac-toe-five-rosy.vercel.app/",
@@ -158,11 +158,11 @@ export const content = {
 					technologies: ["ReactJS"],
 				},
 				{
-					website: "https://pokedex-app-rouge.vercel.app/",
-					github: "https://github.com/carlosmrtzodev/pokedex-app",
+					website: "https://pokedex-pearl-two.vercel.app/",
+					github: "https://github.com/carlosmrtzor/pokedex",
 					title: "Pokédex",
-					description: "Pokédex en Next.js, para hacer consultas consumiendo una api.",
-					technologies: ["ReactJS", "Next.js", "Tailwind CSS"],
+					description: "Pokédex en React, TailwindCSS trabajando con el consumo de una API con Axios.",
+					technologies: ["ReactJS", "Tailwind CSS"],
 				},
 				{
 					website: "https://tic-tac-toe-five-rosy.vercel.app/",

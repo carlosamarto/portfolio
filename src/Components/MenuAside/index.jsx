@@ -4,11 +4,11 @@ import { Context } from "../../Context";
 import { Button } from "../Button";
 import { MenuItem } from "../MenuItem";
 
+//Render UI Component
 function MenuAside() {
 	// Accessing values from the context using useContext hook
 	const { openMenu, data } = useContext(Context);
 
-	//Render UI Component
 	return (
 		<>
 			<aside className={`menu-aside ${openMenu ? "menu-aside--open" : "menu-aside--close"}`} aria-hidden="true">

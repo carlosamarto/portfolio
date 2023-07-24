@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
+// Custom hook
 const useChangeLang = ({ key, initialValue }) => {
-	// Store language
 	const [lang, setLang] = useState(() => {
 		// Get the stored value from localStorage
 		const storedValue = localStorage.getItem(key);

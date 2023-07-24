@@ -1,7 +1,7 @@
-import "./Logo.css";
+import PropTypes from "prop-types";
 
+// Render UI Component
 function Logo({ width, height }) {
-	// Render UI Component
 	return (
 		<>
 			<svg
@@ -40,5 +40,10 @@ function Logo({ width, height }) {
 		</>
 	);
 }
+
+Logo.propTypes = {
+	width: PropTypes.number.isRequired,
+	height: PropTypes.number.isRequired,
+};
 
 export { Logo };

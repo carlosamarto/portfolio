@@ -8,6 +8,7 @@ import { inject } from "@vercel/analytics";
 
 inject(); // Inject Vercel Analytics
 
+// App
 function App() {
 	// Call the custom hook to get the timer animation status
 	const isAnimationFinished = useAnimationTimer();

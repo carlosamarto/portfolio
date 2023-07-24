@@ -1,9 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 
-// Custom hook to detect if a section is visible on the screen and trigger an animation
+// Custom hook
 const useSectionAnimation = () => {
 	const [isVisible, setIsVisible] = useState(false);
+
 	const sectionRef = useRef(null);
+
+	const current = sectionRef.current;
 
 	useEffect(() => {
 		// Create an Intersection Observer to track visibility of the section
@@ -26,11 +29,11 @@ const useSectionAnimation = () => {
 
 		// Cleanup the observer when the component is unmounted
 		return () => {
-			if (sectionRef.current) {
-				sectionObserver.unobserve(sectionRef.current);
+			if (current) {
+				sectionObserver.unobserve(current);
 			}
 		};
-	}, []);
+	}, [current]);
 
 	return { isVisible, sectionRef };
 };

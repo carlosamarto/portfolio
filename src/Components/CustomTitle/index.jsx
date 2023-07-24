@@ -1,7 +1,8 @@
 import "./CustomTitle.css";
+import PropTypes from "prop-types";
 
+// Render UI Component
 function CustomTitle({ number, customTitle }) {
-	// Render UI Component
 	return (
 		<>
 			<div className="custom-title">
@@ -13,5 +14,10 @@ function CustomTitle({ number, customTitle }) {
 		</>
 	);
 }
+
+CustomTitle.propTypes = {
+	number: PropTypes.string.isRequired,
+	customTitle: PropTypes.string.isRequired,
+};
 
 export { CustomTitle };

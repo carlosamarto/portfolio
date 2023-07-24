@@ -4,11 +4,11 @@ import { Context } from "../../Context";
 import { SlRocket } from "react-icons/sl";
 import { ToggleLanguage, SocialBar } from "../../Components";
 
+// Render UI Layout
 function Footer() {
 	// Accessing values from the context using useContext hook
 	const { openMenu, data } = useContext(Context);
 
-	// Render UI Layout
 	return (
 		<>
 			<footer className={`footer ${openMenu ? "footer--lock" : "footer--unlock"}`}>

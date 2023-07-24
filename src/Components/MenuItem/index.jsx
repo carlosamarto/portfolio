@@ -1,7 +1,8 @@
 import "./MenuItem.css";
+import PropTypes from "prop-types";
 
+// Render UI Component
 function MenuItem({ menuLink, menuNumber, menuText }) {
-	// Render UI Component
 	return (
 		<>
 			<li className="menu-item">
@@ -13,5 +14,11 @@ function MenuItem({ menuLink, menuNumber, menuText }) {
 		</>
 	);
 }
+
+MenuItem.propTypes = {
+	menuLink: PropTypes.string.isRequired,
+	menuNumber: PropTypes.string.isRequired,
+	menuText: PropTypes.string.isRequired,
+};
 
 export { MenuItem };

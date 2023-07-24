@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+// Custom hook
 const useOpenMenu = () => {
 	// Controls the open/close state of the menu
 	const [openMenu, setOpenMenu] = useState(false);
