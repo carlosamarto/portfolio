@@ -1,6 +1,7 @@
 import "./CardProject.css";
 import { VscLinkExternal } from "react-icons/vsc";
 import { SlSocialGithub, SlFolder } from "react-icons/sl";
+import PropTypes from "prop-types";
 
 // Render UI Component
 function CardProject({ website, github, title, description, technologies }) {
@@ -62,5 +63,13 @@ function CardProject({ website, github, title, description, technologies }) {
 		</>
 	);
 }
+
+CardProject.propTypes = {
+	website: PropTypes.string,
+	github: PropTypes.string,
+	title: PropTypes.string.isRequired,
+	description: PropTypes.string.isRequired,
+	technologies: PropTypes.array.isRequired,
+};
 
 export { CardProject };

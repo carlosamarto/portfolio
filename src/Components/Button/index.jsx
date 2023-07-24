@@ -1,4 +1,5 @@
 import "./Button.css";
+import PropTypes from "prop-types";
 
 // Render UI Component
 function Button({ link, external, text }) {
@@ -17,5 +18,11 @@ function Button({ link, external, text }) {
 		</>
 	);
 }
+
+Button.propTypes = {
+	link: PropTypes.string.isRequired,
+	external: PropTypes.bool,
+	text: PropTypes.string.isRequired,
+};
 
 export { Button };
