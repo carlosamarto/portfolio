@@ -1,5 +1,3 @@
-import "./Logo.css";
-
 // Render UI Component
 function Logo({ width, height }) {
 	return (
