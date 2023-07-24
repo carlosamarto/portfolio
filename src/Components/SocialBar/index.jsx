@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { Context } from "../../Context";
 import { ImCodepen } from "react-icons/im";
 import { SlSocialGithub, SlSocialInstagram, SlSocialTwitter, SlSocialLinkedin } from "react-icons/sl";
+import PropTypes from "prop-types";
 
 // Render UI Component
 function SocialBar({ links }) {
@@ -67,5 +68,9 @@ function SocialBar({ links }) {
 		</>
 	);
 }
+
+SocialBar.propTypes = {
+	links: PropTypes.object.isRequired,
+};
 
 export { SocialBar };

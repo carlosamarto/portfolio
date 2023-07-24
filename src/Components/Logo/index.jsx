@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 // Render UI Component
 function Logo({ width, height }) {
 	return (
@@ -38,5 +40,10 @@ function Logo({ width, height }) {
 		</>
 	);
 }
+
+Logo.propTypes = {
+	width: PropTypes.number.isRequired,
+	height: PropTypes.number.isRequired,
+};
 
 export { Logo };
