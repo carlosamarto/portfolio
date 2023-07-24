@@ -64,6 +64,7 @@ function CardProject({ website, github, title, description, technologies }) {
 	);
 }
 
+// Define prop types for the CardProject layout
 CardProject.propTypes = {
 	website: PropTypes.string,
 	github: PropTypes.string,

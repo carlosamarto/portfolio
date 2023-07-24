@@ -69,6 +69,7 @@ function SocialBar({ links }) {
 	);
 }
 
+// Define prop types for the SocialBar layout
 SocialBar.propTypes = {
 	links: PropTypes.object.isRequired,
 };

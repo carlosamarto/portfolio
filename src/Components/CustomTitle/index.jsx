@@ -15,6 +15,7 @@ function CustomTitle({ number, customTitle }) {
 	);
 }
 
+// Define prop types for the CustomTitle layout
 CustomTitle.propTypes = {
 	number: PropTypes.string.isRequired,
 	customTitle: PropTypes.string.isRequired,

@@ -41,6 +41,7 @@ function Logo({ width, height }) {
 	);
 }
 
+// Define prop types for the Logo layout
 Logo.propTypes = {
 	width: PropTypes.number.isRequired,
 	height: PropTypes.number.isRequired,
