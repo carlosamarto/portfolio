@@ -19,6 +19,7 @@ function Button({ link, external, text }) {
 	);
 }
 
+// Define prop types for the Button component
 Button.propTypes = {
 	link: PropTypes.string.isRequired,
 	external: PropTypes.bool,

@@ -15,6 +15,7 @@ function MenuItem({ menuLink, menuNumber, menuText }) {
 	);
 }
 
+// Define prop types for the MenuItem layout
 MenuItem.propTypes = {
 	menuLink: PropTypes.string.isRequired,
 	menuNumber: PropTypes.string.isRequired,
