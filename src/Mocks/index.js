@@ -39,12 +39,6 @@ export const content = {
 			title: "Projects",
 			cardProjects: [
 				{
-					github: "https://github.com/carlosmrtzor/portfolio",
-					title: "Portfolio",
-					description: "My personal portfolio to collect my experience and work, built in React.",
-					technologies: ["ReactJS"],
-				},
-				{
 					website: "http://task-app-lovat.vercel.app/",
 					github: "https://github.com/carlosmrtzor/task-app",
 					title: "Task App",
@@ -144,12 +138,6 @@ export const content = {
 			sectionNumber: "03.",
 			title: "Proyectos",
 			cardProjects: [
-				{
-					github: "https://github.com/carlosmrtzor/portfolio",
-					title: "Portafolio",
-					description: "Mi portafolio para recopilar mi experiencia y trabajo, construido en React.",
-					technologies: ["ReactJS"],
-				},
 				{
 					website: "http://task-app-lovat.vercel.app/",
 					github: "https://github.com/carlosmrtzor/task-app",
