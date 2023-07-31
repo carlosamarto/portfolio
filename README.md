@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Portfolio](./public/icons/favicon-48.png)](https://www.carlosmrtzo.com/)
+[![Portfolio](./public/icons/favicon-128.png)](https://www.carlosmrtzo.com/)
 
    <h3 align="center">Carlos Martínez</h3>
 
