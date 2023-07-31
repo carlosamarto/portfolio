@@ -187,7 +187,7 @@ export const spanish: Mocks = {
     tasks: [
       {
         description:
-          '<span class="experience__symbol">◇</span><span class="experience__description">Diseño de las interfaces y los componentes llevados al código, usando <strong class="experiencie__strong">React</strong>, sobre <strong class="experiencie__strong">Next.js</strong>, siguiendo ciertos patrones en el código y buenas prácticas para llevar la maquetación a producción.</span>'
+          '<span class="experience__symbol">◇</span><span class="experience__description">Diseño de las interfaces y los componentes llevados al código, usando <strong class="experiencie__strong">React</strong>, sobre <strong class="experiencie__strong">Next.js</strong>, siguiendo ciertos patrones en el código y buenas prácticas para llevar  a producción.</span>'
       },
       {
         description:
