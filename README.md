@@ -41,7 +41,7 @@ You are free to fork this repository, either to see the code or use the portfoli
 1. Generate a production build
 
    ```sh
-   vite build
+   npm run build
    ```
 
 ## 🎨 Color Palette
