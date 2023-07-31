@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Portfolio](./public/Logo.svg)](https://www.carlosmrtzo.com/)
+[![Portfolio](./public/icons/favicon-48.png)](https://www.carlosmrtzo.com/)
 
    <h3 align="center">Carlos Martínez</h3>
 
@@ -16,7 +16,7 @@
 ![](https://img.shields.io/badge/JavaScript-informational?style=for-the-badge&logo=JavaScript&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
 ![](https://img.shields.io/badge/TypeScript-informational?style=for-the-badge&logo=TypeScript&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
 ![](https://img.shields.io/badge/ReactJS-informational?style=for-the-badge&logo=react&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
-![](https://img.shields.io/badge/Next.js-informational?style=for-the-badge&logo=next&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
+![](https://img.shields.io/badge/Next.js-informational?style=for-the-badge&logo=vercel&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
 
 ## 🚨 Forking this repository
 
