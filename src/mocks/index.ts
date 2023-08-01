@@ -51,19 +51,19 @@ export const english: Mocks = {
     tasks: [
       {
         description:
-          '<span class="experience__symbol">◇</span><span class="experience__description">Deliver the design of the interfaces and components to code, layout with <strong class="experiencie__strong">React</strong>, on <strong class="experiencie__strong">Next.js</strong>, following certain patterns in the code and good practices to pass the layout to production.</span>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">In charge of bringing the design to the code for the layout of certain components or pages, for the different company websites, we work with <strong class="experiencie__strong">React</strong> on <strong class="experiencie__strong">Next.js</strong>, following various patterns for a readable and maintainable code.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><span class="experience__description">Creation and search of solutions for new designs for certain components or pages within the different websites of the company, delivering the finished and approved design in <strong class="experiencie__strong">Figma</strong>.</span>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Creation of new designs for certain components of the web or complete pages to later be evaluated, approved and pass them to layout, working in <strong class="experiencie__strong">Figma</strong>.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><span class="experience__description">Collaborate with other members of the front design team, project managers and other team engineers for certain tasks.</span>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Collaborate with other members of the <strong class="experiencie__strong">Web Design</strong> team, <strong class="experiencie__strong">Project Managers</strong>, among others, to coordinate tasks.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><span class="experience__description">Update the project documentation in the layout section, for new team members.</span>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Update of the documentation to work in the <strong class="experiencie__strong">Front-End</strong> part of the project, explaining the project, its patterns and variables.</p>'
       }
     ]
   },
@@ -187,19 +187,19 @@ export const spanish: Mocks = {
     tasks: [
       {
         description:
-          '<span class="experience__symbol">◇</span><span class="experience__description">Diseño de las interfaces y los componentes llevados al código, usando <strong class="experiencie__strong">React</strong>, sobre <strong class="experiencie__strong">Next.js</strong>, siguiendo ciertos patrones en el código y buenas prácticas para llevar  a producción.</span>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Encargado de llevar el diseño al código para la maquetación de ciertos componentes o páginas, para las distintas webs de la empresa, trabajamos con <strong class="experiencie__strong">React</strong> sobre <strong class="experiencie__strong">Next.js</strong>, siguiendo varios patrones para un código legible y mantenible.'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><span class="experience__description">Creación y búsqueda de soluciones de nuevos diseños para determinados componentes de los diferentes sitios web de la empresa, entregando el diseño terminado y aprobado en <strong class="experiencie__strong">Figma</strong>.</span>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Creación de nuevos diseños para ciertos componentes de la web o páginas completas para luego ser evaluadas, aprobadas y pasarlas a maquetación, trabajando en <strong class="experiencie__strong">Figma</strong>.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><span class="experience__description">Colabore con otros miembros del equipo del Front-End, gerentes de proyecto y otros ingenieros del equipo para ciertas tareas.</span>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Colaborar con otros miembros del equipo de <strong class="experiencie__strong">Diseño Web</strong>, <strong class="experiencie__strong">Project Managers</strong>, entre otros, para coordinar tareas.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><span class="experience__description">Actualice la documentación del proyecto en la parte del Front-End, para los nuevos miembros del equipo.</span>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Actualización de la documentación para trabajar en la parte del <strong class="experiencie__strong">Front-End</strong> del proyecto, explicando el proyecto, sus patrones y variables.</p>'
       }
     ]
   },
