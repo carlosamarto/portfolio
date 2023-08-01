@@ -7,7 +7,7 @@ import Header from '@/layouts/Header'
 import Footer from '@/layouts/Footer'
 
 // Sections
-import Intro from '@/sections/Introduction'
+import Intro from '@/sections/Intro'
 import About from '@/sections/About'
 import Contact from '@/sections/Contact'
 import Projects from '@/sections/Projects'
