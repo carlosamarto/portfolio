@@ -23,7 +23,7 @@ export default function About (): JSX.Element {
       <section id="about" className="about">
         <div className="about__container">
           <div className="about__content">
-            <CustomTitle center={false} alternative={false} number={data.about.sectionNumber} customTitle={data.about.title} />
+            <CustomTitle center={false} number={data.about.sectionNumber} customTitle={data.about.title} />
 
             <p dangerouslySetInnerHTML={{ __html: data.about.description }} className="about__description" />
 

@@ -394,11 +394,6 @@
 .custom-title--center {
   justify-content: center;
 }
-.custom-title--alternative {
-  font-weight: 500;
-  color: var(--color-red);
-  font-family: var(--font-fira-code);
-}
 .custom-title__number {
   line-height: 1.5;
   font-weight: 500;
@@ -413,7 +408,6 @@
   width: 100%;
   display: flex;
   margin: 0 auto;
-  padding: 8rem 0;
   max-width: 80rem;
   min-height: 100vh;
   flex-direction: column;

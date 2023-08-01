@@ -20,7 +20,6 @@ export default function Experience (): JSX.Element {
       <section id="experience" className="experience">
         <CustomTitle
           center={false}
-          alternative={false}
           number={data.experience.sectionNumber}
           customTitle={data.experience.title}
         />

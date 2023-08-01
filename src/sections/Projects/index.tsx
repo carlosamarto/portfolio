@@ -21,7 +21,6 @@ export default function Projects (): JSX.Element {
       <section id="projects" className="projects">
         <CustomTitle
           center={false}
-          alternative={false}
           number={data.projects.sectionNumber}
           customTitle={data.projects.title}
         />
