@@ -32,7 +32,7 @@ export const english: Mocks = {
     technologies: [
       { technologyName: '<span class="about__symbol">◇</span>HTML5' },
       { technologyName: '<span class="about__symbol">◇</span>CSS3' },
-      { technologyName: '<span class="about__symbol">◇</span>TailwindCSS' },
+      { technologyName: '<span class="about__symbol">◇</span>Tailwind' },
       { technologyName: '<span class="about__symbol">◇</span>JavaScript' },
       { technologyName: '<span class="about__symbol">◇</span>TypeScript' },
       { technologyName: '<span class="about__symbol">◇</span>React' },
@@ -82,7 +82,7 @@ export const english: Mocks = {
         website: 'https://pokedex-pearl-two.vercel.app/',
         github: 'https://github.com/carlosmrtzor/pokedex',
         title: 'Pokédex',
-        description: 'Pokédex built with React and TailwindCSS, utilizing Axios for API consumption.',
+        description: 'Pokédex built with React and Tailwind, utilizing Axios for API consumption.',
         technologies: ['React', 'JavaScript', 'Tailwind']
       },
       {
@@ -168,7 +168,7 @@ export const spanish: Mocks = {
     technologies: [
       { technologyName: '<span class="about__symbol">◇</span>HTML5' },
       { technologyName: '<span class="about__symbol">◇</span>CSS3' },
-      { technologyName: '<span class="about__symbol">◇</span>TailwindCSS' },
+      { technologyName: '<span class="about__symbol">◇</span>Tailwind' },
       { technologyName: '<span class="about__symbol">◇</span>JavaScript' },
       { technologyName: '<span class="about__symbol">◇</span>TypeScript' },
       { technologyName: '<span class="about__symbol">◇</span>React' },
@@ -218,7 +218,7 @@ export const spanish: Mocks = {
         website: 'https://pokedex-pearl-two.vercel.app/',
         github: 'https://github.com/carlosmrtzor/pokedex',
         title: 'Pokédex',
-        description: 'Pokédex construido con React y TailwindCSS, utilizando Axios para el consumo de API.',
+        description: 'Pokédex construido con React y Tailwind, utilizando Axios para el consumo de API.',
         technologies: ['React', 'JavaScript', 'Tailwind']
       },
       {
