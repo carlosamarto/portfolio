@@ -4,7 +4,7 @@
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#ef233c",
-  "background_color": "#1c1e2b",
+  "background_color": "#0b1622",
   "description": "Front-End Developer passionate about creating web pages that stand out for their great style.",
   "icons": [
     {
@@ -30,6 +30,12 @@
     {
       "src": "icons/apple-touch-icon-152.png",
       "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/apple-touch-icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]

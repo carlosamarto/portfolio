@@ -4,11 +4,14 @@
 // React
 import React, { useContext } from 'react'
 
+// Next
+import dynamic from 'next/dynamic'
+
 // Context
 import { ThemeContext } from '@/context'
 
 // Components
-import CustomTitle from '@/components/CustomTitle'
+const CustomTitle = dynamic(async () => await import('@/components/CustomTitle'))
 
 // Projects
 export default function Experience (): JSX.Element {
@@ -18,11 +21,7 @@ export default function Experience (): JSX.Element {
   return (
     <>
       <section id="experience" className="experience">
-        <CustomTitle
-          center={false}
-          number={data.experience.sectionNumber}
-          customTitle={data.experience.title}
-        />
+        <CustomTitle center={false} number={data.experience.sectionNumber} customTitle={data.experience.title} />
 
         <div className="experience__container">
           <ul className="experience__list">

@@ -5,8 +5,11 @@
 import React from 'react'
 
 // React Icons
-import { ImCodepen } from 'react-icons/im'
-import { SlSocialGithub, SlSocialLinkedin, SlSocialTwitter, SlSocialInstagram } from 'react-icons/sl'
+import { ImCodepen } from '@react-icons/all-files/im/ImCodepen'
+import { FiGithub } from '@react-icons/all-files/fi/FiGithub'
+import { FiLinkedin } from '@react-icons/all-files/fi/FiLinkedin'
+import { FiTwitter } from '@react-icons/all-files/fi/FiTwitter'
+import { FiInstagram } from '@react-icons/all-files/fi/FiInstagram'
 
 // Utils
 import { type Links } from '@/utils/definitions'
@@ -21,19 +24,19 @@ export default function SocialBar ({ links }: { links: Links }): JSX.Element {
         </a>
 
         <a href={links.github} aria-label="github" target="_blank" rel="noopener noreferrer" className="social-bar__link">
-          <SlSocialGithub size="2.4rem" className="social-bar__icon" />
+          <FiGithub size="2.4rem" className="social-bar__icon" />
         </a>
 
         <a href={links.linkedin} aria-label="linkedin" target="_blank" rel="noopener noreferrer" className="social-bar__link">
-          <SlSocialLinkedin size="2.4rem" className="social-bar__icon" />
+          <FiLinkedin size="2.4rem" className="social-bar__icon" />
         </a>
 
         <a href={links.twitter} aria-label="linkedin" target="_blank" rel="noopener noreferrer" className="social-bar__link">
-          <SlSocialTwitter size="2.4rem" className="social-bar__icon" />
+          <FiTwitter size="2.4rem" className="social-bar__icon" />
         </a>
 
         <a href={links.instagram} aria-label="linkedin" target="_blank" rel="noopener noreferrer" className="social-bar__link">
-          <SlSocialInstagram size="2.4rem" className="social-bar__icon" />
+          <FiInstagram size="2.4rem" className="social-bar__icon" />
         </a>
       </div>
     </>

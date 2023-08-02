@@ -4,11 +4,14 @@
 // React
 import React, { useContext } from 'react'
 
+// Next
+import dynamic from 'next/dynamic'
+
 // Context
 import { ThemeContext } from '@/context'
 
 // Components
-import Button from '@/components/Button'
+const Button = dynamic(async () => await import('@/components/Button'))
 
 // Contact
 export default function Contact (): JSX.Element {

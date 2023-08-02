@@ -6,12 +6,13 @@ import React, { useContext } from 'react'
 
 // Next
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 
 // Context
 import { ThemeContext } from '@/context'
 
 // Components
-import CustomTitle from '@/components/CustomTitle'
+const CustomTitle = dynamic(async () => await import('@/components/CustomTitle'))
 
 // About
 export default function About (): JSX.Element {

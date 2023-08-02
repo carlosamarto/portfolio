@@ -4,12 +4,15 @@
 // React
 import React, { useContext } from 'react'
 
+// Next
+import dynamic from 'next/dynamic'
+
 // Context
 import { ThemeContext } from '@/context'
 
 // Components
-import CustomTitle from '@/components/CustomTitle'
-import CardProject from '@/components/CardProject'
+const CustomTitle = dynamic(async () => await import('@/components/CustomTitle'))
+const CardProject = dynamic(async () => await import('@/components/CardProject'))
 
 // Projects
 export default function Projects (): JSX.Element {
@@ -19,11 +22,7 @@ export default function Projects (): JSX.Element {
   return (
     <>
       <section id="projects" className="projects">
-        <CustomTitle
-          center={false}
-          number={data.projects.sectionNumber}
-          customTitle={data.projects.title}
-        />
+        <CustomTitle center={false} number={data.projects.sectionNumber} customTitle={data.projects.title} />
 
         <ul className="projects__cards">
           {data.projects.cardProjects.map((cardProject) => (

@@ -18,6 +18,7 @@ inject()
 // Metadata
 export const metadata: Metadata = {
   generator: 'Next.js',
+  themeColor: '#0b1622',
   referrer: 'origin-when-cross-origin',
   keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'Portfolio', 'Front-End'],
   authors: [{ name: 'Carlos', url: 'https://carlosmrtzo.com/' }],

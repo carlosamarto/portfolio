@@ -11,7 +11,6 @@ import Footer from '@/layouts/Footer'
 
 // Sections
 import Intro from '@/sections/Intro'
-
 const About = dynamic(async () => await import('@/sections/About'))
 const Contact = dynamic(async () => await import('@/sections/Contact'))
 const Projects = dynamic(async () => await import('@/sections/Projects'))

@@ -430,13 +430,14 @@
   outline: none;
   line-height: 1.5;
   font-weight: 500;
+  border-right: none;
   padding: 0.8rem 2.4rem;
   color: var(--color-light);
   font-size: var(--font-sm);
   background-color: transparent;
   transition: all ease-in-out 0.2s;
-  background-color: var(--color-red);
   font-family: var(--font-fira-code);
+  border: solid 0.1rem var(--color-red);
 }
 .experience__job {
   gap: 1.6rem;

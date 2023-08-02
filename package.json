@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@vercel/analytics": "^1.0.1",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
     "typescript": "^5.1.6"
   },
   "devDependencies": {
