@@ -13,8 +13,8 @@
   --font-2xl: 7.2rem;
   --font-3xl: 9.6rem;
 
-  --shadow-medium: rgba(0, 0, 0, 0.16) 0rem 1rem 3.6rem 0rem, rgba(0, 0, 0, 0.06) 0rem 0rem 0rem 0.1rem;
   --shadow-regular: rgba(0, 0, 0, 0.1) 0rem 1rem 1.5rem -0.3rem, rgba(0, 0, 0, 0.05) 0rem 0.4rem 0.6rem -0.2rem;
+  --shadow-medium: rgba(0, 0, 0, 0.16) 0rem 1rem 3.6rem 0rem, rgba(0, 0, 0, 0.06) 0rem 0rem 0rem 0.1rem;
 }
 
 /* General */
@@ -280,12 +280,18 @@
 
 /* Intro */
 .intro {
-  gap: 1.6rem;
+  gap: 2.4rem;
   display: flex;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+.intro__container {
+  gap: 0.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .intro__subtitle {
   font-weight: 500;
@@ -549,7 +555,7 @@
 .card-project__title {
   line-height: 1.5;
   font-weight: 700;
-  font-size: var(--font-md);
+  font-size: var(--font-lg);
   font-family: var(--font-inter);
 }
 .card-project__url {
@@ -591,12 +597,18 @@
 
 /* Contact */
 .contact {
-  gap: 1.6rem;
+  gap: 2.4rem;
   display: flex;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+.contact__container {
+  gap: 0.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .contact__subtitle {
   font-weight: 500;

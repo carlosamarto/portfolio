@@ -19,7 +19,7 @@ export const english: Mocks = {
     title: 'Carlos Martínez',
     text: "<strong class='intro__strong'>Front-End Developer</strong> passionate about creating web pages that stand out for their great style.",
     buttonLink: '#contact',
-    buttonText: 'Contact Details'
+    buttonText: 'Contact me'
   },
   about: {
     sectionNumber: '02.',
@@ -155,7 +155,7 @@ export const spanish: Mocks = {
     title: 'Carlos Martínez',
     text: "<strong class='intro__strong'>Front-End Developer</strong> apasionado en crear páginas webs que destaquen por su gran estilo.",
     buttonLink: '#contact',
-    buttonText: 'Detalles de contacto'
+    buttonText: 'Contáctame'
   },
   about: {
     sectionNumber: '02.',

@@ -55,11 +55,11 @@ export default function CardProject ({
             </div>
           </div>
 
-          <h3 className="card-project__title">
+          <h2 className="card-project__title">
             <a href={website === '' ? github : website} target="_blank" rel="noopener noreferrer" className="card-project__url">
               {title}
             </a>
-          </h3>
+          </h2>
 
           <p className="card-project__description">{description}</p>
         </header>

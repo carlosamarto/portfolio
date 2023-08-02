@@ -18,11 +18,13 @@ export default function Intro (): JSX.Element {
   return (
     <>
       <section id="intro" className="intro">
-        <h3 className="intro__subtitle">{data.intro.subtitle}</h3>
+        <div className="intro__container">
+          <h3 className="intro__subtitle">{data.intro.subtitle}</h3>
 
-        <h1 className="intro__title">{data.intro.title}</h1>
+          <h1 className="intro__title">{data.intro.title}</h1>
 
-        <p dangerouslySetInnerHTML={{ __html: data.intro.text }} className="intro__text" />
+          <p dangerouslySetInnerHTML={{ __html: data.intro.text }} className="intro__text" />
+        </div>
 
         <Button link={data.intro.buttonLink} external={false} text={data.intro.buttonText} />
       </section>

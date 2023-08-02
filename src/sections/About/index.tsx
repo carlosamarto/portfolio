@@ -48,6 +48,8 @@ export default function About (): JSX.Element {
               width="0"
               height="0"
               sizes="100vw"
+              quality={60}
+              priority
               className="about__image"
             />
           </figure>
