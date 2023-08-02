@@ -1,10 +1,9 @@
 /* Variables */
 :root {
-  --color-red: #ef233c;
-  --color-dark: #1c1e2b;
-  --color-gray: #8d99ae;
+  --color-red: #ff0000;
+  --color-dark: #0b1622;
+  --color-gray: #a6aebf;
   --color-light: #edf2f4;
-  --color-dark-red: #d90429;
 
   --font-xs: 1.4rem;
   --font-sm: 1.6rem;
@@ -187,8 +186,8 @@
 .menu-item__text {
   font-weight: 500;
   line-height: 1.5;
+  color: var(--color-gray);
   font-size: var(--font-xs);
-  color: var(--color-light);
   transition: all 0.2s ease-in-out;
   font-family: var(--font-fira-code);
 }
@@ -674,7 +673,6 @@
   transition: all 0.2s ease-in-out;
 }
 .social-bar__link:hover {
-  color: var(--color-dark-red);
   transform: translateY(-0.4rem);
 }
 
