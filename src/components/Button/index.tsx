@@ -1,6 +1,3 @@
-// React
-import React from 'react'
-
 // Button
 export default function Button ({ link, external, text }: { link: string, external: boolean, text: string }): JSX.Element {
   return (

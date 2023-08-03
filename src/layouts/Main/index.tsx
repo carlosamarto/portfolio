@@ -1,8 +1,8 @@
 // Client Component
 'use client'
 
-// Reacr
-import React, { useContext } from 'react'
+// React
+import { useContext } from 'react'
 
 // Context
 import { ThemeContext } from '@/context'

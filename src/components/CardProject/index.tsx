@@ -1,9 +1,7 @@
-// React
-import React from 'react'
-
 // React Icons
-import { VscLinkExternal } from 'react-icons/vsc'
-import { SlSocialGithub, SlFolder } from 'react-icons/sl'
+import { FiFolder } from '@react-icons/all-files/fi/FiFolder'
+import { FiGithub } from '@react-icons/all-files/fi/FiGithub'
+import { FiExternalLink } from '@react-icons/all-files/fi/FiExternalLink'
 
 // CardProject
 export default function CardProject ({
@@ -25,7 +23,7 @@ export default function CardProject ({
         <header className="card-project__header">
           <div className="card-project__top">
             <div className="card-project__folder">
-              <SlFolder size="3.2rem" className="card-project__icon" />
+              <FiFolder size="3.2rem" className="card-project__icon" />
             </div>
 
             <div className="card-project__icons">
@@ -37,7 +35,7 @@ export default function CardProject ({
                   rel="noopener noreferrer"
                   className="card-project__links"
                 >
-                  <SlSocialGithub size="2.4rem" className="card-project__icon" />
+                  <FiGithub size="2.4rem" className="card-project__icon" />
                 </a>
               )}
 
@@ -49,17 +47,17 @@ export default function CardProject ({
                   rel="noopener noreferrer"
                   className="card-project__links"
                 >
-                  <VscLinkExternal size="2.4rem" className="card-project__icon" />
+                  <FiExternalLink size="2.4rem" className="card-project__icon" />
                 </a>
               )}
             </div>
           </div>
 
-          <h3 className="card-project__title">
+          <h2 className="card-project__title">
             <a href={website === '' ? github : website} target="_blank" rel="noopener noreferrer" className="card-project__url">
               {title}
             </a>
-          </h3>
+          </h2>
 
           <p className="card-project__description">{description}</p>
         </header>

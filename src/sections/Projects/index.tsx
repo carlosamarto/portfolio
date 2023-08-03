@@ -1,33 +1,22 @@
-// Client Component
-'use client'
+// Next
+import dynamic from 'next/dynamic'
 
-// React
-import React, { useContext } from 'react'
-
-// Context
-import { ThemeContext } from '@/context'
+// Mocks
+import { content } from '@/mocks'
 
 // Components
-import CustomTitle from '@/components/CustomTitle'
-import CardProject from '@/components/CardProject'
+const CustomTitle = dynamic(async () => await import('@/components/CustomTitle'))
+const CardProject = dynamic(async () => await import('@/components/CardProject'))
 
 // Projects
 export default function Projects (): JSX.Element {
-  // Accessing values from the context using useContext hook
-  const { data } = useContext(ThemeContext)
-
   return (
     <>
       <section id="projects" className="projects">
-        <CustomTitle
-          center={false}
-          alternative={false}
-          number={data.projects.sectionNumber}
-          customTitle={data.projects.title}
-        />
+        <CustomTitle center={false} number={content.projects.sectionNumber} customTitle={content.projects.title} />
 
         <ul className="projects__cards">
-          {data.projects.cardProjects.map((cardProject) => (
+          {content.projects.cardProjects.map((cardProject) => (
             <CardProject
               key={cardProject.title}
               website={cardProject.website}

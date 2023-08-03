@@ -1,6 +1,3 @@
-// React
-import React from 'react'
-
 // MenuItem
 export default function MenuItem ({
   menuLink,

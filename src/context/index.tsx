@@ -2,14 +2,10 @@
 'use client'
 
 // React
-import React, { createContext } from 'react'
-
-// Mocks
-import { english, spanish } from '@/mocks'
+import { createContext, useEffect } from 'react'
 
 // Hooks
 import { useOpenMenu } from '@/hooks/useOpenMenu'
-import { useChangeLang } from '@/hooks/useChangeLang'
 import { useHeaderScroll } from '@/hooks/useHeaderScroll'
 
 // Utils
@@ -17,18 +13,21 @@ import { type Context } from '@/utils/definitions'
 
 // Create Context
 export const ThemeContext = createContext<Context>({
-  lang: '',
-  toggleLang: () => {},
   isHeaderVisible: false,
   prevScrollPos: 0,
   openMenu: false,
-  setOpenMenu: () => {},
-  data: english
+  setOpenMenu: () => {}
 })
 
 export default function ThemeProvider ({ children }: { children: React.ReactNode }): JSX.Element {
-  // Toggles between language options
-  const [lang, toggleLang] = useChangeLang({ key: 'LANG_V1', initialValue: 'en' })
+  // Register service worker
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      void navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+        console.log('Register SW', registration)
+      })
+    }
+  }, [])
 
   // Tracks header visibility and previous scroll position
   const [isHeaderVisible, prevScrollPos] = useHeaderScroll()
@@ -36,19 +35,13 @@ export default function ThemeProvider ({ children }: { children: React.ReactNode
   // Controls the open/close state of the menu
   const [openMenu, setOpenMenu] = useOpenMenu()
 
-  // Selects the content data based on the current language
-  const data = lang === 'en' ? english : spanish
-
   return (
     <ThemeContext.Provider
       value={{
-        lang,
-        toggleLang,
         isHeaderVisible,
         prevScrollPos,
         openMenu,
-        setOpenMenu,
-        data
+        setOpenMenu
       }}
     >
       {children}

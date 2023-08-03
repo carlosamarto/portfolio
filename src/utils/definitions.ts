@@ -64,30 +64,16 @@ export interface Mocks {
       twitter: string
       instagram: string
     }
-    langEn: string
-    langEs: string
   }
 }
 
 // Context interface for provide all the values to the app
 export interface Context {
-  lang: string
-  toggleLang: (value: string) => void
   isHeaderVisible: boolean
   prevScrollPos: number
   openMenu: boolean
   setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>
-  data: Mocks
 }
-
-// useChangeLang Props
-export interface LangProps {
-  key: string
-  initialValue: string
-}
-
-// ToggleLang function to change language
-export type LangFunction = (value: string) => void
 
 // Footer social links
 export interface Links {

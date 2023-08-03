@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,17 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@vercel/analytics": "^1.0.1",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
     "typescript": "^5.1.6"
   },
   "devDependencies": {
-    "@types/node": "20.4.5",
+    "@types/node": "^20.4.6",
     "@types/react": "18.2.17",
-    "@types/react-dom": "18.2.7",
+    "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "eslint": "^8.46.0",
     "eslint-config-next": "13.4.12",

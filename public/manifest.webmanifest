@@ -3,33 +3,39 @@
   "short_name": "Carlos M",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#ef233c",
-  "background_color": "#1c1e2b",
+  "theme_color": "#ff0000",
+  "background_color": "#0b1622",
   "description": "Front-End Developer passionate about creating web pages that stand out for their great style.",
   "icons": [
     {
-      "src": "icons/apple-touch-icon-60.png",
-      "sizes": "60x60",
+      "src": "icons/apple-touch-icon-16.png",
+      "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "icons/apple-touch-icon-76.png",
-      "sizes": "76x76",
+      "src": "icons/apple-touch-icon-32.png",
+      "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "icons/apple-touch-icon-120.png",
-      "sizes": "120x120",
+      "src": "icons/apple-touch-icon-48.png",
+      "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "icons/apple-touch-icon-150.png",
-      "sizes": "150x150",
+      "src": "icons/apple-touch-icon-64.png",
+      "sizes": "64x64",
       "type": "image/png"
     },
     {
-      "src": "icons/apple-touch-icon-152.png",
-      "sizes": "152x152",
+      "src": "icons/apple-touch-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/apple-touch-icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]

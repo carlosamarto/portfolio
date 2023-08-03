@@ -46,10 +46,9 @@ You are free to fork this repository, either to see the code or use the portfoli
 
 ## 🎨 Color Palette
 
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Primary        | ![#ef233c](https://via.placeholder.com/10/ef233c?text=+) `#ef233c` |
-| Secondary      | ![#d90429](https://via.placeholder.com/10/d90429?text=+) `#d90429` |
-| Body           | ![#2b2d42](https://via.placeholder.com/10/2b2d42?text=+) `#1c1e2b` |
-| Text           | ![#edf2f4](https://via.placeholder.com/10/edf2f4?text=+) `#edf2f4` |
-| Text Secondary | ![#8d99ae](https://via.placeholder.com/10/8d99ae?text=+) `#8d99ae` |
+| Color     | Hex                                                                |
+| --------- | ------------------------------------------------------------------ |
+| Red       | ![#ff0000](https://via.placeholder.com/10/ef233c?text=+) `#ff0000` |
+| Dark Blue | ![#0b1622](https://via.placeholder.com/10/2b2d42?text=+) `#0b1622` |
+| White     | ![#edf2f4](https://via.placeholder.com/10/edf2f4?text=+) `#edf2f4` |
+| Gray      | ![#a6aebf](https://via.placeholder.com/10/8d99ae?text=+) `#a6aebf` |

@@ -1,6 +1,3 @@
-// React
-import React from 'react'
-
 // Next
 import type { Metadata } from 'next'
 import { inject } from '@vercel/analytics'
@@ -18,8 +15,9 @@ inject()
 // Metadata
 export const metadata: Metadata = {
   generator: 'Next.js',
+  themeColor: '#0b1622',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'Portfolio', 'Front-End'],
+  keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'WordPress', 'Portfolio', 'Front-End'],
   authors: [{ name: 'Carlos', url: 'https://carlosmrtzo.com/' }],
   creator: 'Carlos Martínez',
   manifest: '/manifest.webmanifest',
@@ -62,14 +60,20 @@ export const metadata: Metadata = {
       { url: '/icons/favicon-48.png', sizes: '48x48', type: 'image/png' },
       { url: '/icons/favicon-64.png', sizes: '64x64', type: 'image/png' },
       { url: '/icons/favicon-128.png', sizes: '128x128', type: 'image/png' },
-      { url: '/icons/android-icon-192.png', sizes: '192x192', type: 'image/png' }
+      { url: '/icons/favicon-512.png', sizes: '512x512', type: 'image/png' },
+      { url: '/icons/android-icon-16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icons/android-icon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icons/android-icon-48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/icons/android-icon-64.png', sizes: '64x64', type: 'image/png' },
+      { url: '/icons/android-icon-128.png', sizes: '128x128', type: 'image/png' }
     ],
     apple: [
-      { url: '/icons/apple-touch-icon-60.png', sizes: '60x60', type: 'image/png' },
-      { url: '/icons/apple-touch-icon-76.png', sizes: '76x76', type: 'image/png' },
-      { url: '/icons/apple-touch-icon-120.png', sizes: '120x120', type: 'image/png' },
-      { url: '/icons/apple-touch-icon-150.png', sizes: '150x150', type: 'image/png' },
-      { url: '/icons/apple-touch-icon-152.png', sizes: '152x152', type: 'image/png' }
+      { url: '/icons/apple-touch-icon-16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icons/apple-touch-icon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icons/apple-touch-icon-48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/icons/apple-touch-icon-64.png', sizes: '64x64', type: 'image/png' },
+      { url: '/icons/apple-touch-icon-128.png', sizes: '128x128', type: 'image/png' },
+      { url: '/icons/apple-touch-icon-512.png', sizes: '512x512', type: 'image/png' }
     ]
   }
 }
@@ -78,12 +82,16 @@ export const metadata: Metadata = {
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  weight: ['400', '500', '700'],
+  style: ['normal'],
   display: 'swap'
 })
 
 const firaCode = Fira_Code({
   subsets: ['latin'],
   variable: '--font-fira-code',
+  weight: ['400', '500', '700'],
+  style: ['normal'],
   display: 'swap'
 })
 
