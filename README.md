@@ -11,12 +11,12 @@
 
 ## 💼 Used technologies
 
-![](https://img.shields.io/badge/HTML5-informational?style=for-the-badge&logo=html5&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
-![](https://img.shields.io/badge/CSS3-informational?style=for-the-badge&logo=css3&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
-![](https://img.shields.io/badge/JavaScript-informational?style=for-the-badge&logo=JavaScript&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
-![](https://img.shields.io/badge/TypeScript-informational?style=for-the-badge&logo=TypeScript&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
-![](https://img.shields.io/badge/ReactJS-informational?style=for-the-badge&logo=react&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
-![](https://img.shields.io/badge/Next.js-informational?style=for-the-badge&logo=vercel&logoColor=edf2f4&color=2b2d42&labelColor=ef233c)
+![](https://img.shields.io/badge/HTML5-informational?style=for-the-badge&logo=html5&logoColor=edf2f4&color=0b1622&labelColor=ff0000)
+![](https://img.shields.io/badge/CSS3-informational?style=for-the-badge&logo=css3&logoColor=edf2f4&color=0b1622&labelColor=ff0000)
+![](https://img.shields.io/badge/JavaScript-informational?style=for-the-badge&logo=JavaScript&logoColor=edf2f4&color=0b1622&labelColor=ff0000)
+![](https://img.shields.io/badge/TypeScript-informational?style=for-the-badge&logo=TypeScript&logoColor=edf2f4&color=0b1622&labelColor=ff0000)
+![](https://img.shields.io/badge/ReactJS-informational?style=for-the-badge&logo=react&logoColor=edf2f4&color=0b1622&labelColor=ff0000)
+![](https://img.shields.io/badge/Next.js-informational?style=for-the-badge&logo=vercel&logoColor=edf2f4&color=0b1622&labelColor=ff0000)
 
 ## 🚨 Forking this repository
 
@@ -48,7 +48,7 @@ You are free to fork this repository, either to see the code or use the portfoli
 
 | Color     | Hex                                                                |
 | --------- | ------------------------------------------------------------------ |
-| Red       | ![#ff0000](https://via.placeholder.com/10/ef233c?text=+) `#ff0000` |
-| Dark Blue | ![#0b1622](https://via.placeholder.com/10/2b2d42?text=+) `#0b1622` |
+| Red       | ![#ff0000](https://via.placeholder.com/10/ff0000?text=+) `#ff0000` |
+| Dark Blue | ![#0b1622](https://via.placeholder.com/10/0b1622?text=+) `#0b1622` |
 | White     | ![#edf2f4](https://via.placeholder.com/10/edf2f4?text=+) `#edf2f4` |
 | Gray      | ![#a6aebf](https://via.placeholder.com/10/8d99ae?text=+) `#a6aebf` |
