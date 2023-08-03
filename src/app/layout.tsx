@@ -79,12 +79,16 @@ export const metadata: Metadata = {
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  weight: ['400', '500', '700'],
+  style: ['normal'],
   display: 'swap'
 })
 
 const firaCode = Fira_Code({
   subsets: ['latin'],
   variable: '--font-fira-code',
+  weight: ['400', '500', '700'],
+  style: ['normal'],
   display: 'swap'
 })
 

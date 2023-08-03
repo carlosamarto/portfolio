@@ -1,5 +1,7 @@
+'use client'
+
 // React
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // Next
 import dynamic from 'next/dynamic'
@@ -18,6 +20,14 @@ const Experience = dynamic(async () => await import('@/sections/Experience'))
 
 // Page
 export default function Home (): JSX.Element {
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      void navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+        console.log('scope is: ', registration.scope)
+      })
+    }
+  }, [])
+
   return (
     <>
       <Header />

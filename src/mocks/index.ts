@@ -37,7 +37,8 @@ export const english: Mocks = {
       { technologyName: '<span class="about__symbol">◇</span>TypeScript' },
       { technologyName: '<span class="about__symbol">◇</span>React' },
       { technologyName: '<span class="about__symbol">◇</span>Next.js' },
-      { technologyName: '<span class="about__symbol">◇</span>Figma' }
+      { technologyName: '<span class="about__symbol">◇</span>Figma' },
+      { technologyName: '<span class="about__symbol">◇</span>WordPress' }
     ],
     imageProfile: '/images/profile.jpg',
     imageCaption: 'Profile picture created by Vana IA'
@@ -173,7 +174,8 @@ export const spanish: Mocks = {
       { technologyName: '<span class="about__symbol">◇</span>TypeScript' },
       { technologyName: '<span class="about__symbol">◇</span>React' },
       { technologyName: '<span class="about__symbol">◇</span>Next.js' },
-      { technologyName: '<span class="about__symbol">◇</span>Figma' }
+      { technologyName: '<span class="about__symbol">◇</span>Figma' },
+      { technologyName: '<span class="about__symbol">◇</span>WordPress' }
     ],
     imageProfile: '/images/profile.jpg',
     imageCaption: 'Foto de perfil creada por Vana IA'
