@@ -1,15 +1,11 @@
 const installEvent = () => {
-  self.addEventListener("install", () => {
-    console.log("service worker installed");
-  });
+  self.addEventListener("install", () => {});
 };
 
 installEvent();
 
 const activateEvent = () => {
-  self.addEventListener("activate", () => {
-    console.log("service worker activated");
-  });
+  self.addEventListener("activate", () => {});
 };
 
 activateEvent();

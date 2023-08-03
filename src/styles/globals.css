@@ -177,14 +177,14 @@
   text-decoration: none;
 }
 .menu-item__number {
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: var(--color-red);
   font-size: var(--font-xs);
   font-family: var(--font-fira-code);
 }
 .menu-item__text {
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: var(--color-gray);
   font-size: var(--font-xs);
@@ -201,7 +201,7 @@
   border: none;
   cursor: pointer;
   background: none;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   position: relative;
   text-decoration: none;
@@ -294,7 +294,7 @@
   flex-direction: column;
 }
 .intro__subtitle {
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   text-align: center;
   color: var(--color-red);
@@ -311,7 +311,7 @@
 }
 .intro__text {
   width: 100%;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   text-align: center;
   color: var(--color-gray);
@@ -343,7 +343,7 @@
 }
 .about__description {
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-gray);
   font-size: var(--font-sm);
   font-family: var(--font-fira-code);
@@ -369,7 +369,7 @@
 .about__technology {
   gap: 1.2rem;
   display: flex;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   align-items: center;
   color: var(--color-gray);
@@ -401,7 +401,7 @@
 }
 .custom-title__number {
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-red);
   font-size: var(--font-md);
   font-family: var(--font-fira-code);
@@ -429,7 +429,7 @@
   border: none;
   outline: none;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   border-right: none;
   padding: 0.8rem 2.4rem;
   color: var(--color-light);
@@ -462,7 +462,7 @@
 }
 .experience__time {
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-gray);
   font-size: var(--font-xs);
   font-family: var(--font-fira-code);
@@ -483,7 +483,7 @@
   gap: 0.8rem;
   display: flex;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-gray);
   font-size: var(--font-sm);
   font-family: var(--font-fira-code);
@@ -576,7 +576,7 @@
 }
 .card-project__description {
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-gray);
   font-size: var(--font-sm);
   font-family: var(--font-fira-code);
@@ -590,7 +590,7 @@
 }
 .card-project__technology {
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-gray);
   font-size: var(--font-xs);
   font-family: var(--font-fira-code);
@@ -612,7 +612,7 @@
   flex-direction: column;
 }
 .contact__subtitle {
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: var(--color-red);
   font-size: var(--font-md);
@@ -628,7 +628,7 @@
 }
 .contact__text {
   width: 100%;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   text-align: center;
   color: var(--color-gray);
@@ -660,7 +660,7 @@
 .footer__repository {
   gap: 0.8rem;
   display: flex;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   align-items: center;
   text-decoration: none;
@@ -723,7 +723,7 @@
   outline: none;
   cursor: pointer;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   padding: 0.2rem 0.8rem;
   color: var(--color-red);

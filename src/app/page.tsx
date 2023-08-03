@@ -20,11 +20,10 @@ const Experience = dynamic(async () => await import('@/sections/Experience'))
 
 // Page
 export default function Home (): JSX.Element {
+  // Register service worker
   useEffect(() => {
     if ('serviceWorker' in navigator) {
-      void navigator.serviceWorker.register('/service-worker.js').then((registration) => {
-        console.log('scope is: ', registration.scope)
-      })
+      void navigator.serviceWorker.register('/service-worker.js').then((registration) => {})
     }
   }, [])
 
