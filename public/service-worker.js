@@ -1,11 +1,15 @@
 const installEvent = () => {
-  self.addEventListener("install", () => {});
+  self.addEventListener("install", () => {
+    console.log("SW Install");
+  });
 };
 
 installEvent();
 
 const activateEvent = () => {
-  self.addEventListener("activate", () => {});
+  self.addEventListener("activate", () => {
+    console.log("SW Active");
+  });
 };
 
 activateEvent();

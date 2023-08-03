@@ -1,6 +1,3 @@
-// React
-import React from 'react'
-
 // CustomTitle
 export default function CustomTitle ({
   center,

@@ -1,5 +1,5 @@
 // React
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 
 // Context
 import { ThemeContext } from '@/context'

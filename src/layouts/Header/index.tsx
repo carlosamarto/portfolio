@@ -2,7 +2,7 @@
 'use client'
 
 // React
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 
 // Next
 import Link from 'next/link'

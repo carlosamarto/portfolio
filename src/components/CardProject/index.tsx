@@ -1,6 +1,3 @@
-// React
-import React from 'react'
-
 // React Icons
 import { FiFolder } from '@react-icons/all-files/fi/FiFolder'
 import { FiGithub } from '@react-icons/all-files/fi/FiGithub'
