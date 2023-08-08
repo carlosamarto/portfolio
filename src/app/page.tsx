@@ -1,10 +1,14 @@
 // Next
 import dynamic from 'next/dynamic'
+import { inject } from '@vercel/analytics'
 
 // Components
 import Header from '@/layouts/Header'
 import Main from '@/layouts/Main'
 import Intro from '@/sections/Intro'
+
+// Vercel Analytics
+inject()
 
 const Footer = dynamic(async () => await import('@/layouts/Footer'))
 const About = dynamic(async () => await import('@/sections/About'))
