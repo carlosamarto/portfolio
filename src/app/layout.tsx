@@ -1,6 +1,5 @@
 // Next
 import type { Metadata } from 'next'
-import { inject } from '@vercel/analytics'
 import { Fira_Code, Inter } from 'next/font/google'
 
 // Styles
@@ -8,9 +7,6 @@ import '@/styles/globals.css'
 
 // Context
 import ThemeProvider from '@/context'
-
-// Vercel Analytics
-inject()
 
 // Metadata
 export const metadata: Metadata = {
