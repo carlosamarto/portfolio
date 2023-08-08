@@ -73,6 +73,13 @@ export const content: Mocks = {
     title: 'Projects',
     cardProjects: [
       {
+        website: 'https://hackers-news-topaz.vercel.app/',
+        github: 'https://github.com/carlosmrtzor/hackers-news',
+        title: 'Hackers News',
+        description: 'Hackers News Project with React and TypeScript, fetching an API for the post and comments.',
+        technologies: ['React', 'TypeScript']
+      },
+      {
         website: 'http://task-app-lovat.vercel.app/',
         github: 'https://github.com/carlosmrtzor/task-app',
         title: 'Task App',
