@@ -94,7 +94,7 @@ const firaCode = Fira_Code({
 // Layout
 export default function RootLayout ({ children }: { children: React.ReactNode }): JSX.Element {
   return (
-    <html lang="en" className={`page ${inter.variable} ${firaCode.variable}`}>
+    <html lang="es" className={`page ${inter.variable} ${firaCode.variable}`}>
       <body className="body">
         <ThemeProvider>{children}</ThemeProvider>
       </body>

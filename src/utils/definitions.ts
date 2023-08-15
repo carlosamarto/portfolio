@@ -1,5 +1,5 @@
 // Mocks interface with the content of the website
-export interface Mocks {
+export interface Content {
   header: {
     menuItems: Array<{
       menuNumber: string
@@ -64,6 +64,34 @@ export interface Mocks {
       twitter: string
       instagram: string
     }
+  }
+}
+
+// Mocks interface with the content of the work website
+export interface Work {
+  header: {
+    menuItems: Array<{
+      menuNumber: string
+      menuText: string
+      menuLink: string
+    }>
+    buttonLink: string
+  }
+  intro: {
+    text: string
+  }
+  projects: {
+    sectionNumber: string
+    cardProjects: Array<{
+      website: string
+      github: string
+      title: string
+      description: string
+      technologies: string[]
+    }>
+  }
+  contact: {
+    subtitle: string
   }
 }
 
