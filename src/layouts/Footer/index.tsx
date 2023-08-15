@@ -6,6 +6,7 @@ import { useContext } from 'react'
 
 // Next
 import dynamic from 'next/dynamic'
+import { usePathname } from 'next/navigation'
 
 // React Icons
 import { FiGitBranch } from '@react-icons/all-files/fi/FiGitBranch'
@@ -24,10 +25,13 @@ export default function Footer (): JSX.Element {
   // Accessing values from the context using useContext hook
   const { openMenu } = useContext(ThemeContext)
 
+  // Get the path of the url
+  const path = usePathname()
+
   return (
     <>
       <footer className={`footer ${openMenu ? 'footer--lock' : 'footer--unlock'}`}>
-        <SocialBar links={content.footer.social} />
+        {path !== '/work' && <SocialBar links={content.footer.social} />}
 
         <a
           href={content.footer.link}

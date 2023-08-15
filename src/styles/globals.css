@@ -414,6 +414,7 @@
   margin: 0 auto;
   max-width: 80rem;
   min-height: 100vh;
+  padding-bottom: 8rem;
   flex-direction: column;
   justify-content: center;
 }

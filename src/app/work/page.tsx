@@ -11,12 +11,10 @@ import Intro from '@/sections/Intro'
 inject()
 
 const Footer = dynamic(async () => await import('@/layouts/Footer'))
-const About = dynamic(async () => await import('@/sections/About'))
 const Contact = dynamic(async () => await import('@/sections/Contact'))
 const Projects = dynamic(async () => await import('@/sections/Projects'))
-const Experience = dynamic(async () => await import('@/sections/Experience'))
 
-// Home Page
+// Work Page
 export default function Home (): JSX.Element {
   return (
     <>
@@ -24,10 +22,6 @@ export default function Home (): JSX.Element {
 
       <Main>
         <Intro />
-
-        <About />
-
-        <Experience />
 
         <Projects />
 
