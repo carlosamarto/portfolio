@@ -17,7 +17,7 @@ export const content: Mocks = {
   intro: {
     subtitle: '01. Hello, my name is',
     title: 'Carlos Martínez',
-    text: "<strong class='intro__strong'>Front-End Developer</strong> passionate about creating web pages that stand out for their great style.",
+    text: "Passionate <strong class='intro__strong'>Front-End Developer</strong> driven to create websites that stand out for their exceptional style.",
     buttonLink: '#contact',
     buttonText: 'Contact me'
   },
@@ -30,15 +30,14 @@ export const content: Mocks = {
       'Passionate about creating attractive and functional interfaces. Always looking for new challenges and opportunities to grow as a professional.',
     descriptionc: 'Here are some of the technologies I`ve been working on most recently:',
     technologies: [
-      { technologyName: '<span class="about__symbol">◇</span>HTML5' },
-      { technologyName: '<span class="about__symbol">◇</span>CSS3' },
+      { technologyName: '<span class="about__symbol">◇</span>HTML' },
+      { technologyName: '<span class="about__symbol">◇</span>CSS' },
       { technologyName: '<span class="about__symbol">◇</span>Tailwind' },
       { technologyName: '<span class="about__symbol">◇</span>JavaScript' },
       { technologyName: '<span class="about__symbol">◇</span>TypeScript' },
       { technologyName: '<span class="about__symbol">◇</span>React' },
       { technologyName: '<span class="about__symbol">◇</span>Next.js' },
-      { technologyName: '<span class="about__symbol">◇</span>Figma' },
-      { technologyName: '<span class="about__symbol">◇</span>WordPress' }
+      { technologyName: '<span class="about__symbol">◇</span>Figma' }
     ],
     imageProfile: '/images/profile.jpg',
     imageCaption: 'Profile picture created by Vana IA'
@@ -52,19 +51,31 @@ export const content: Mocks = {
     tasks: [
       {
         description:
-          '<span class="experience__symbol">◇</span><p class="experience__description">In charge of bringing the design to the code for the layout of certain components or pages, for the different company websites, we work with <strong class="experiencie__strong">React</strong> on <strong class="experiencie__strong">Next.js</strong>, following various patterns for a readable and maintainable code.</p>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Initiated by participating in the conceptualization and design of components, widgets, and screens in <strong class="experiencie__strong">Figma</strong>, meticulously transcribing them into code.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><p class="experience__description">Creation of new designs for certain components of the web or complete pages to later be evaluated, approved and pass them to layout, working in <strong class="experiencie__strong">Figma</strong>.</p>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Employed <strong class="experiencie__strong">Next.js</strong> as the primary framework, utilizing <strong class="experiencie__strong">React</strong> for meticulous component creation and structuring.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><p class="experience__description">Collaborate with other members of the <strong class="experiencie__strong">Web Design</strong> team, <strong class="experiencie__strong">Project Managers</strong>, among others, to coordinate tasks.</p>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Adhered to established patterns and best practices to achieve clean and maintainable code, including the application of auxiliary classes, JSX styling, and a modular component architecture.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><p class="experience__description">Update of the documentation to work in the <strong class="experiencie__strong">Front-End</strong> part of the project, explaining the project, its patterns and variables.</p>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Implemented basic testing methodologies to ensure functionality and code performance met project standards.</p>'
+      },
+      {
+        description:
+          '<span class="experience__symbol">◇</span><p class="experience__description">Utilized <strong class="experiencie__strong">Storybook</strong> as a platform for component documentation, facilitating seamless sharing and presentation of various components among the team.</p>'
+      },
+      {
+        description:
+          '<span class="experience__symbol">◇</span><p class="experience__description">Assumed the responsibility of creating comprehensive documentation for new team members, ensuring smooth onboarding and effective knowledge transfer.</p>'
+      },
+      {
+        description:
+          '<span class="experience__symbol">◇</span><p class="experience__description">Effectively communicated and coordinated with design and development teams to align tasks, facilitate seamless workflows, and achieve project milestones.</p>'
       }
     ]
   },
