@@ -25,9 +25,9 @@ export const content: Content = {
     sectionNumber: '02.',
     title: 'Acerca de mí',
     description:
-      "¡Hola! Soy <strong class='about__strong'>Desarrollador Front-End</strong> con más de 1 año de experiencia, enfocado en <strong class='about__strong'>React</strong> y <strong class='about__strong'>Next.js</strong>.",
+      "¡Hola! Soy <strong class='about__strong'>Desarrollador Front-End</strong> con más de 1 año de experiencia, me he especializado en estos ultimos tiempos con <strong class='about__strong'>React</strong>.",
     descriptionb:
-      'Apasionado por crear interfaces atractivas y funcionales. Siempre en busca de nuevos desafíos y oportunidades para crecer como profesional.',
+      'Me apasiona crear interfaces atractivas y funcionales. Siempre en busca de nuevos desafíos y oportunidades para crecer como profesional.',
     descriptionc: 'Aquí hay algunas de las tecnologías en las que he estado trabajando recientemente:',
     technologies: [
       { technologyName: '<span class="about__symbol">◇</span>HTML' },
@@ -59,7 +59,7 @@ export const content: Content = {
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><p class="experience__description">Seguí patrones y mejores prácticas establecidas para obtener un código limpio y mantenible, incluyendo la aplicación de clases auxiliares, estilo JSX y una arquitectura modularizada de componentes.</p>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Comunicado y coordinado de manera efectiva con los equipos de diseño y desarrollo para alinear tareas, facilitar flujos de trabajo sin problemas y alcanzar hitos del proyecto.</p>'
       }
     ]
   },
@@ -102,7 +102,7 @@ export const content: Content = {
   contact: {
     subtitle: '05. ¿Cuál es el siguiente paso?',
     title: 'Ponte en Contacto',
-    text: "Actualmente estoy abierto a nuevas oportunidades laborales. Si quieres ponerte en contacto conmigo, puedes hacerlo a través de mis redes o enviarme un <strong class='contact__strong'>correo electrónico</strong> al siguiente enlace.",
+    text: "Actualmente estoy abierto a nuevas oportunidades de trabajo. Puedes ponerte en contacto conmigo a través de mis redes o enviarme un <strong class='contact__strong'>correo electrónico</strong>.",
     buttonLink: 'mailto:carlosmrtzo@gmail.com',
     buttonText: '¡Hablemos!'
   },

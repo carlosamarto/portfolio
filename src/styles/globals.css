@@ -760,18 +760,6 @@
     padding: 2.4rem 6.4rem;
   }
 
-  .menu-icon {
-    display: none;
-  }
-
-  .menu-aside {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-  }
-
   .article {
     padding: 0 2.4rem;
     max-width: 102.4rem;
@@ -784,6 +772,20 @@
   .about__container {
     flex-direction: row;
     align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-aside {
+    display: none;
   }
 }
 
