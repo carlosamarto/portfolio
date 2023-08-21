@@ -1,7 +1,7 @@
 // Next
 import type { Metadata } from 'next'
-import { inject } from '@vercel/analytics'
 import { Fira_Code, Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 
 // Styles
 import '@/styles/globals.css'
@@ -92,15 +92,13 @@ const firaCode = Fira_Code({
   display: 'swap'
 })
 
-// Vercel Analytics
-inject()
-
 // Layout
 export default function RootLayout ({ children }: { children: React.ReactNode }): JSX.Element {
   return (
     <html lang="es" className={`page ${inter.variable} ${firaCode.variable}`}>
       <body className="body">
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
