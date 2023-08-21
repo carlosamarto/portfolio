@@ -1,5 +1,6 @@
 // Next
 import type { Metadata } from 'next'
+import { inject } from '@vercel/analytics'
 import { Fira_Code, Inter } from 'next/font/google'
 
 // Styles
@@ -90,6 +91,9 @@ const firaCode = Fira_Code({
   style: ['normal'],
   display: 'swap'
 })
+
+// Vercel Analytics
+inject()
 
 // Layout
 export default function RootLayout ({ children }: { children: React.ReactNode }): JSX.Element {
