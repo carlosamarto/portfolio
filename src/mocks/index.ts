@@ -12,7 +12,7 @@ export const content: Content = {
       { menuNumber: '05.', menuText: 'Contacto', menuLink: '#contact' }
     ],
     buttonText: 'Curriculum',
-    buttonLink: 'resumes/curriculum-front-end-developer.pdf'
+    buttonLink: 'resumes/curriculum-front-end.pdf'
   },
   intro: {
     subtitle: '01. Hola, mi nombre es',
@@ -127,7 +127,7 @@ export const work: Work = {
       { menuNumber: '02.', menuText: 'Proyectos', menuLink: '#projects' },
       { menuNumber: '03.', menuText: 'Contacto', menuLink: '#contact' }
     ],
-    buttonLink: 'resumes/curriculum-wordpress-web-design.pdf'
+    buttonLink: 'resumes/curriculum-wordpress.pdf'
   },
   intro: {
     text: "<strong class='intro__strong'>Diseñador Web WordPress</strong> apasionado en crear páginas webs que destaquen por su gran estilo."
