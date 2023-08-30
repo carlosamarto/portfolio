@@ -17,7 +17,7 @@ export const content: Content = {
   intro: {
     subtitle: '01. Hola, mi nombre es',
     title: 'Carlos Martínez',
-    text: "<strong class='intro__strong'>Front-End Developer</strong> apasionado en crear páginas webs que destaquen por su gran estilo.",
+    text: "<strong class='intro__strong'>Desarrollador Front-End</strong> apasionado en crear páginas webs que destaquen por su gran estilo.",
     buttonLink: '#contact',
     buttonText: 'Contáctame'
   },
@@ -25,18 +25,18 @@ export const content: Content = {
     sectionNumber: '02.',
     title: 'Acerca de mí',
     description:
-      "¡Hola! Soy <strong class='about__strong'>Desarrollador Front-End</strong> con más de 1 año de experiencia, me he especializado en estos ultimos tiempos con <strong class='about__strong'>React</strong>.",
+      "Soy <strong class='intro__strong'>Desarrollador Front-End</strong>, tengo dos años de experiencia trabajando en esta área, usando tecnologías como <strong class='intro__strong'>React</strong>, <strong class='intro__strong'>JavaScript</strong> y <strong class='intro__strong'>CSS</strong>. Especializándome en estas mismas tecnologías mientras voy mejorando y aprendiendo cosas nuevas como: <strong class='intro__strong'>Next.js</strong>, <strong class='intro__strong'>TypeScript</strong>, <strong class='intro__strong'>Tailwind CSS</strong>, etc.",
     descriptionb:
-      'Me apasiona crear interfaces atractivas y funcionales. Siempre en busca de nuevos desafíos y oportunidades para crecer como profesional.',
+      'En mi experiencia, tengo buena comunicación con el equipo, buen desempeñó individual y siempre colaboro en lo posible.',
     descriptionc: 'Aquí hay algunas de las tecnologías en las que he estado trabajando recientemente:',
     technologies: [
       { technologyName: '<span class="about__symbol">◇</span>HTML' },
       { technologyName: '<span class="about__symbol">◇</span>CSS' },
-      { technologyName: '<span class="about__symbol">◇</span>Tailwind' },
       { technologyName: '<span class="about__symbol">◇</span>JavaScript' },
       { technologyName: '<span class="about__symbol">◇</span>TypeScript' },
       { technologyName: '<span class="about__symbol">◇</span>React' },
       { technologyName: '<span class="about__symbol">◇</span>Next.js' },
+      { technologyName: '<span class="about__symbol">◇</span>Tailwind' },
       { technologyName: '<span class="about__symbol">◇</span>Figma' }
     ],
     imageProfile: '/images/profile.jpg',
@@ -51,15 +51,15 @@ export const content: Content = {
     tasks: [
       {
         description:
-          '<span class="experience__symbol">◇</span><p class="experience__description">Inicialmente participé en la conceptualización y diseño de componentes, widgets y pantallas en <strong class="experiencie__strong">Figma</strong>, que luego se transcribieron meticulosamente en código.</p>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Logre en el proceso aprender <strong class="intro__strong">Figma</strong> para encargarme de la conceptualización y diseño de componentes, widgets y pantallas, que luego lleve a la maquetación en código utilizando <strong class="intro__strong">React</strong> sobre un proyecto en <strong class="intro__strong">Next.js</strong>.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><p class="experience__description">Utilicé <strong class="experiencie__strong">Next.js</strong> como el marco principal, aplicando <strong class="experiencie__strong">React</strong> para la creación y estructuración meticulosa de componentes.</p>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Colabore con otros miembros del equipo de distintas áreas para avanzar en ciertas tareas, comunicándome de manera efectiva y clara con temas relacionados con el <strong class="intro__strong">Front-End</strong>.</p>'
       },
       {
         description:
-          '<span class="experience__symbol">◇</span><p class="experience__description">Comunicado y coordinado de manera efectiva con los equipos de diseño y desarrollo para alinear tareas, facilitar flujos de trabajo sin problemas y alcanzar hitos del proyecto.</p>'
+          '<span class="experience__symbol">◇</span><p class="experience__description">Seguí patrones y mejore prácticas establecidas para obtener un código limpio y mantenible, incluyendo la aplicación de clases auxiliares, estilo JSX y una arquitectura modular de componentes.</p>'
       }
     ]
   },

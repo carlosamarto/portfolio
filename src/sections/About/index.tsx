@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 // Mocks
 import { content } from '@/mocks'
 
-// Components
+// Dynamic Components
 const CustomTitle = dynamic(async () => await import('@/components/CustomTitle'))
 
 // About

@@ -6,6 +6,7 @@ import Header from '@/layouts/Header'
 import Main from '@/layouts/Main'
 import Intro from '@/sections/Intro'
 
+// Dynamic Components
 const Footer = dynamic(async () => await import('@/layouts/Footer'))
 const About = dynamic(async () => await import('@/sections/About'))
 const Contact = dynamic(async () => await import('@/sections/Contact'))

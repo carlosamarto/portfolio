@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 // Mocks
 import { content, work } from '@/mocks'
 
-// Components
+// Dynamic Components
 const Button = dynamic(async () => await import('@/components/Button'))
 
 // Contact

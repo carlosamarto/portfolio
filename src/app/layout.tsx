@@ -98,6 +98,7 @@ export default function RootLayout ({ children }: { children: React.ReactNode })
     <html lang="es" className={`page ${inter.variable} ${firaCode.variable}`}>
       <body className="body">
         <ThemeProvider>{children}</ThemeProvider>
+
         <Analytics />
       </body>
     </html>
