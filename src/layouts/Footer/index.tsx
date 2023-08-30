@@ -17,7 +17,7 @@ import { ThemeContext } from '@/context'
 // Mocks
 import { content } from '@/mocks'
 
-// Components
+// Dynamic Components
 const SocialBar = dynamic(async () => await import('@/components/SocialBar'))
 
 // Footer

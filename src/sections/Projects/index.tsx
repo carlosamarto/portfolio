@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 // Mocks
 import { content, work } from '@/mocks'
 
-// Components
+// Dynamic Components
 const CustomTitle = dynamic(async () => await import('@/components/CustomTitle'))
 const CardProject = dynamic(async () => await import('@/components/CardProject'))
 
