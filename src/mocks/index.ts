@@ -72,7 +72,7 @@ export const content: Content = {
         github: 'https://github.com/carlosmrtzor/hackers-news',
         title: 'Hackers News',
         description:
-          'Proyecto Hackers News con React y TypeScript, obteniendo datos de una API para publicaciones y comentarios.',
+          'Proyecto Hackers News con React y TypeScript, obteniendo una API para las historias, comentarios y lista de favoritos.',
         technologies: ['React', 'TypeScript']
       },
       {
