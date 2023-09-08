@@ -7,6 +7,7 @@ import { createContext, useEffect } from 'react'
 // Hooks
 import { useOpenMenu } from '@/hooks/useOpenMenu'
 import { useHeaderScroll } from '@/hooks/useHeaderScroll'
+import { useExperienceTabs } from '@/hooks/useExperienceTabs'
 
 // Utils
 import { type Context } from '@/utils/definitions'
@@ -16,7 +17,9 @@ export const ThemeContext = createContext<Context>({
   isHeaderVisible: false,
   prevScrollPos: 0,
   openMenu: false,
-  setOpenMenu: () => {}
+  setOpenMenu: () => {},
+  activeTab: 0,
+  handleClick: () => {}
 })
 
 export default function ThemeProvider ({ children }: { children: React.ReactNode }): JSX.Element {
@@ -28,6 +31,9 @@ export default function ThemeProvider ({ children }: { children: React.ReactNode
       })
     }
   }, [])
+
+  // Handle the navegation tabs for the experience section
+  const { activeTab, handleClick } = useExperienceTabs()
 
   // Tracks header visibility and previous scroll position
   const [isHeaderVisible, prevScrollPos] = useHeaderScroll()
@@ -41,7 +47,9 @@ export default function ThemeProvider ({ children }: { children: React.ReactNode
         isHeaderVisible,
         prevScrollPos,
         openMenu,
-        setOpenMenu
+        setOpenMenu,
+        activeTab,
+        handleClick
       }}
     >
       {children}

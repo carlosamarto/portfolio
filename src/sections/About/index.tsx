@@ -21,7 +21,7 @@ export default function About (): JSX.Element {
 
             <p dangerouslySetInnerHTML={{ __html: content.about.descriptionb }} className="about__description" />
 
-            <p dangerouslySetInnerHTML={{ __html: content.about.descriptionc }} className="about__description" />
+            <p className="about__description">{content.about.descriptionc}</p>
 
             <ul className="about__list">
               {content.about.technologies.map((technology) => (

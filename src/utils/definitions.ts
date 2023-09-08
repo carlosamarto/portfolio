@@ -29,11 +29,14 @@ export interface Content {
   experience: {
     sectionNumber: string
     title: string
-    company: string
-    position: string
-    time: string
-    tasks: Array<{
-      description: string
+    jobs: Array<{
+      company: string
+      position: string
+      location: string
+      time: string
+      tasks: Array<{
+        description: string
+      }>
     }>
   }
   projects: {
@@ -67,40 +70,14 @@ export interface Content {
   }
 }
 
-// Mocks interface with the content of the work website
-export interface Work {
-  header: {
-    menuItems: Array<{
-      menuNumber: string
-      menuText: string
-      menuLink: string
-    }>
-    buttonLink: string
-  }
-  intro: {
-    text: string
-  }
-  projects: {
-    sectionNumber: string
-    cardProjects: Array<{
-      website: string
-      github: string
-      title: string
-      description: string
-      technologies: string[]
-    }>
-  }
-  contact: {
-    subtitle: string
-  }
-}
-
 // Context interface for provide all the values to the app
 export interface Context {
   isHeaderVisible: boolean
   prevScrollPos: number
   openMenu: boolean
   setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>
+  activeTab: number
+  handleClick: (tabNum: number) => void
 }
 
 // Footer social links
