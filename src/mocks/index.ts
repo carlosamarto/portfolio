@@ -12,7 +12,7 @@ export const content: Content = {
       { menuNumber: '05.', menuText: 'Contacto', menuLink: '#contact' }
     ],
     buttonText: 'Curriculum',
-    buttonLink: 'resumes/curriculum.pdf'
+    buttonLink: '/curriculum.pdf'
   },
   intro: {
     subtitle: '01. Hola, mi nombre es',
