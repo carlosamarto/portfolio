@@ -659,6 +659,7 @@
 .contact__subtitle {
   font-weight: 400;
   line-height: 1.5;
+  text-align: center;
   color: var(--color-red);
   font-size: var(--font-md);
   font-family: var(--font-fira-code);
