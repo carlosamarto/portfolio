@@ -435,21 +435,15 @@
 }
 .experience__button {
   width: 100%;
-  border: none;
   outline: none;
   cursor: pointer;
   line-height: 1.5;
   font-weight: 400;
-  border-top: 0.1rem;
-  border-left: 0.1rem;
-  border-right: 0.1rem;
-  border-bottom: 0.1rem;
-  border-style: solid;
   padding: 0.8rem 2.4rem;
   color: var(--color-gray);
   font-size: var(--font-sm);
-  border-color: transparent;
   background-color: transparent;
+  border: 0.1rem solid transparent;
   transition: all ease-in-out 0.2s;
   font-family: var(--font-fira-code);
 }
