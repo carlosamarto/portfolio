@@ -41,7 +41,7 @@ export const content: Content = {
       { technologyName: '<span class="about__symbol">◇</span>WordPress' },
       { technologyName: '<span class="about__symbol">◇</span>Figma' }
     ],
-    imageProfile: '/images/profile.jpg',
+    imageProfile: '/images/profile-work.jpg',
     imageCaption: 'Imagen de perfil creada por Vana IA'
   },
   experience: {
@@ -70,7 +70,7 @@ export const content: Content = {
       },
       {
         company: 'Freelance',
-        position: 'Desarrollador Front-End / Diseñador Web',
+        position: 'Desarrollador Front-End | Diseñador Web',
         location: 'Latinoamérica - Trabajo Remoto',
         time: 'Septiembre 2020 - Abril 2022',
         tasks: [
@@ -143,6 +143,13 @@ export const content: Content = {
         github: '',
         title: 'Home Lovers USA',
         description: 'Home Lovers USA, Landing Page construida en WordPress.',
+        technologies: ['WordPress']
+      },
+      {
+        website: 'https://getvenueclick.com',
+        github: '',
+        title: 'Get VenueClick',
+        description: 'Get VenueClick, sitio web construido en WordPress.',
         technologies: ['WordPress']
       }
     ]
