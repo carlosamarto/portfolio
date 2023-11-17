@@ -61,7 +61,6 @@ export interface Content {
     link: string
     text: string
     social: {
-      codepen: string
       github: string
       linkedin: string
       twitter: string
@@ -82,7 +81,6 @@ export interface Context {
 
 // Footer social links
 export interface Links {
-  codepen: string
   github: string
   linkedin: string
   twitter: string

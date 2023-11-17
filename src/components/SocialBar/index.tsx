@@ -1,5 +1,4 @@
 // React Icons
-import { ImCodepen } from '@react-icons/all-files/im/ImCodepen'
 import { FiGithub } from '@react-icons/all-files/fi/FiGithub'
 import { FiLinkedin } from '@react-icons/all-files/fi/FiLinkedin'
 import { FiTwitter } from '@react-icons/all-files/fi/FiTwitter'
@@ -19,10 +18,6 @@ export default function SocialBar ({ links }: { links: Links }): JSX.Element {
 
         <a href={links.instagram} aria-label="instagram" target="_blank" rel="noopener noreferrer" className="social-bar__link">
           <FiInstagram size="2.4rem" className="social-bar__icon" />
-        </a>
-
-        <a href={links.codepen} aria-label="codepen" target="_blank" rel="noopener noreferrer" className="social-bar__link">
-          <ImCodepen size="2.4rem" className="social-bar__icon" />
         </a>
 
         <a href={links.github} aria-label="github" target="_blank" rel="noopener noreferrer" className="social-bar__link">

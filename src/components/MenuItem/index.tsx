@@ -1,13 +1,5 @@
 // MenuItem
-export default function MenuItem ({
-  menuLink,
-  menuNumber,
-  menuText
-}: {
-  menuLink: string
-  menuNumber: string
-  menuText: string
-}): JSX.Element {
+export default function MenuItem ({ menuLink, menuNumber, menuText }: { menuLink: string, menuNumber: string, menuText: string }): JSX.Element {
   return (
     <>
       <li className="menu-item">

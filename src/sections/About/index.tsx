@@ -33,17 +33,7 @@ export default function About (): JSX.Element {
           </div>
 
           <figure className="about__figure">
-            <Image
-              src={content.about.imageProfile}
-              alt={content.about.imageCaption}
-              title={content.about.imageCaption}
-              width="0"
-              height="0"
-              sizes="100vw"
-              quality={60}
-              priority
-              className="about__image"
-            />
+            <Image src={content.about.imageProfile} alt={content.about.imageCaption} title={content.about.imageCaption} width="0" height="0" sizes="100vw" quality={60} priority className="about__image" />
           </figure>
         </div>
       </section>

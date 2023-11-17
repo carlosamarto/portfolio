@@ -33,13 +33,7 @@ export default function Footer (): JSX.Element {
       <footer className={`footer ${openMenu ? 'footer--lock' : 'footer--unlock'}`}>
         {path !== '/work' && <SocialBar links={content.footer.social} />}
 
-        <a
-          href={content.footer.link}
-          aria-label="repository"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="footer__repository"
-        >
+        <a href={content.footer.link} aria-label="repository" target="_blank" rel="noopener noreferrer" className="footer__repository">
           <FiGitBranch size="1.8rem" color="#ff0000" className="footer__icon" />
           {content.footer.text}
         </a>

@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "3.0.0",
+  "version": "2.5.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,24 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-icons/all-files": "^4.1.0",
-    "@vercel/analytics": "^1.0.2",
-    "next": "13.4.12",
+    "@react-icons/all-files": "4.1.0",
+    "@vercel/analytics": "1.1.1",
+    "next": "14.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "^5.1.6"
+    "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/node": "^20.4.6",
+    "@types/node": "20.4.6",
     "@types/react": "18.2.17",
-    "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "eslint": "^8.46.0",
+    "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
-    "eslint-config-standard-with-typescript": "^37.0.0",
-    "eslint-plugin-import": "^2.28.0",
-    "eslint-plugin-n": "^16.0.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.33.0"
+    "eslint-config-standard-with-typescript": "37.0.0",
+    "eslint-plugin-import": "2.28.0",
+    "eslint-plugin-n": "16.0.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.33.0"
   }
 }

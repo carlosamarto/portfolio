@@ -4,19 +4,7 @@ import { FiGithub } from '@react-icons/all-files/fi/FiGithub'
 import { FiExternalLink } from '@react-icons/all-files/fi/FiExternalLink'
 
 // CardProject
-export default function CardProject ({
-  website,
-  github,
-  title,
-  description,
-  technologies
-}: {
-  website: string
-  github: string
-  title: string
-  description: string
-  technologies: string[]
-}): JSX.Element {
+export default function CardProject ({ website, github, title, description, technologies }: { website: string, github: string, title: string, description: string, technologies: string[] }): JSX.Element {
   return (
     <>
       <li className="card-project">
@@ -28,25 +16,13 @@ export default function CardProject ({
 
             <div className="card-project__icons">
               {github !== '' && (
-                <a
-                  href={github}
-                  aria-label="Project Github"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card-project__links"
-                >
+                <a href={github} aria-label="Project Github" target="_blank" rel="noopener noreferrer" className="card-project__links">
                   <FiGithub size="2.4rem" className="card-project__icon" />
                 </a>
               )}
 
               {website !== '' && (
-                <a
-                  href={website}
-                  aria-label="Project Website"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card-project__links"
-                >
+                <a href={website} aria-label="Project Website" target="_blank" rel="noopener noreferrer" className="card-project__links">
                   <FiExternalLink size="2.4rem" className="card-project__icon" />
                 </a>
               )}

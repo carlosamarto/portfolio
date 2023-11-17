@@ -19,14 +19,7 @@ export default function Projects (): JSX.Element {
 
         <ul className="projects__cards">
           {content.projects.cardProjects.map((cardProject) => (
-            <CardProject
-              key={cardProject.title}
-              website={cardProject.website}
-              github={cardProject.github}
-              title={cardProject.title}
-              description={cardProject.description}
-              technologies={cardProject.technologies}
-            />
+            <CardProject key={cardProject.title} website={cardProject.website} github={cardProject.github} title={cardProject.title} description={cardProject.description} technologies={cardProject.technologies} />
           ))}
         </ul>
       </section>
