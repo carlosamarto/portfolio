@@ -11,8 +11,8 @@ import ThemeProvider from '@/context'
 
 // Metadata
 export const metadata: Metadata = {
+  metadataBase: new URL('https://carlosmrtzo.com/'),
   generator: 'Next.js',
-  themeColor: '#0b1622',
   referrer: 'origin-when-cross-origin',
   keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'WordPress', 'Portfolio', 'Front-End'],
   authors: [{ name: 'Carlos', url: 'https://carlosmrtzo.com/' }],
