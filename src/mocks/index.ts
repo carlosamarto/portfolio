@@ -17,15 +17,15 @@ export const content: Content = {
   intro: {
     subtitle: '01. Hola, mi nombre es',
     title: 'Carlos Martínez',
-    text: "<strong class='intro__strong'>Desarrollador Front-End</strong> apasionado en crear páginas webs que destaquen por su gran estilo.",
+    text: "<strong class='intro__strong'>Front-End Developer</strong> apasionado en crear páginas webs que destaquen por su gran estilo.",
     buttonLink: '#contact',
     buttonText: 'Contáctame'
   },
   about: {
     sectionNumber: '02.',
     title: 'Acerca de mí',
-    description: 'Me especializo en el área de <strong class="about__strong">Front-End</strong>, con experiencia en el diseño y desarrollo de componentes y páginas web utilizando las últimas tecnologías, tales como <strong class="about__strong">React</strong>, <strong class="about__strong">Next.js</strong>, <strong class="about__strong">Node.js</strong>, <strong class="about__strong">JavaScript</strong>, <strong class="about__strong">TypeScript</strong> y <strong class="about__strong">CSS</strong>.',
-    descriptionb: 'Además, ocasionalmente trabajo en proyectos con <strong class="about__strong">WordPress</strong>. Siempre estoy en búsqueda de oportunidades para aprender y mejorar tanto en mi trabajo individual como en equipos. ✨💻',
+    description: 'Actualmente me desempeño como <strong class="about__strong">Front-End Developer</strong>, especializándome principalmente en la maquetación y creación de interfaces de usuario para la web utilizando tecnologías como <strong class="about__strong">React</strong>/<strong class="about__strong">Next.js</strong>.',
+    descriptionb: 'También tengo experiencia en la conceptualización de diseños web con <strong class="about__strong">Figma</strong>. Además, he trabajado en el lado del <strong class="about__strong">Back-End</strong> para complementar el <strong class="about__strong">Front-End</strong> con <strong class="about__strong">Node.js</strong> y ocasionalmente trabajo en proyectos con <strong class="about__strong">WordPress</strong>. Siempre estoy abierto a aprender nuevas tecnologías, poseo habilidades de comunicación sólidas y me desenvuelvo bien tanto en equipos de trabajo como de forma individual. 💻',
     descriptionc: 'Aquí hay algunas de las tecnologías en las que he estado trabajando recientemente:',
     technologies: [{ technologyName: '<span class="about__symbol">◇</span>HTML' }, { technologyName: '<span class="about__symbol">◇</span>CSS' }, { technologyName: '<span class="about__symbol">◇</span>JavaScript' }, { technologyName: '<span class="about__symbol">◇</span>TypeScript' }, { technologyName: '<span class="about__symbol">◇</span>React' }, { technologyName: '<span class="about__symbol">◇</span>Next.js' }, { technologyName: '<span class="about__symbol">◇</span>Node.js' }, { technologyName: '<span class="about__symbol">◇</span>Tailwind' }, { technologyName: '<span class="about__symbol">◇</span>WordPress' }, { technologyName: '<span class="about__symbol">◇</span>Figma' }],
     imageProfile: '/images/profile-work.jpg',
@@ -36,9 +36,26 @@ export const content: Content = {
     title: 'Experiencia Profesional',
     jobs: [
       {
+        company: 'Freelance',
+        position: 'Front-End Developer | Web Developer',
+        location: 'Trabajo Remoto',
+        time: 'Septiembre de 2023 - Presente',
+        tasks: [
+          {
+            description: '<span class="experience__symbol">◇</span><p class="experience__description">Crear y maquetar diversos sitios web para clientes, utilizando tanto <strong class="intro__strong">WordPress</strong> como código personalizado.</p>'
+          },
+          {
+            description: '<span class="experience__symbol">◇</span><p class="experience__description">En el ámbito del código personalizado, trabajo con tecnologías como vanilla <strong class="intro__strong">JavaScript</strong>, <strong class="intro__strong">React</strong>/<strong class="intro__strong">Next.js</strong>, entre otras.</p>'
+          },
+          {
+            description: '<span class="experience__symbol">◇</span><p class="experience__description">Configurar el consumo del uso de alguna <strong class="intro__strong">API</strong> para traer informacíon a la web.</p>'
+          }
+        ]
+      },
+      {
         company: 'MContigo',
-        position: 'Desarrollador Front-End',
-        location: 'España - Trabajo Remoto',
+        position: 'Front-End Developer',
+        location: 'Trabajo Remoto',
         time: 'Abril de 2022 - Junio de 2023',
         tasks: [
           {
@@ -54,8 +71,8 @@ export const content: Content = {
       },
       {
         company: 'Freelance',
-        position: 'Desarrollador Front-End | Diseñador Web',
-        location: 'Latinoamérica - Trabajo Remoto',
+        position: 'Front-End Developer | Web Developer',
+        location: 'Trabajo Remoto',
         time: 'Septiembre 2020 - Abril 2022',
         tasks: [
           {
